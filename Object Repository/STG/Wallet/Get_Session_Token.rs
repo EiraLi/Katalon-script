@@ -40,28 +40,28 @@
    <soapRequestMethod></soapRequestMethod>
    <soapServiceFunction></soapServiceFunction>
    <variables>
-      <defaultValue>findTestData('INT_data').getValue(10, 1)</defaultValue>
+      <defaultValue>findTestData('STG_data').getValue(10, 1)</defaultValue>
       <description></description>
       <id>554f690c-0692-4fbb-b227-1308f2704a34</id>
       <masked>false</masked>
       <name>url_krug_gw</name>
    </variables>
    <variables>
-      <defaultValue>findTestData('INT_data').getValue(2, 1)</defaultValue>
+      <defaultValue>findTestData('STG_data').getValue(2, 1)</defaultValue>
       <description></description>
       <id>a27a4b76-8f6d-499b-99bb-2225e73648ef</id>
       <masked>false</masked>
       <name>partner</name>
    </variables>
    <variables>
-      <defaultValue>findTestData('INT_data').getValue(3, 1)</defaultValue>
+      <defaultValue>findTestData('STG_data').getValue(3, 1)</defaultValue>
       <description></description>
       <id>bc1aa9f1-3227-4e06-8086-ddc3ac08076b</id>
       <masked>false</masked>
       <name>secret_key</name>
    </variables>
    <variables>
-      <defaultValue>findTestData('INT_data').getValue(4, 1)</defaultValue>
+      <defaultValue>findTestData('STG_data').getValue(4, 1)</defaultValue>
       <description></description>
       <id>109b3b45-4200-4d2e-8f75-13d024bc39e1</id>
       <masked>false</masked>

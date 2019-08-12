@@ -26,7 +26,7 @@
    <soapRequestMethod></soapRequestMethod>
    <soapServiceFunction></soapServiceFunction>
    <variables>
-      <defaultValue>findTestData('INT_data').getValue(2, 1)</defaultValue>
+      <defaultValue>findTestData('STG_data').getValue(2, 1)</defaultValue>
       <description></description>
       <id>955576e0-e07d-4331-b2e6-ad20d50fa36d</id>
       <masked>false</masked>

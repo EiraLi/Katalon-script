@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <DataFileEntity>
    <description></description>
-   <name>INT_data</name>
+   <name>STG_data</name>
    <tag></tag>
    <containsHeaders>true</containsHeaders>
    <csvSeperator></csvSeperator>
-   <dataFileGUID>c9bc75f2-133c-4c09-83c5-133997edf100</dataFileGUID>
-   <dataSourceUrl>/Users/eiralee/Katalon_Script/SuperWild/INT_data.xlsx</dataSourceUrl>
+   <dataFileGUID>df4f1979-6ff2-428d-97ef-cb68eb8b2765</dataFileGUID>
+   <dataSourceUrl>/Users/eiralee/Katalon_Script/SuperWild/STG_data.xlsx</dataSourceUrl>
    <driver>ExcelFile</driver>
    <isInternalPath>false</isInternalPath>
    <query></query>

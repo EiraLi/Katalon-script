@@ -44,14 +44,14 @@
    <soapRequestMethod></soapRequestMethod>
    <soapServiceFunction></soapServiceFunction>
    <variables>
-      <defaultValue>findTestData('INT_data').getValue(2, 1)</defaultValue>
+      <defaultValue>findTestData('STG_data').getValue(2, 1)</defaultValue>
       <description></description>
       <id>82a2ea64-9e1b-4917-970f-e84924c316c6</id>
       <masked>false</masked>
       <name>partner</name>
    </variables>
    <variables>
-      <defaultValue>findTestData('INT_data').getValue(14, 1)</defaultValue>
+      <defaultValue>findTestData('STG_data').getValue(14, 1)</defaultValue>
       <description></description>
       <id>d9fa1f69-174d-478f-9a86-7b2b02da7974</id>
       <masked>false</masked>

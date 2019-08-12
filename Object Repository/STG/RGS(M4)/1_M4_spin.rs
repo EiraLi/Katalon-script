@@ -58,7 +58,7 @@
       <name>rgs_session_token</name>
    </variables>
    <variables>
-      <defaultValue>findTestData('INT_data').getValue(2, 1)</defaultValue>
+      <defaultValue>findTestData('STG_data').getValue(2, 1)</defaultValue>
       <description></description>
       <id>bee7d5ce-292b-4b20-9b23-fae9e2212e1d</id>
       <masked>false</masked>
