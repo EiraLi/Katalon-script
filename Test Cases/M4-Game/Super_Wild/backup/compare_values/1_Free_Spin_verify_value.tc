@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>https://staroad.atlassian.net/wiki/spaces/IPD/pages/461176986/NuRgs+API+Features+Use-case+M4-0012+Super+Wilds
+
+#1 situation</description>
+   <name>1_Free_Spin_verify_value</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>1a072b65-ff04-4309-8c03-153b307ad255</testCaseGuid>
+   <variable>
+      <defaultValue>findTestData('INT_data').getValue(2, 1)</defaultValue>
+      <description></description>
+      <id>777d5cb8-125a-4420-b891-0538f024ee51</id>
+      <masked>false</masked>
+      <name>Partner</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('INT_data').getValue(4, 1)</defaultValue>
+      <description></description>
+      <id>cc759b9e-86ec-414e-98e2-37b8ce2f8a69</id>
+      <masked>false</masked>
+      <name>Userid</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('INT_data').getValue(5, 1)</defaultValue>
+      <description></description>
+      <id>f2e51e8e-787f-4632-92c3-8c9f5e5d5d5c</id>
+      <masked>false</masked>
+      <name>Game_code</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('INT_data').getValue(10, 1)</defaultValue>
+      <description></description>
+      <id>aa95780b-0ebe-4982-9a64-25948952cd96</id>
+      <masked>false</masked>
+      <name>url_krug_gw</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('INT_data').getValue(3, 1)</defaultValue>
+      <description></description>
+      <id>31b984a4-d0dc-44f8-baa6-c4c8792a066c</id>
+      <masked>false</masked>
+      <name>secret_key</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('INT_data').getValue(14, 1)</defaultValue>
+      <description></description>
+      <id>c85146eb-b5d5-415e-8c6d-16b5455ba137</id>
+      <masked>false</masked>
+      <name>M4_recorder</name>
+   </variable>
+</TestCaseEntity>

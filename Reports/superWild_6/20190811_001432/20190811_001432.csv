@@ -1,0 +1,30 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+superWild_6,,,,2019-08-11 00:14:56,2019-08-11 00:17:33,2m - 36.687s,INCOMPLETE
+,,,,,,,
+Test Cases/M4-Game/Super_Wild/6_Normal_CALL,,"https://staroad.atlassian.net/wiki/spaces/IPD/pages/461176986/NuRgs+API+Features+Use-case+M4-0012+Super+Wilds
+
+#1 situation",,2019-08-11 00:14:56,2019-08-11 00:17:33,2m - 36.468s,PASSED
+Normal = new java.util.ArrayList(),,,,2019-08-11 00:14:58,2019-08-11 00:14:58,0.002s,PASSED
+"Normal.add(""type"")",,,,2019-08-11 00:14:58,2019-08-11 00:14:58,0.001s,PASSED
+"Normal.add(""complete"")",,,,2019-08-11 00:14:58,2019-08-11 00:14:58,0.001s,PASSED
+"Normal.add(""feature_state"")",,,,2019-08-11 00:14:58,2019-08-11 00:14:58,0.001s,PASSED
+"sendRequestAndVerify(findTestObject(""Wallet/Get_Session_Token"", [""url_krug_gw"":url_krug_gw, ""partner"":Partner, ""secret_key"":secret_key, ""userid"":Userid]))",,,,2019-08-11 00:14:58,2019-08-11 00:15:00,2.566s,PASSED
+"M4_login = sendRequestAndVerify(findTestObject(""RGS(M4)/M4_Login"", [""partner"":Partner, ""game_code"":Game_code, ""session_token"":session_token]))",,,,2019-08-11 00:15:00,2019-08-11 00:15:01,0.529s,PASSED
+M4_login_user_id = M4_login_user_id,,,,2019-08-11 00:15:01,2019-08-11 00:15:01,0.000s,PASSED
+"M4_init = sendRequestAndVerify(findTestObject(""RGS(M4)/M4_init"", [""partner"":Partner, ""M4_recorder"":M4_recorder, ""M4_login_user_id"":M4_login_user_id]))",,,,2019-08-11 00:15:01,2019-08-11 00:15:01,0.561s,PASSED
+rgs_session_token = rgs_session_token,,,,2019-08-11 00:15:01,2019-08-11 00:15:01,0.001s,PASSED
+"for ([i = 0, i <= 1000, (i++)])",,,,2019-08-11 00:15:01,2019-08-11 00:17:28,2m - 26.241s,PASSED
+"sendRequestAndVerify(findTestObject(""RGS(M4)/1_Round_detail"", [""partner"":Partner, ""M4_spin_round_id"":M4_spin_round_id]))",,,,2019-08-11 00:17:28,2019-08-11 00:17:28,0.342s,PASSED
+M4_round_features_triggered = M4_round_features_triggered,,,,2019-08-11 00:17:28,2019-08-11 00:17:28,0.000s,PASSED
+wildNormalIndex = -1,,,,2019-08-11 00:17:28,2019-08-11 00:17:28,0.000s,PASSED
+wildNormalFeatureStateKeys = null,,,,2019-08-11 00:17:28,2019-08-11 00:17:28,0.000s,PASSED
+"for ([i = 0, i < M4_round_features_triggered.size(), (i++)])",,,,2019-08-11 00:17:28,2019-08-11 00:17:28,0.002s,PASSED
+println(wildNormalIndex),,,,2019-08-11 00:17:28,2019-08-11 00:17:28,0.000s,PASSED
+println(wildNormalFeatureStateKeys),,,,2019-08-11 00:17:28,2019-08-11 00:17:28,0.001s,PASSED
+Normal_keys = new java.util.ArrayList(wildNormalFeatureStateKeys),,,,2019-08-11 00:17:28,2019-08-11 00:17:28,0.000s,PASSED
+Collections.sort(Normal_keys),,,,2019-08-11 00:17:28,2019-08-11 00:17:28,0.003s,PASSED
+Collections.sort(Normal),,,,2019-08-11 00:17:28,2019-08-11 00:17:28,0.001s,PASSED
+"println(""Normal_keys is:"" + Normal_keys)",,,,2019-08-11 00:17:28,2019-08-11 00:17:28,0.000s,PASSED
+"println(""Normal is:"" + Normal)",,,,2019-08-11 00:17:28,2019-08-11 00:17:28,0.000s,PASSED
+assert Normal_keys.equals(Normal),,,,2019-08-11 00:17:28,2019-08-11 00:17:28,0.001s,PASSED
+"callTestCase(findTestCase(""M4-Game/Super_Wild/backup/compare_values/6_specific_Normal_verify_value_call_test_case""), [""Partner"":Partner, ""Userid"":Userid, ""Game_code"":Game_code, ""url_krug_gw"":url_krug_gw, ""secret_key"":secret_key, ""M4_recorder"":M4_recorder])",,,,2019-08-11 00:17:28,2019-08-11 00:17:33,4.768s,PASSED

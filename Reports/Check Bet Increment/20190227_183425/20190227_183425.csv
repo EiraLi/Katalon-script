@@ -1,0 +1,11 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+Check Bet Increment,,,2019-02-27 18:34:31,2019-02-27 18:34:35,3.766s,FAILED
+,,,,,,
+Test Cases/Check Bet Increment,,,2019-02-27 18:34:31,2019-02-27 18:34:35,3.562s,FAILED
+"response0 = sendRequestAndVerify(findTestObject(""Get_Session_Token""))",,,2019-02-27 18:34:31,2019-02-27 18:34:34,2.462s,PASSED
+"response1 = sendRequestAndVerify(findTestObject(""Login""))",,,2019-02-27 18:34:34,2019-02-27 18:34:35,0.834s,PASSED
+login = new groovy.json.JsonSlurper(),,,2019-02-27 18:34:35,2019-02-27 18:34:35,0.001s,PASSED
+login_rsult = login.parseText(response1.getResponseBodyContent()),,,2019-02-27 18:34:35,2019-02-27 18:34:35,0.001s,PASSED
+denomination = bet_denominations,,,2019-02-27 18:34:35,2019-02-27 18:34:35,0.001s,PASSED
+"println(""bet denomination is :"" + denomination)",,,2019-02-27 18:34:35,2019-02-27 18:34:35,0.001s,PASSED
+assert denomination == bet_denomination,,,2019-02-27 18:34:35,2019-02-27 18:34:35,0.008s,FAILED

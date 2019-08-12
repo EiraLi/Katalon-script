@@ -1,0 +1,15 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+Check Bet Increment,,,2019-03-14 18:54:32,2019-03-14 18:54:37,4.197s,PASSED
+,,,,,,
+Test Cases/Check Bet Increment,,,2019-03-14 18:54:33,2019-03-14 18:54:37,3.978s,PASSED
+"response0 = sendRequestAndVerify(findTestObject(""Get_Session_Token""))",,,2019-03-14 18:54:33,2019-03-14 18:54:35,2.547s,PASSED
+"response1 = sendRequestAndVerify(findTestObject(""Login""))",,,2019-03-14 18:54:35,2019-03-14 18:54:37,1.181s,PASSED
+login = new groovy.json.JsonSlurper(),,,2019-03-14 18:54:37,2019-03-14 18:54:37,0.001s,PASSED
+login_rsult = login.parseText(response1.getResponseBodyContent()),,,2019-03-14 18:54:37,2019-03-14 18:54:37,0.001s,PASSED
+denomination = bet_denominations,,,2019-03-14 18:54:37,2019-03-14 18:54:37,0.000s,PASSED
+"println(""bet denomination is :"" + denomination)",,,2019-03-14 18:54:37,2019-03-14 18:54:37,0.001s,PASSED
+arrayResponse = denomination,,,2019-03-14 18:54:37,2019-03-14 18:54:37,0.001s,PASSED
+"println(""arrayResponse is :"" + arrayResponse)",,,2019-03-14 18:54:37,2019-03-14 18:54:37,0.001s,PASSED
+arrayExpect = bet_denomination,,,2019-03-14 18:54:37,2019-03-14 18:54:37,0.001s,PASSED
+"println(""arrayDenomination is :"" + arrayExpect)",,,2019-03-14 18:54:37,2019-03-14 18:54:37,0.001s,PASSED
+assert arrayResponse == arrayExpect,,,2019-03-14 18:54:37,2019-03-14 18:54:37,0.001s,PASSED

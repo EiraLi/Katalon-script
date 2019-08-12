@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Check Bet Increment" time="3" tests="1" failures="0" errors="0">
+   <testsuite name="Check Bet Increment" tests="1" failures="0" errors="0" time="3" timestamp="2019-02-27 19:16:03" hostname="jack.c - 172.16.60.187" id="Test Suites/Check Bet Increment">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="/Users/jack.c/Katalon Studio/Kataon_API_Testing/Reports/Check Bet Increment/20190227_191558"/>
+         <property name="logFiles" value="/Users/jack.c/Katalon Studio/Kataon_API_Testing/Reports/Check Bet Increment/20190227_191558/execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="jack.c - 172.16.60.187"/>
+         <property name="hostAddress" value="172.16.60.187"/>
+         <property name="os" value="Mac OS X 64bit"/>
+         <property name="katalonVersion" value="6.0.4.1"/>
+      </properties>
+      <testcase name="Test Cases/Check Bet Increment" classname="Test Cases/Check Bet Increment" status="PASSED">
+         <system-out><![CDATA[2019-02-27 19:16:04 - [TEST_CASE][PASSED] - Test Cases/Check Bet Increment: Test Cases/Check Bet Increment
+
+2019-02-27 19:16:04 - [TEST_STEP][PASSED] - response0 = sendRequestAndVerify(findTestObject("Get_Session_Token")): Send request and verify the response successfully
+
+2019-02-27 19:16:06 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2019-02-27 19:16:06 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2019-02-27 19:16:06 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2019-02-27 19:16:06 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2019-02-27 19:16:06 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-02-27 19:16:06 - [TEST_STEP][PASSED] - getStatusCode()).isEqualTo(200): null
+
+2019-02-27 19:16:06 - [TEST_STEP][PASSED] - getResponseText()).contains("session_token"): null
+
+2019-02-27 19:16:06 - [TEST_STEP][PASSED] - getsession = new groovy.json.JsonSlurper(): null
+
+2019-02-27 19:16:06 - [TEST_STEP][PASSED] - result_getsession = getsession.parseText(response.getResponseBodyContent()): null
+
+2019-02-27 19:16:06 - [TEST_STEP][PASSED] - session_token = session_token: null
+
+2019-02-27 19:16:06 - [TEST_STEP][PASSED] - println("...value extracted is :" + session_token): null
+
+2019-02-27 19:16:06 - [TEST_STEP][PASSED] - session_token = session_token: null
+
+2019-02-27 19:16:06 - [TEST_STEP][PASSED] - println("GlobalVariable is :" + session_token): null
+
+2019-02-27 19:16:06 - [MESSAGE][PASSED] - Verify response successfully
+
+2019-02-27 19:16:06 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2019-02-27 19:16:06 - [TEST_STEP][PASSED] - response1 = sendRequestAndVerify(findTestObject("Login")): Send request and verify the response successfully
+
+2019-02-27 19:16:07 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2019-02-27 19:16:07 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2019-02-27 19:16:07 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2019-02-27 19:16:07 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2019-02-27 19:16:07 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-02-27 19:16:07 - [TEST_STEP][PASSED] - getStatusCode()).isEqualTo(200): null
+
+2019-02-27 19:16:07 - [TEST_STEP][PASSED] - login = new groovy.json.JsonSlurper(): null
+
+2019-02-27 19:16:07 - [TEST_STEP][PASSED] - result_login = login.parseText(response.getResponseBodyContent()): null
+
+2019-02-27 19:16:07 - [TEST_STEP][PASSED] - rgssessiontoken = session_token: null
+
+2019-02-27 19:16:07 - [TEST_STEP][PASSED] - println("...value extracted is :" + rgssessiontoken): null
+
+2019-02-27 19:16:07 - [TEST_STEP][PASSED] - rgs_session_token = rgssessiontoken: null
+
+2019-02-27 19:16:07 - [TEST_STEP][PASSED] - println("GlobalVariable is :" + rgs_session_token): null
+
+2019-02-27 19:16:07 - [TEST_STEP][PASSED] - statetag = state_tag: null
+
+2019-02-27 19:16:07 - [TEST_STEP][PASSED] - println("...value extracted is :" + statetag): null
+
+2019-02-27 19:16:07 - [TEST_STEP][PASSED] - state_tag = statetag: null
+
+2019-02-27 19:16:07 - [TEST_STEP][PASSED] - println("GlobalVariable is :" + state_tag): null
+
+2019-02-27 19:16:07 - [TEST_STEP][PASSED] - playerid = player_id: null
+
+2019-02-27 19:16:07 - [TEST_STEP][PASSED] - println("...value extracted is :" + playerid): null
+
+2019-02-27 19:16:07 - [TEST_STEP][PASSED] - player_id = playerid: null
+
+2019-02-27 19:16:07 - [TEST_STEP][PASSED] - println("GlobalVariable is :" + player_id): null
+
+2019-02-27 19:16:07 - [TEST_STEP][PASSED] - arrayResponse = ["why", "hello", "there"]: null
+
+2019-02-27 19:16:07 - [TEST_STEP][PASSED] - arrayExpect = ["there", "why", "hello"]: null
+
+2019-02-27 19:16:07 - [TEST_STEP][PASSED] - assertThat(arrayResponse).containsOnly("there", "hello", "why"): null
+
+2019-02-27 19:16:07 - [TEST_STEP][PASSED] - assertThat(arrayResponse).containsOnlyElementsOf(Arrays.asList("why", "there", "hello")): null
+
+2019-02-27 19:16:07 - [TEST_STEP][PASSED] - assertThat(arrayResponse).containsExactly("why", "hello", "there"): null
+
+2019-02-27 19:16:07 - [TEST_STEP][PASSED] - assertThat(arrayResponse).containsExactlyElementsOf(Arrays.asList("why", "hello", "there")): null
+
+2019-02-27 19:16:07 - [TEST_STEP][PASSED] - assertThat(arrayResponse).containsSequence("why", "hello"): null
+
+2019-02-27 19:16:07 - [TEST_STEP][PASSED] - assertThat(arrayResponse).containsSubsequence("why", "there"): null
+
+2019-02-27 19:16:07 - [TEST_STEP][PASSED] - assertThat(arrayResponse).containsAnyOf("why", "nothing", "new"): null
+
+2019-02-27 19:16:07 - [TEST_STEP][PASSED] - assertThat(arrayResponse).contains("hello", Assertions.atIndex(1)): null
+
+2019-02-27 19:16:07 - [MESSAGE][PASSED] - Verify response successfully
+
+2019-02-27 19:16:07 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2019-02-27 19:16:07 - [TEST_STEP][PASSED] - login = new groovy.json.JsonSlurper(): null
+
+2019-02-27 19:16:07 - [TEST_STEP][PASSED] - login_rsult = login.parseText(response1.getResponseBodyContent()): null
+
+2019-02-27 19:16:07 - [TEST_STEP][PASSED] - denomination = bet_denominations: null
+
+2019-02-27 19:16:07 - [TEST_STEP][PASSED] - println("bet denomination is :" + denomination): null
+
+2019-02-27 19:16:07 - [TEST_STEP][PASSED] - arrayResponse = denomination: null
+
+2019-02-27 19:16:07 - [TEST_STEP][PASSED] - arrayExpect = bet_denomination: null
+
+2019-02-27 19:16:07 - [TEST_STEP][PASSED] - assert arrayResponse == arrayExpect: null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2019-02-27 19:16:03 - [TEST_SUITE][PASSED] - Check Bet Increment: Test Cases/Check Bet Increment]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>
