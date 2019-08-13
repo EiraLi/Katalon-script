@@ -17,7 +17,7 @@ import java.io.File as File
 import com.kms.katalon.keyword.excel.ExcelKeywords as ExcelKeywords
 
 
-String excelTestFile02 = '/Users/eiralee/EiraLi-Katalon_API/INT_env/Reports/TestFile02.xls'
+String excelTestFile02 = '/Users/eiralee/Katalon_Script/SuperWild/Reports/TestFile02.xls'
 
 ExcelKeywords.createExcelFile(excelTestFile02)
 

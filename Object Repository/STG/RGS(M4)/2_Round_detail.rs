@@ -19,7 +19,7 @@
    </httpHeaderProperties>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>https://${partner}-rgs-history.3655oule.com/api/slot/roundid/${M4_spin_round_id}</restUrl>
+   <restUrl>https://${partner}-rgs-history.star9ad.com/api/slot/roundid/${M4_spin_round_id}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>

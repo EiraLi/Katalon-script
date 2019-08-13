@@ -3,49 +3,49 @@
    <description>https://staroad.atlassian.net/wiki/spaces/IPD/pages/461176986/NuRgs+API+Features+Use-case+M4-0012+Super+Wilds
 
 #1 situation</description>
-   <name>6_Normal_CALL</name>
+   <name>2_reel_wins_CALL</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>1a0b3330-2c98-4660-9739-fd8c59145c52</testCaseGuid>
+   <testCaseGuid>16ae7e89-08c2-41c9-bb16-9ec9fb76f91f</testCaseGuid>
    <variable>
-      <defaultValue>findTestData('INT_data').getValue(2, 1)</defaultValue>
+      <defaultValue>findTestData('STG_data').getValue(2, 1)</defaultValue>
       <description></description>
-      <id>018805d2-f721-4dcd-8917-fd1822080415</id>
+      <id>14490bcb-1f7b-4a6b-9d2c-ef6f3a0095f2</id>
       <masked>false</masked>
       <name>Partner</name>
    </variable>
    <variable>
-      <defaultValue>findTestData('INT_data').getValue(4, 1)</defaultValue>
+      <defaultValue>findTestData('STG_data').getValue(4, 1)</defaultValue>
       <description></description>
-      <id>ebf32c39-aa70-4d73-bbe3-67346065a4c6</id>
+      <id>3564d369-4c98-4585-8cb7-3400e9e83cd1</id>
       <masked>false</masked>
       <name>Userid</name>
    </variable>
    <variable>
-      <defaultValue>findTestData('INT_data').getValue(5, 1)</defaultValue>
+      <defaultValue>findTestData('STG_data').getValue(10, 1)</defaultValue>
       <description></description>
-      <id>e630653a-ce14-49df-991d-0446824a0a66</id>
-      <masked>false</masked>
-      <name>Game_code</name>
-   </variable>
-   <variable>
-      <defaultValue>findTestData('INT_data').getValue(10, 1)</defaultValue>
-      <description></description>
-      <id>ecaac4d9-cef8-4bd4-8883-d981118bd85a</id>
+      <id>be8c466a-ccec-434f-bbde-fbb3039743c2</id>
       <masked>false</masked>
       <name>url_krug_gw</name>
    </variable>
    <variable>
-      <defaultValue>findTestData('INT_data').getValue(3, 1)</defaultValue>
+      <defaultValue>findTestData('STG_data').getValue(5, 1)</defaultValue>
       <description></description>
-      <id>980ac095-0671-4a1f-bbb7-b584f04b3e67</id>
+      <id>e70d1d56-aac6-4961-93e3-651146ae6a91</id>
+      <masked>false</masked>
+      <name>Game_code</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('STG_data').getValue(3, 1)</defaultValue>
+      <description></description>
+      <id>0bb0428d-a478-44fa-a036-09dd15e54ed9</id>
       <masked>false</masked>
       <name>secret_key</name>
    </variable>
    <variable>
-      <defaultValue>findTestData('INT_data').getValue(14, 1)</defaultValue>
+      <defaultValue>findTestData('STG_data').getValue(14, 1)</defaultValue>
       <description></description>
-      <id>6b07a1f5-5587-4fd4-a8d6-6202d5ba9e79</id>
+      <id>923b47d8-2aef-4842-bd8d-717420d19cf5</id>
       <masked>false</masked>
       <name>M4_recorder</name>
    </variable>

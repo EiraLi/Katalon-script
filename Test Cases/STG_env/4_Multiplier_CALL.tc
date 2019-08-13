@@ -3,49 +3,49 @@
    <description>https://staroad.atlassian.net/wiki/spaces/IPD/pages/461176986/NuRgs+API+Features+Use-case+M4-0012+Super+Wilds
 
 #1 situation</description>
-   <name>4_specific_Multiplier_verify_value_call_test_case</name>
+   <name>4_Multiplier_CALL</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>67b282d4-c91e-45d7-8b10-8f5c996f6947</testCaseGuid>
+   <testCaseGuid>4e406138-cfa7-4577-845f-89eef3a6a6a8</testCaseGuid>
    <variable>
-      <defaultValue>findTestData('INT_data').getValue(2, 1)</defaultValue>
+      <defaultValue>findTestData('STG_data').getValue(2, 1)</defaultValue>
       <description></description>
-      <id>af259ab9-e3cd-4701-a927-497cb1dc042f</id>
+      <id>fce831ad-8307-4437-92f1-6a9b2dc70421</id>
       <masked>false</masked>
       <name>Partner</name>
    </variable>
    <variable>
-      <defaultValue>findTestData('INT_data').getValue(4, 1)</defaultValue>
+      <defaultValue>findTestData('STG_data').getValue(4, 1)</defaultValue>
       <description></description>
-      <id>ee0724dc-c3b8-41c8-80d7-c321ba12db71</id>
+      <id>f77928be-c85c-42c7-951b-c22bf4ffada6</id>
       <masked>false</masked>
       <name>Userid</name>
    </variable>
    <variable>
-      <defaultValue>findTestData('INT_data').getValue(5, 1)</defaultValue>
+      <defaultValue>findTestData('STG_data').getValue(5, 1)</defaultValue>
       <description></description>
-      <id>0d710772-4c29-493d-a361-d48087a5b429</id>
+      <id>eb1e8b15-a207-4b3d-b41b-4e08b9792f15</id>
       <masked>false</masked>
       <name>Game_code</name>
    </variable>
    <variable>
-      <defaultValue>findTestData('INT_data').getValue(10, 1)</defaultValue>
+      <defaultValue>findTestData('STG_data').getValue(10, 1)</defaultValue>
       <description></description>
-      <id>1dd7d9c5-6e24-4d9e-891b-8afc6ef697ef</id>
+      <id>47b8d4b8-fae3-4861-b997-7a150c57247f</id>
       <masked>false</masked>
       <name>url_krug_gw</name>
    </variable>
    <variable>
-      <defaultValue>findTestData('INT_data').getValue(3, 1)</defaultValue>
+      <defaultValue>findTestData('STG_data').getValue(3, 1)</defaultValue>
       <description></description>
-      <id>0375ce1e-a773-424f-b7ce-3ab3b30e231b</id>
+      <id>e46cfe3c-f884-4c96-b63d-a9f9b18f921a</id>
       <masked>false</masked>
       <name>secret_key</name>
    </variable>
    <variable>
-      <defaultValue>findTestData('INT_data').getValue(14, 1)</defaultValue>
+      <defaultValue>findTestData('STG_data').getValue(14, 1)</defaultValue>
       <description></description>
-      <id>2ba61fed-3dbd-4bf3-b99f-0be9b13a93dd</id>
+      <id>fc20fdc5-bf54-4d5a-a922-cb5ed3c5c2c0</id>
       <masked>false</masked>
       <name>M4_recorder</name>
    </variable>
