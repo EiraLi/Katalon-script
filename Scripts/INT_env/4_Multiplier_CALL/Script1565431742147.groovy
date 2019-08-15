@@ -29,15 +29,17 @@ wild_config.add('index')
 
 wild_config.add('value')
 
-WS.sendRequestAndVerify(findTestObject('Wallet/Get_Session_Token', [('url_krug_gw') : url_krug_gw, ('partner') : Partner
+WS.sendRequestAndVerify(findTestObject('INT/Wallet/Get_Session_Token', [('url_krug_gw') : url_krug_gw, ('partner') : Partner
             , ('secret_key') : secret_key, ('userid') : Userid]))
 
-M4_login = WS.sendRequestAndVerify(findTestObject('RGS(M4)/M4_Login', [('partner') : Partner, ('game_code') : Game_code, ('session_token') : GlobalVariable.session_token]))
+M4_login = WS.sendRequestAndVerify(findTestObject('INT/RGS(M4)/M4_Login', [('partner') : Partner, ('game_code') : Game_code
+            , ('session_token') : GlobalVariable.session_token]))
 
 def M4_login_user_id = GlobalVariable.M4_login_user_id
 
-M4_init = WS.sendRequestAndVerify(findTestObject('RGS(M4)/M4_init', [('partner') : Partner, ('M4_recorder') : M4_recorder
+M4_init = WS.sendRequestAndVerify(findTestObject('INT/RGS(M4)/M4_init', [('partner') : Partner, ('M4_recorder') : M4_recorder
             , ('M4_login_user_id') : GlobalVariable.M4_login_user_id]))
+
 
 def rgs_session_token = GlobalVariable.rgs_session_token
 
@@ -48,9 +50,9 @@ for (int i = 0; i <= 500; i++) {
 
     def M4_total_bonus_spins = GlobalVariable.M4_total_bonus_spins
 
-    spin_result = WS.sendRequestAndVerify(findTestObject('RGS(M4)/1_M4_spin', [('M4_login_user_id') : GlobalVariable.M4_login_user_id
+    spin_result = WS.sendRequestAndVerify(findTestObject('INT/RGS(M4)/1_M4_spin', [('M4_login_user_id') : GlobalVariable.M4_login_user_id
                 , ('rgs_session_token') : GlobalVariable.rgs_session_token, ('partner') : Partner]))
-
+	
     if ((GlobalVariable.M4_total_bonus_spins_int != 0) && (GlobalVariable.M4_spin_reels_symbols[2].contains('WILD_Double') || 
     GlobalVariable.M4_spin_reels_symbols[4].contains('WILD_Triple'))) {
         break
@@ -60,25 +62,18 @@ for (int i = 0; i <= 500; i++) {
     }
 }
 
-WS.sendRequestAndVerify(findTestObject('RGS(M4)/1_Round_detail', [('partner') : Partner, ('M4_spin_round_id') : GlobalVariable.M4_spin_round_id]))
+WS.sendRequestAndVerify(findTestObject('INT/RGS(M4)/1_Round_detail', [('partner') : Partner, ('M4_spin_round_id') : GlobalVariable.M4_spin_round_id]))
 
-//def M4_spin_reels = GlobalVariable.M4_spin_reels 
-//println("GlobalVariable.M4_round_features_triggered[1]: "+GlobalVariable.M4_round_features_triggered)
-//println("GlobalVariable.M4_round_features_triggered[1].feature_state.free_spin_left: "+GlobalVariable.M4_round_features_triggered[1].feature_state.free_spins_left)
-//println("GlobalVariable.M4_round_features_triggered[1].feature_state[0]: "+GlobalVariable.M4_round_features_triggered[1].feature_state[0])
 def M4_round_features_triggered = GlobalVariable.M4_round_features_triggered
 
-//def extraFreeSpinIndex = -1
-//def extraFreeSpinFeatureStateKeys = null
+
 def wildMultiplierIndex = -1
 
 def wildMultiplierFeatureStateKeys = null
+def wildMultiplierWildConfigeKeys = ''
 
 for (int i = 0; i < M4_round_features_triggered.size(); i++) {
-    //	if (M4_round_features_triggered[i].type.equals("EXTRA_FREE_SPIN")) {
-    //		extraFreeSpinIndex = i
-    //		extraFreeSpinFeatureStateKeys = M4_round_features_triggered[i].feature_state.keySet()
-    //	}
+    
     if (M4_round_features_triggered[i].type.equals('WILD_MULTIPLIER')) {
         wildMultiplierIndex = i
 
@@ -118,7 +113,7 @@ assert multi_keys.equals(Multiplier)
 
 assert wildConfig_keys.equals(wild_config)
 
-WS.callTestCase(findTestCase('M4-Game/Super_Wild/backup/compare_values/4_specific_Multiplier_verify_value_call_test_case'), 
+WS.callTestCase(findTestCase('INT_env/compare_values/4_Multiplier_verify_value'), 
     [('Partner') : Partner, ('Userid') : Userid, ('Game_code') : Game_code
         , ('url_krug_gw') : url_krug_gw, ('secret_key') : secret_key
         , ('M4_recorder') : M4_recorder])

@@ -33,14 +33,15 @@ def reel_wins = new ArrayList()
 
 (reel_wins[6]) = 'wild_win'
 
-WS.sendRequestAndVerify(findTestObject('Wallet/Get_Session_Token', [('url_krug_gw') : url_krug_gw, ('partner') : Partner
+WS.sendRequestAndVerify(findTestObject('INT/Wallet/Get_Session_Token', [('url_krug_gw') : url_krug_gw, ('partner') : Partner
             , ('secret_key') : secret_key, ('userid') : Userid]))
 
-M4_login = WS.sendRequestAndVerify(findTestObject('RGS(M4)/M4_Login', [('partner') : Partner, ('game_code') : Game_code, ('session_token') : GlobalVariable.session_token]))
+M4_login = WS.sendRequestAndVerify(findTestObject('INT/RGS(M4)/M4_Login', [('partner') : Partner, ('game_code') : Game_code
+            , ('session_token') : GlobalVariable.session_token]))
 
 def M4_login_user_id = GlobalVariable.M4_login_user_id
 
-M4_init = WS.sendRequestAndVerify(findTestObject('RGS(M4)/M4_init', [('partner') : Partner, ('M4_recorder') : M4_recorder
+M4_init = WS.sendRequestAndVerify(findTestObject('INT/RGS(M4)/M4_init', [('partner') : Partner, ('M4_recorder') : M4_recorder
             , ('M4_login_user_id') : GlobalVariable.M4_login_user_id]))
 
 def rgs_session_token = GlobalVariable.rgs_session_token
@@ -50,7 +51,7 @@ for (int i = 0; i <= 500; i++) {
 
     def M4_spin_total_bonus_win_this_round = GlobalVariable.M4_spin_total_bonus_win_this_round
 
-    spin_result = WS.sendRequestAndVerify(findTestObject('RGS(M4)/1_M4_spin', [('M4_login_user_id') : GlobalVariable.M4_login_user_id
+    spin_result = WS.sendRequestAndVerify(findTestObject('INT/RGS(M4)/1_M4_spin', [('M4_login_user_id') : GlobalVariable.M4_login_user_id
                 , ('rgs_session_token') : GlobalVariable.rgs_session_token, ('partner') : Partner]))
 
     if ((GlobalVariable.M4_total_bonus_spins != 0) && (GlobalVariable.M4_spin_line_wins.size() != 0)) {
@@ -58,7 +59,7 @@ for (int i = 0; i <= 500; i++) {
     }
 }
 
-WS.sendRequestAndVerify(findTestObject('RGS(M4)/2_Round_detail', [('partner') : Partner, ('M4_spin_round_id') : GlobalVariable.M4_spin_round_id]))
+WS.sendRequestAndVerify(findTestObject('INT/RGS(M4)/2_Round_detail', [('partner') : Partner, ('M4_spin_round_id') : GlobalVariable.M4_spin_round_id]))
 
 def M4_round_All_keys = GlobalVariable.M4_round_reel_wins.keySet()
 
@@ -70,7 +71,7 @@ println('reel_wins_list' + reel_wins)
 
 assert reel_wins.equals(listofKeys)
 
-WS.callTestCase(findTestCase('M4-Game/Super_Wild/backup/compare_values/2_reel_wins_verify_value _call_test_case'), [('Partner') : Partner
+WS.callTestCase(findTestCase('INT_env/compare_values/2_reel_wins_verify_value'), [('Partner') : Partner
         , ('Userid') : Userid, ('Game_code') : Game_code, ('url_krug_gw') : url_krug_gw
         , ('secret_key') : secret_key, ('M4_recorder') : M4_recorder])
 

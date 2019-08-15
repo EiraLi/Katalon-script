@@ -89,14 +89,15 @@ def NG_reel_symbol3 = new ArrayList()
 
 NG_reel_symbol3.add('symbol')
 
-WS.sendRequestAndVerify(findTestObject('Wallet/Get_Session_Token', [('url_krug_gw') : url_krug_gw, ('partner') : Partner
+WS.sendRequestAndVerify(findTestObject('STG/Wallet/Get_Session_Token', [('url_krug_gw') : url_krug_gw, ('partner') : Partner
             , ('secret_key') : secret_key, ('userid') : Userid]))
 
-M4_login = WS.sendRequestAndVerify(findTestObject('RGS(M4)/M4_Login', [('partner') : Partner, ('game_code') : Game_code, ('session_token') : GlobalVariable.session_token]))
+M4_login = WS.sendRequestAndVerify(findTestObject('STG/RGS(M4)/M4_Login', [('partner') : Partner, ('game_code') : Game_code
+            , ('session_token') : GlobalVariable.session_token]))
 
 def M4_login_user_id = GlobalVariable.M4_login_user_id
 
-M4_init = WS.sendRequestAndVerify(findTestObject('RGS(M4)/M4_init', [('partner') : Partner, ('M4_recorder') : M4_recorder
+M4_init = WS.sendRequestAndVerify(findTestObject('STG/RGS(M4)/M4_init', [('partner') : Partner, ('M4_recorder') : M4_recorder
             , ('M4_login_user_id') : GlobalVariable.M4_login_user_id]))
 
 def rgs_session_token = GlobalVariable.rgs_session_token
@@ -104,7 +105,7 @@ def rgs_session_token = GlobalVariable.rgs_session_token
 def M4_spin_reels_symbols = GlobalVariable.M4_spin_reels_symbols
 
 for (int i = 0; i <= 300; i++) {
-    spin_result = WS.sendRequestAndVerify(findTestObject('RGS(M4)/1_M4_spin', [('M4_login_user_id') : GlobalVariable.M4_login_user_id
+    spin_result = WS.sendRequestAndVerify(findTestObject('STG/RGS(M4)/1_M4_spin', [('M4_login_user_id') : GlobalVariable.M4_login_user_id
                 , ('rgs_session_token') : GlobalVariable.rgs_session_token, ('partner') : Partner]))
 
     if ((((GlobalVariable.free_spin_reel_counter[0]) >= 1) && ((GlobalVariable.free_spin_reel_counter[1]) >= 1)) && ((GlobalVariable.free_spin_reel_counter[
@@ -113,7 +114,7 @@ for (int i = 0; i <= 300; i++) {
     }
 }
 
-WS.sendRequestAndVerify(findTestObject('RGS(M4)/1_Round_detail', [('partner') : Partner, ('M4_spin_round_id') : GlobalVariable.M4_spin_round_id]))
+WS.sendRequestAndVerify(findTestObject('STG/RGS(M4)/1_Round_detail', [('partner') : Partner, ('M4_spin_round_id') : GlobalVariable.M4_spin_round_id]))
 
 def M4_round_object_key = GlobalVariable.M4_round_object.keySet()
 
@@ -195,7 +196,7 @@ assert NG_reel_symbol2.equals(M4_round_reels_symbols_key2)
 
 assert NG_reel_symbol3.equals(M4_round_reels_symbols_key3)
 
-WS.callTestCase(findTestCase('M4-Game/Super_Wild/backup/compare_values/1_verify_value_call_test_case'), [('Partner') : Partner
+WS.callTestCase(findTestCase('STG_env/compare_values/1_freeSpin_verify_value'), [('Partner') : Partner
         , ('Userid') : Userid, ('Game_code') : Game_code, ('url_krug_gw') : url_krug_gw
         , ('secret_key') : secret_key, ('M4_recorder') : M4_recorder])
 

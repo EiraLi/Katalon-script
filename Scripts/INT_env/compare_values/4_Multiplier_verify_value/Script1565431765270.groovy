@@ -19,22 +19,23 @@ import java.util.Collections as Collections
 
 //compare wild_multiplier
 //compare ild_config
-WS.sendRequestAndVerify(findTestObject('Wallet/Get_Session_Token', [('url_krug_gw') : url_krug_gw, ('partner') : Partner
+WS.sendRequestAndVerify(findTestObject('INT/Wallet/Get_Session_Token', [('url_krug_gw') : url_krug_gw, ('partner') : Partner
             , ('secret_key') : secret_key, ('userid') : Userid]))
 
-M4_login = WS.sendRequestAndVerify(findTestObject('RGS(M4)/M4_Login', [('partner') : Partner, ('game_code') : Game_code, ('session_token') : GlobalVariable.session_token]))
+M4_login = WS.sendRequestAndVerify(findTestObject('INT/RGS(M4)/M4_Login', [('partner') : Partner, ('game_code') : Game_code
+            , ('session_token') : GlobalVariable.session_token]))
 
 def M4_login_user_id = GlobalVariable.M4_login_user_id
 
-M4_init = WS.sendRequestAndVerify(findTestObject('RGS(M4)/M4_init', [('partner') : Partner, ('M4_recorder') : M4_recorder
+M4_init = WS.sendRequestAndVerify(findTestObject('INT/RGS(M4)/M4_init', [('partner') : Partner, ('M4_recorder') : M4_recorder
             , ('M4_login_user_id') : GlobalVariable.M4_login_user_id]))
 
 def rgs_session_token = GlobalVariable.rgs_session_token
 
 
-WS.sendRequestAndVerify(findTestObject('RGS(M4)/1_Round_detail', [('partner') : Partner, ('M4_spin_round_id') : GlobalVariable.M4_spin_round_id]))
+WS.sendRequestAndVerify(findTestObject('INT/RGS(M4)/1_Round_detail', [('partner') : Partner, ('M4_spin_round_id') : GlobalVariable.M4_spin_round_id]))
 
-WS.sendRequestAndVerify(findTestObject('RGS(M4)/in_game_history_detail', [('partner') : Partner, ('M4_spin_transaction_id') : GlobalVariable.M4_spin_transaction_id, ('M4_login_user_id') : GlobalVariable.M4_login_user_id]))
+WS.sendRequestAndVerify(findTestObject('INT/RGS(M4)/in_game_history_detail', [('partner') : Partner, ('M4_spin_transaction_id') : GlobalVariable.M4_spin_transaction_id, ('M4_login_user_id') : GlobalVariable.M4_login_user_id]))
 def M4_round_features_triggered = GlobalVariable.M4_round_features_triggered
 def M4_round_reels3 = GlobalVariable.M4_round_reels3
 def M4_round_reels5 = GlobalVariable.M4_round_reels5
@@ -135,15 +136,7 @@ if (Reels3list.contains("WILD_Double") && Reels3list.contains("WILD_Triple")){
 		symbol_value = 3
 	}
 
-//for (int i = 0; i < M4_round_reels.size(); i++) {
-//    def symbols = M4_round_reels[i].symbols
-//	
 
-//    for (int j = 0; j < symbols.size(); j++) {
-//        def symbol = symbols[j].symbol
-//		def wildList = GlobalVariable.wildList
-//		println(symbol)
-		
 
 println('GlobalVariable.M4_history_multiplier is: ' + GlobalVariable.M4_history_multiplier)
 
@@ -151,7 +144,7 @@ println('symbol_value is: ' + symbol_value)
 
 println('Config_Value is:' + config_value)
 
-//Integer M4_multiplier = Integer.valueOf(GlobalVariable.M4_history_multiplier)
+
 
 //wild_multiplier compare
 assert GlobalVariable.M4_history_multiplier == symbol_value

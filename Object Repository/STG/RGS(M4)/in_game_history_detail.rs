@@ -44,7 +44,7 @@
    <soapRequestMethod></soapRequestMethod>
    <soapServiceFunction></soapServiceFunction>
    <variables>
-      <defaultValue>findTestData('STG_data').getValue(2, 1)</defaultValue>
+      <defaultValue>findTestData('STG_data').getValue(2, 5)</defaultValue>
       <description></description>
       <id>24a52e8c-e0d3-4489-afec-d8df382e8bd7</id>
       <masked>false</masked>
@@ -156,6 +156,7 @@ GlobalVariable.M4_history_F_reels = M4_history_F_reels1
 def M4_history_multiplier = M4_history.game_history.bonuses[1].extra_spins_data[0].multiplier
 GlobalVariable.M4_history_multiplier = M4_history_multiplier
 
-</verificationScript>
+def M4_history_bonuses1 = M4_history.game_history.bonuses[1]
+GlobalVariable.M4_history_bonuses1 = M4_history_bonuses1</verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>

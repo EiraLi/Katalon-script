@@ -156,6 +156,7 @@ GlobalVariable.M4_history_F_reels = M4_history_F_reels1
 def M4_history_multiplier = M4_history.game_history.bonuses[1].extra_spins_data[0].multiplier
 GlobalVariable.M4_history_multiplier = M4_history_multiplier
 
-</verificationScript>
+def M4_history_bonuses1 = M4_history.game_history.bonuses[1]
+GlobalVariable.M4_history_bonuses1 = M4_history_bonuses1</verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>

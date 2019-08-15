@@ -44,7 +44,7 @@
    <soapRequestMethod></soapRequestMethod>
    <soapServiceFunction></soapServiceFunction>
    <variables>
-      <defaultValue>findTestData('STG_data').getValue(2, 1)</defaultValue>
+      <defaultValue>findTestData('STG_data').getValue(2, 5)</defaultValue>
       <description></description>
       <id>24a52e8c-e0d3-4489-afec-d8df382e8bd7</id>
       <masked>false</masked>

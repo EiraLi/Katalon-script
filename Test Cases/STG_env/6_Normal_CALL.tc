@@ -8,42 +8,42 @@
    <comment></comment>
    <testCaseGuid>1a0b3330-2c98-4660-9739-fd8c59145c52</testCaseGuid>
    <variable>
-      <defaultValue>findTestData('STG_data').getValue(2, 1)</defaultValue>
+      <defaultValue>findTestData('STG_data').getValue(2, 5)</defaultValue>
       <description></description>
       <id>018805d2-f721-4dcd-8917-fd1822080415</id>
       <masked>false</masked>
       <name>Partner</name>
    </variable>
    <variable>
-      <defaultValue>findTestData('STG_data').getValue(4, 1)</defaultValue>
+      <defaultValue>findTestData('STG_data').getValue(4, 5)</defaultValue>
       <description></description>
       <id>ebf32c39-aa70-4d73-bbe3-67346065a4c6</id>
       <masked>false</masked>
       <name>Userid</name>
    </variable>
    <variable>
-      <defaultValue>findTestData('STG_data').getValue(5, 1)</defaultValue>
+      <defaultValue>findTestData('STG_data').getValue(5, 5)</defaultValue>
       <description></description>
       <id>e630653a-ce14-49df-991d-0446824a0a66</id>
       <masked>false</masked>
       <name>Game_code</name>
    </variable>
    <variable>
-      <defaultValue>findTestData('STG_data').getValue(10, 1)</defaultValue>
+      <defaultValue>findTestData('STG_data').getValue(10, 5)</defaultValue>
       <description></description>
       <id>ecaac4d9-cef8-4bd4-8883-d981118bd85a</id>
       <masked>false</masked>
       <name>url_krug_gw</name>
    </variable>
    <variable>
-      <defaultValue>findTestData('STG_data').getValue(3, 1)</defaultValue>
+      <defaultValue>findTestData('STG_data').getValue(3, 5)</defaultValue>
       <description></description>
       <id>980ac095-0671-4a1f-bbb7-b584f04b3e67</id>
       <masked>false</masked>
       <name>secret_key</name>
    </variable>
    <variable>
-      <defaultValue>findTestData('STG_data').getValue(14, 1)</defaultValue>
+      <defaultValue>findTestData('STG_data').getValue(14, 5)</defaultValue>
       <description></description>
       <id>6b07a1f5-5587-4fd4-a8d6-6202d5ba9e79</id>
       <masked>false</masked>

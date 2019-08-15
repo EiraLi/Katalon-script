@@ -19,23 +19,23 @@ import java.util.Collections as Collections
 
 
 
-WS.sendRequestAndVerify(findTestObject('Wallet/Get_Session_Token', [('url_krug_gw') : url_krug_gw, ('partner') : Partner
+WS.sendRequestAndVerify(findTestObject('INT/Wallet/Get_Session_Token', [('url_krug_gw') : url_krug_gw, ('partner') : Partner
             , ('secret_key') : secret_key, ('userid') : Userid]))
 
-M4_login = WS.sendRequestAndVerify(findTestObject('RGS(M4)/M4_Login', [('partner') : Partner, ('game_code') : Game_code, ('session_token') : GlobalVariable.session_token]))
+M4_login = WS.sendRequestAndVerify(findTestObject('INT/RGS(M4)/M4_Login', [('partner') : Partner, ('game_code') : Game_code
+            , ('session_token') : GlobalVariable.session_token]))
 
 def M4_login_user_id = GlobalVariable.M4_login_user_id
 
-M4_init = WS.sendRequestAndVerify(findTestObject('RGS(M4)/M4_init', [('partner') : Partner, ('M4_recorder') : M4_recorder
+M4_init = WS.sendRequestAndVerify(findTestObject('INT/RGS(M4)/M4_init', [('partner') : Partner, ('M4_recorder') : M4_recorder
             , ('M4_login_user_id') : GlobalVariable.M4_login_user_id]))
-
 def rgs_session_token = GlobalVariable.rgs_session_token
 	
-WS.sendRequestAndVerify(findTestObject('RGS(M4)/1_Round_detail', [('partner') : Partner, ('M4_spin_round_id') : GlobalVariable.M4_spin_round_id]))
+WS.sendRequestAndVerify(findTestObject('INT/RGS(M4)/1_Round_detail', [('partner') : Partner, ('M4_spin_round_id') : GlobalVariable.M4_spin_round_id]))
 
 def M4_round_features_triggered = GlobalVariable.M4_round_features_triggered
 
-//def wildExpandingFeatureStateKeys = null
+
 def extraFreeSpinTypeAndComplete = false
 def original = ''
 def swapped = ''
@@ -45,7 +45,7 @@ for (int i=0; i < M4_round_features_triggered.size(); i++) {
 
 		extraFreeSpinTypeAndComplete = true
 		
-//		extraFreeSpinFeatureStateKeys = M4_round_features_triggered[i].feature_state.keySet()
+
 		original = trigger.feature_state.original_reels
 		
 		swapped = trigger.feature_state.swapped_reels

@@ -17,7 +17,7 @@ import java.io.File as File
 import com.kms.katalon.keyword.excel.ExcelKeywords as ExcelKeywords
 
 
-String excelTestFile02 = '/Users/eiralee/EiraLi-Katalon_API/INT_env/Reports/TestFile02.xls'
+String excelTestFile02 = '/Users/eiralee/Katalon_Script/SuperWild/Reports/TestFile02.xls'
 
 ExcelKeywords.createExcelFile(excelTestFile02)
 
@@ -133,14 +133,15 @@ ExcelKeywords.setValueToCellByAddresses(M4_historyOrOthersAPI, content1)
 ExcelKeywords.saveWorkbook(excelTestFile02, workbook01)
 
 
-WS.sendRequestAndVerify(findTestObject('Wallet/Get_Session_Token', [('url_krug_gw') : url_krug_gw, ('partner') : Partner
+WS.sendRequestAndVerify(findTestObject('INT/Wallet/Get_Session_Token', [('url_krug_gw') : url_krug_gw, ('partner') : Partner
             , ('secret_key') : secret_key, ('userid') : Userid]))
 
-M4_login = WS.sendRequestAndVerify(findTestObject('RGS(M4)/M4_Login', [('partner') : Partner, ('game_code') : Game_code, ('session_token') : GlobalVariable.session_token]))
+M4_login = WS.sendRequestAndVerify(findTestObject('INT/RGS(M4)/M4_Login', [('partner') : Partner, ('game_code') : Game_code
+            , ('session_token') : GlobalVariable.session_token]))
 
 def M4_login_user_id = GlobalVariable.M4_login_user_id
 
-M4_init = WS.sendRequestAndVerify(findTestObject('RGS(M4)/M4_init', [('partner') : Partner, ('M4_recorder') : M4_recorder
+M4_init = WS.sendRequestAndVerify(findTestObject('INT/RGS(M4)/M4_init', [('partner') : Partner, ('M4_recorder') : M4_recorder
             , ('M4_login_user_id') : GlobalVariable.M4_login_user_id]))
 
 def rgs_session_token = GlobalVariable.rgs_session_token
@@ -148,7 +149,7 @@ def rgs_session_token = GlobalVariable.rgs_session_token
 def M4_spin_reels_symbols = GlobalVariable.M4_spin_reels_symbols
 
 
-WS.sendRequestAndVerify(findTestObject('RGS(M4)/1_Round_detail', [('partner') : Partner, ('M4_spin_round_id') : GlobalVariable.M4_spin_round_id]))
+WS.sendRequestAndVerify(findTestObject('INT/RGS(M4)/1_Round_detail', [('partner') : Partner, ('M4_spin_round_id') : GlobalVariable.M4_spin_round_id]))
 
 
 def M4_balance = GlobalVariable.M4_round_balance
@@ -173,7 +174,7 @@ for (i = 0; i < M4_round_spin_result.size(); i++) {
 }
 
 
-WS.sendRequestAndVerify(findTestObject('RGS(M4)/in_game_history_detail', [('partner') : Partner, ('M4_spin_transaction_id') : GlobalVariable.M4_spin_transaction_id, ('M4_login_user_id') : GlobalVariable.M4_login_user_id]))
+WS.sendRequestAndVerify(findTestObject('INT/RGS(M4)/in_game_history_detail', [('partner') : Partner, ('M4_spin_transaction_id') : GlobalVariable.M4_spin_transaction_id, ('M4_login_user_id') : GlobalVariable.M4_login_user_id]))
 
 
 //Round detail, base spin reel

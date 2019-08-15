@@ -804,4 +804,9 @@
       <initValue>''</initValue>
       <name>M4_history_game_total_won</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>M4_history_bonuses1</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

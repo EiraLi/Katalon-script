@@ -11,10 +11,19 @@
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <testSuiteGuid>fb45965e-9f73-4e8c-b36a-a1da50c152e1</testSuiteGuid>
    <testCaseLink>
-      <guid>6346a808-b7ce-4865-942d-7ca226b0c8b5</guid>
+      <guid>f23c810c-a688-477f-b53d-094512369118</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/STG_env/1_Free_Spin_CALL</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>d454bfb7-273c-44d3-9c81-5a7c6b22e729</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/STG_data</testDataId>
+      </testDataLink>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
