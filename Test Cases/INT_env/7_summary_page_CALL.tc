@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>https://staroad.atlassian.net/wiki/spaces/IPD/pages/461176986/NuRgs+API+Features+Use-case+M4-0012+Super+Wilds
+
+#1 situation</description>
+   <name>7_summary_page_CALL</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>1a88fdd7-4fe9-4c77-afe0-8346240dc476</testCaseGuid>
+   <variable>
+      <defaultValue>findTestData('INT_data').getValue(2, 1)</defaultValue>
+      <description></description>
+      <id>347e54da-2454-4567-b473-64e03e6c4c07</id>
+      <masked>false</masked>
+      <name>Partner</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('INT_data').getValue(4, 1)</defaultValue>
+      <description></description>
+      <id>bc0887f6-b695-4855-b233-f4715a94e1e0</id>
+      <masked>false</masked>
+      <name>Userid</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('INT_data').getValue(5, 1)</defaultValue>
+      <description></description>
+      <id>d4a77f9d-c5ef-4073-a68e-b3f23b549672</id>
+      <masked>false</masked>
+      <name>Game_code</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('INT_data').getValue(10, 1)</defaultValue>
+      <description></description>
+      <id>8ad2f398-25de-44ae-870b-00ea152c8d21</id>
+      <masked>false</masked>
+      <name>url_krug_gw</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('INT_data').getValue(3, 1)</defaultValue>
+      <description></description>
+      <id>741318fa-a144-4d1a-8ebd-2e2c4c34c858</id>
+      <masked>false</masked>
+      <name>secret_key</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('INT_data').getValue(14, 1)</defaultValue>
+      <description></description>
+      <id>fdb02e5a-25ce-455f-a308-ea9ff59fd7d7</id>
+      <masked>false</masked>
+      <name>M4_recorder</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('INT_data').getValue(7, 1)</defaultValue>
+      <description></description>
+      <id>c0b00ad4-2023-439a-8869-8bb74230249e</id>
+      <masked>false</masked>
+      <name>start_date</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('INT_data').getValue(8, 1)</defaultValue>
+      <description></description>
+      <id>b28f1b09-f991-4e79-af76-069ddde51307</id>
+      <masked>false</masked>
+      <name>end_date</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('INT_data').getValue(10, 1)</defaultValue>
+      <description></description>
+      <id>758dfc51-944a-40e7-af9b-af0571787351</id>
+      <masked>false</masked>
+      <name>url_krug</name>
+   </variable>
+</TestCaseEntity>

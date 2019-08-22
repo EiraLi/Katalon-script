@@ -14,7 +14,7 @@
       <guid>b58ba3be-98b7-4657-a6ea-d2f678b7f36e</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/M4-Game/Super_Wild/4_Multiplier_CALL</testCaseId>
+      <testCaseId>Test Cases/INT_env/4_Multiplier_CALL</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>

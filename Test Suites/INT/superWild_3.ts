@@ -14,7 +14,7 @@
       <guid>228e9bc7-7176-458a-9700-e161f89d5f73</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/M4-Game/Super_Wild/3_ExtraFG_CALL</testCaseId>
+      <testCaseId>Test Cases/INT_env/3_ExtraFG_CALL</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>

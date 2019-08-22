@@ -165,8 +165,8 @@ def M4_spin_total_bonus_win_this_round = result_M4_spin.spin_result.bonus.total_
 GlobalVariable.M4_spin_total_bonus_win_this_round = M4_spin_total_bonus_win_this_round
 println(&quot;GlobalVariable.M4_spin_total_bonus_win_this_round is: &quot;+GlobalVariable.M4_spin_total_bonus_win_this_round)
 
-
-
+def M4_spin_bonus_spin_result = result_M4_spin.spin_result.bonus.bonus_data[0].get('properties').spin_result
+GlobalVariable.M4_spin_bonus_spin_result = M4_spin_bonus_spin_result
 
 </verificationScript>
    <wsdlAddress></wsdlAddress>

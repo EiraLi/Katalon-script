@@ -205,8 +205,8 @@ GlobalVariable.M4_round_wild_config = M4_round_wild_config
 
 def M4_round_wild_config_index =  M4_round_detail.spin_results.features_triggered.feature_state.wild_config.index
 
-
-
+def M4_round_free_spin_left = M4_round_detail.spin_results[0].features_triggered[0].feature_state.free_spins_lef
+GlobalVariable.M4_round_free_spin_left = M4_round_free_spin_left
 
 def M4_round_original_reels =  M4_round_detail.spin_results.features_triggered.feature_state.original_reels
 GlobalVariable.M4_round_original_reels = M4_round_original_reels

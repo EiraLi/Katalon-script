@@ -84,7 +84,7 @@ println('ExtraFG is:' + ExtraFG)
 
 assert listOfKeys.equals(ExtraFG)
 
-WS.callTestCase(findTestCase('INT_env/compare_values/3_ExtraFG_verify_value'), 
+WS.callTestCase(findTestCase('INT_env/compare_values/3_ExtraFG_verify_value_and_summary'), 
     [('Partner') : Partner, ('Userid') : Userid, ('Game_code') : Game_code
         , ('url_krug_gw') : url_krug_gw, ('secret_key') : secret_key
         , ('M4_recorder') : M4_recorder])

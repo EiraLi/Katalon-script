@@ -93,7 +93,7 @@ def M4_history_spin_transaction = M4_history.spin_transaction
 GlobalVariable.M4_history_spin_transaction = M4_history_spin_transaction
 
 def M4_history_date = M4_history.date
-//GlobalVariable.M4_history_date = M4_history_date
+GlobalVariable.M4_history_date = M4_history_date
 
 def M4_history_game_id = M4_history.game_id
 //GlobalVariable.M4_history_game_id = M4_history_game_id
@@ -142,7 +142,7 @@ def M4_history_balance = M4_history.balance
 GlobalVariable.M4_history_balance = M4_history_balance
 
 def M4_history_type = M4_history.type
-//GlobalVariable.M4_history_type = M4_history_type
+GlobalVariable.M4_history_type = M4_history_type
 
 def M4_history_reel_symbol = M4_history.game_history.reels.symbols
 GlobalVariable.M4_history_reel_symbol = M4_history_reel_symbol

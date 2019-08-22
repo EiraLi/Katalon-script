@@ -83,7 +83,7 @@ println('Expanding_keys is:' + Expanding_keys)
 
 assert Expanding.equals(Expanding_keys)
 
-WS.callTestCase(findTestCase('INT_env/compare_values/5_Expanding_verify_value'), 
+WS.callTestCase(findTestCase('INT_env/compare_values/5_Expanding_verify_value_and_summary'), 
     [('Partner') : Partner, ('Userid') : Userid, ('Game_code') : Game_code
         , ('url_krug_gw') : url_krug_gw, ('secret_key') : secret_key
         , ('M4_recorder') : M4_recorder])

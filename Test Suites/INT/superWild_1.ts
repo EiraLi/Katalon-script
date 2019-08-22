@@ -14,7 +14,7 @@
       <guid>6731b42e-b55d-44b9-9522-5f75205de717</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/M4-Game/Super_Wild/1_Free_Spin_CALL</testCaseId>
+      <testCaseId>Test Cases/INT_env/1_Free_Spin_CALL</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>

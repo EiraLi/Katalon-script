@@ -196,7 +196,7 @@ assert NG_reel_symbol2.equals(M4_round_reels_symbols_key2)
 
 assert NG_reel_symbol3.equals(M4_round_reels_symbols_key3)
 
-WS.callTestCase(findTestCase('STG_env/compare_values/1_freeSpin_verify_value'), [('Partner') : Partner
-        , ('Userid') : Userid, ('Game_code') : Game_code, ('url_krug_gw') : url_krug_gw
-        , ('secret_key') : secret_key, ('M4_recorder') : M4_recorder])
+//WS.callTestCase(findTestCase('STG_env/compare_values/1_freeSpin_verify_value'), [('Partner') : Partner
+//        , ('Userid') : Userid, ('Game_code') : Game_code, ('url_krug_gw') : url_krug_gw
+//        , ('secret_key') : secret_key, ('M4_recorder') : M4_recorder])
 

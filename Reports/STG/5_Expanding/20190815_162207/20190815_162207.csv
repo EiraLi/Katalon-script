@@ -1,0 +1,29 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+5_Expanding,,,,2019-08-15 16:22:29,2019-08-15 16:22:37,7.671s,INCOMPLETE
+,,,,,,,
+Test Cases/STG_env/5_Expanding_CALL,,"https://staroad.atlassian.net/wiki/spaces/IPD/pages/461176986/NuRgs+API+Features+Use-case+M4-0012+Super+Wilds
+
+#1 situation",,2019-08-15 16:22:29,2019-08-15 16:22:37,7.470s,PASSED
+Expanding = new java.util.ArrayList(),,,,2019-08-15 16:22:31,2019-08-15 16:22:31,0.002s,PASSED
+"Expanding.add(""original_reels"")",,,,2019-08-15 16:22:31,2019-08-15 16:22:31,0.001s,PASSED
+"Expanding.add(""swapped_symbols"")",,,,2019-08-15 16:22:31,2019-08-15 16:22:31,0.001s,PASSED
+"sendRequestAndVerify(findTestObject(""STG/Wallet/Get_Session_Token"", [""url_krug_gw"":url_krug_gw, ""partner"":Partner, ""secret_key"":secret_key, ""userid"":Userid]))",,,,2019-08-15 16:22:31,2019-08-15 16:22:33,2.409s,PASSED
+"M4_login = sendRequestAndVerify(findTestObject(""STG/RGS(M4)/M4_Login"", [""partner"":Partner, ""game_code"":Game_code, ""session_token"":session_token]))",,,,2019-08-15 16:22:33,2019-08-15 16:22:34,0.587s,PASSED
+M4_login_user_id = M4_login_user_id,,,,2019-08-15 16:22:34,2019-08-15 16:22:34,0.001s,PASSED
+"M4_init = sendRequestAndVerify(findTestObject(""STG/RGS(M4)/M4_init"", [""partner"":Partner, ""M4_recorder"":M4_recorder, ""M4_login_user_id"":M4_login_user_id]))",,,,2019-08-15 16:22:34,2019-08-15 16:22:34,0.275s,PASSED
+rgs_session_token = rgs_session_token,,,,2019-08-15 16:22:34,2019-08-15 16:22:34,0.001s,PASSED
+"for ([i = 0, i <= 500, (i++)])",,,,2019-08-15 16:22:34,2019-08-15 16:22:35,0.847s,PASSED
+"sendRequestAndVerify(findTestObject(""STG/RGS(M4)/1_Round_detail"", [""partner"":Partner, ""M4_spin_round_id"":M4_spin_round_id]))",,,,2019-08-15 16:22:35,2019-08-15 16:22:35,0.522s,PASSED
+M4_round_features_triggered = M4_round_features_triggered,,,,2019-08-15 16:22:35,2019-08-15 16:22:35,0.000s,PASSED
+wildExpandingIndex = -1,,,,2019-08-15 16:22:35,2019-08-15 16:22:35,0.000s,PASSED
+wildExpandingFeatureStateKeys = null,,,,2019-08-15 16:22:35,2019-08-15 16:22:35,0.000s,PASSED
+"for ([i = 0, i < M4_round_features_triggered.size(), (i++)])",,,,2019-08-15 16:22:35,2019-08-15 16:22:35,0.003s,PASSED
+println(wildExpandingIndex),,,,2019-08-15 16:22:35,2019-08-15 16:22:35,0.000s,PASSED
+println(wildExpandingFeatureStateKeys),,,,2019-08-15 16:22:35,2019-08-15 16:22:35,0.001s,PASSED
+Expanding_keys = new java.util.ArrayList(wildExpandingFeatureStateKeys),,,,2019-08-15 16:22:35,2019-08-15 16:22:35,0.000s,PASSED
+Collections.sort(Expanding),,,,2019-08-15 16:22:35,2019-08-15 16:22:35,0.004s,PASSED
+Collections.sort(Expanding_keys),,,,2019-08-15 16:22:35,2019-08-15 16:22:35,0.001s,PASSED
+"println(""Expanding is:"" + Expanding)",,,,2019-08-15 16:22:35,2019-08-15 16:22:35,0.000s,PASSED
+"println(""Expanding_keys is:"" + Expanding_keys)",,,,2019-08-15 16:22:35,2019-08-15 16:22:35,0.000s,PASSED
+assert Expanding.equals(Expanding_keys),,,,2019-08-15 16:22:35,2019-08-15 16:22:35,0.003s,PASSED
+"callTestCase(findTestCase(""STG_env/compare_values/5_Expanding_verify_value""), [""Partner"":Partner, ""Userid"":Userid, ""Game_code"":Game_code, ""url_krug_gw"":url_krug_gw, ""secret_key"":secret_key, ""M4_recorder"":M4_recorder])",,,,2019-08-15 16:22:35,2019-08-15 16:22:37,1.396s,PASSED
