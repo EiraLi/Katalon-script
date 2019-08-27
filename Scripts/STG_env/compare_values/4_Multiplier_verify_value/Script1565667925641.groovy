@@ -84,14 +84,9 @@ for (int i=0; i < M4_round_features_triggered.size(); i++) {
 
 			
 def config_value = multi * multi1
-
-
 def M4_round_wild_config = GlobalVariable.M4_round_wild_config
 def wildConfig = M4_round_wild_config.value
-
-	
 def M4_round_object = GlobalVariable.M4_round_object
-
 def symbolsReels3 = M4_round_reels3.symbols
 def Reels3list = new ArrayList()
 for (int i=0; i < symbolsReels3.size(); i++) {
@@ -134,19 +129,47 @@ if (Reels3list.contains("WILD_Double") && Reels3list.contains("WILD_Triple")){
 	else if (Reels5list.contains("WILD_Triple")){
 		symbol_value = 3
 	}
+	
+	def subfeatures = new ArrayList()
+	subfeatures.add("FREE_SPIN")
+	
+	def M4_round_spin_result_list = GlobalVariable.M4_round_spin_result_list
+	def feature_trigger = M4_round_spin_result_list.features_triggered
+	def total_free_spin_count = ''
+	def free_spins_left =  ''
+	def total_free_spin_win_amount = ''
+	for (int i = 0; i < feature_trigger.size(); i++){
+		def feature_type = feature_trigger[i].type
+		
+		
+		
+		if (feature_type == "FREE_SPIN"){
+			def subfeatures_list = feature_trigger[i].subfeatures
+			for (int j = 0; j < subfeatures_list.size(); j++){
+				subfeatures.add(subfeatures_list[j])
+				
+				
+			}
+		}
+	}
+	
+WS.sendRequestAndVerify(findTestObject('INT/RGS(M4)/Summary_history', [('partner_code') : partner_code, ('game_code') : Game_code, ('partner') : Partner, ('userid') : Userid]))
 
+Collections.sort(subfeatures)
+Collections.sort(GlobalVariable.summary_feature_track_1)
 
-
+println("GlobalVariable.summary_feature_track_1 is: "+GlobalVariable.summary_feature_track_1)
+println("subfeatures is: "+subfeatures)
 println('GlobalVariable.M4_history_multiplier is: ' + GlobalVariable.M4_history_multiplier)
-
+println("GlobalVariable.summary_with_free_spin_1 is: "+GlobalVariable.summary_with_free_spin_1)
 println('symbol_value is: ' + symbol_value)
-
 println('Config_Value is:' + config_value)
-
 
 
 //wild_multiplier compare
 assert GlobalVariable.M4_history_multiplier == symbol_value
 //wild_config compare
 assert config_value == GlobalVariable.M4_history_multiplier
-
+//in-game history summary
+assert GlobalVariable.summary_with_free_spin_1 == true
+assert subfeatures.equals(GlobalVariable.summary_feature_track_1)

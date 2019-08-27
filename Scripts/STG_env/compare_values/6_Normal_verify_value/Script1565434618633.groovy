@@ -55,14 +55,46 @@ for (int i=0; i < M4_round_features_triggered.size(); i++) {
 	
 }
 println(wildNormalIndexl)
-
-
-println(feature_state.getClass().getName())
 println("feature state is:"+feature_state)
 
 def feature_state_key = feature_state.keySet()
 ArrayList<String> feature_state_list = new ArrayList<String>(feature_state_key)
 
+
+def subfeatures = new ArrayList()
+subfeatures.add("FREE_SPIN")
+
+def M4_round_spin_result_list = GlobalVariable.M4_round_spin_result_list
+def feature_trigger = M4_round_spin_result_list.features_triggered
+def total_free_spin_count = ''
+def free_spins_left =  ''
+def total_free_spin_win_amount = ''
+for (int i = 0; i < feature_trigger.size(); i++){
+	def feature_type = feature_trigger[i].type
+	
+	
+	
+	if (feature_type == "FREE_SPIN"){
+		def subfeatures_list = feature_trigger[i].subfeatures
+		for (int j = 0; j < subfeatures_list.size(); j++){
+			subfeatures.add(subfeatures_list[j])
+			
+			
+		}
+	}
+}
+
+WS.sendRequestAndVerify(findTestObject('INT/RGS(M4)/Summary_history', [('partner_code') : partner_code, ('game_code') : Game_code, ('partner') : Partner, ('userid') : Userid]))
+
+Collections.sort(subfeatures)
+Collections.sort(GlobalVariable.summary_feature_track_1)
+println("GlobalVariable.summary_feature_track_1 is: "+GlobalVariable.summary_feature_track_1)
+println("subfeatures is: "+subfeatures)
 println("feature_state_list is:"+feature_state_list)
+println("GlobalVariable.summary_with_free_spin_1 is: "+GlobalVariable.summary_with_free_spin_1)
+
 assert feature_state_list.size() == 0
+assert subfeatures.equals(GlobalVariable.summary_feature_track_1)
+assert GlobalVariable.summary_with_free_spin_1 == true
+
 

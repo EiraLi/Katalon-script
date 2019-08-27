@@ -37,9 +37,7 @@ M4_login = WS.sendRequestAndVerify(findTestObject('INT/RGS(M4)/M4_Login', [('par
 
 def M4_login_user_id = GlobalVariable.M4_login_user_id
 
-M4_init = WS.sendRequestAndVerify(findTestObject('INT/RGS(M4)/M4_init', [('partner') : Partner, ('M4_recorder') : M4_recorder
-            , ('M4_login_user_id') : GlobalVariable.M4_login_user_id]))
-
+M4_init = WS.sendRequestAndVerify(findTestObject('INT/RGS(M4)/M4_init', [('partner') : Partner, ('gameId') : gameId, ('M4_login_user_id') : GlobalVariable.M4_login_user_id]))
 
 def rgs_session_token = GlobalVariable.rgs_session_token
 
@@ -52,7 +50,7 @@ for (int i = 0; i <= 500; i++) {
 
     spin_result = WS.sendRequestAndVerify(findTestObject('INT/RGS(M4)/1_M4_spin', [('M4_login_user_id') : GlobalVariable.M4_login_user_id
                 , ('rgs_session_token') : GlobalVariable.rgs_session_token, ('partner') : Partner]))
-	
+
     if ((GlobalVariable.M4_total_bonus_spins_int != 0) && (GlobalVariable.M4_spin_reels_symbols[2].contains('WILD_Double') || 
     GlobalVariable.M4_spin_reels_symbols[4].contains('WILD_Triple'))) {
         break
@@ -66,14 +64,13 @@ WS.sendRequestAndVerify(findTestObject('INT/RGS(M4)/1_Round_detail', [('partner'
 
 def M4_round_features_triggered = GlobalVariable.M4_round_features_triggered
 
-
 def wildMultiplierIndex = -1
 
 def wildMultiplierFeatureStateKeys = null
+
 def wildMultiplierWildConfigeKeys = ''
 
 for (int i = 0; i < M4_round_features_triggered.size(); i++) {
-    
     if (M4_round_features_triggered[i].type.equals('WILD_MULTIPLIER')) {
         wildMultiplierIndex = i
 
@@ -113,8 +110,8 @@ assert multi_keys.equals(Multiplier)
 
 assert wildConfig_keys.equals(wild_config)
 
-WS.callTestCase(findTestCase('INT_env/compare_values/4_Multiplier_verify_value_and_summary'), 
-    [('Partner') : Partner, ('Userid') : Userid, ('Game_code') : Game_code
-        , ('url_krug_gw') : url_krug_gw, ('secret_key') : secret_key
-        , ('M4_recorder') : M4_recorder])
+WS.callTestCase(findTestCase('INT_env/compare_values/4_Multiplier_verify_value_and_summary'), [('Partner') : Partner
+        , ('Userid') : Userid, ('Game_code') : Game_code, ('url_krug_gw') : url_krug_gw
+        , ('secret_key') : secret_key, ('gameId') : gameId
+        , ('partner_code') : partner_code])
 

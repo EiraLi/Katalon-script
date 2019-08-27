@@ -93,5 +93,5 @@ assert Normal_keys.equals(Normal)
 WS.callTestCase(findTestCase('STG_env/compare_values/6_Normal_verify_value'), 
     [('Partner') : Partner, ('Userid') : Userid, ('Game_code') : Game_code
         , ('url_krug_gw') : url_krug_gw, ('secret_key') : secret_key
-        , ('M4_recorder') : M4_recorder])
+        , ('gameId') : gameId, ('partner_code') : partner_code])
 

@@ -1,0 +1,16 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+superWild_3,,,,2019-08-24 11:10:20,2019-08-24 11:34:48,24m - 28.076s,ERROR
+,,,,,,,
+Test Cases/INT_env/3_ExtraFG_CALL,,"https://staroad.atlassian.net/wiki/spaces/IPD/pages/461176986/NuRgs+API+Features+Use-case+M4-0012+Super+Wilds
+
+#1 situation",,2019-08-24 11:10:20,2019-08-24 11:38:36,28m - 15.957s,ERROR
+ExtraFG = new java.util.ArrayList(),,,,2019-08-24 11:10:21,2019-08-24 11:10:21,0.001s,PASSED
+"ExtraFG.add(""free_spins_left"")",,,,2019-08-24 11:10:21,2019-08-24 11:10:21,0.000s,PASSED
+"ExtraFG.add(""free_spins_added"")",,,,2019-08-24 11:10:21,2019-08-24 11:10:21,0.001s,PASSED
+"sendRequestAndVerify(findTestObject(""INT/Wallet/Get_Session_Token"", [""url_krug_gw"":url_krug_gw, ""partner"":Partner, ""secret_key"":secret_key, ""userid"":Userid]))",,,,2019-08-24 11:10:21,2019-08-24 11:10:24,3.108s,PASSED
+"M4_login = sendRequestAndVerify(findTestObject(""INT/RGS(M4)/M4_Login"", [""partner"":Partner, ""game_code"":Game_code, ""session_token"":session_token]))",,,,2019-08-24 11:10:24,2019-08-24 11:10:26,1.363s,PASSED
+M4_login_user_id = M4_login_user_id,,,,2019-08-24 11:10:26,2019-08-24 11:10:26,0.000s,PASSED
+"M4_init = sendRequestAndVerify(findTestObject(""INT/RGS(M4)/M4_init"", [""partner"":Partner, ""gameId"":gameId, ""M4_login_user_id"":M4_login_user_id]))",,,,2019-08-24 11:10:26,2019-08-24 11:10:26,0.600s,PASSED
+rgs_session_token = rgs_session_token,,,,2019-08-24 11:10:26,2019-08-24 11:10:26,0.001s,PASSED
+"for ([i = 0, i <= 500, (i++)])",,,,2019-08-24 11:10:26,2019-08-24 11:38:35,28m - 8.857s,PASSED
+"sendRequestAndVerify(findTestObject(""INT/RGS(M4)/1_Round_detail"", [""partner"":Partner, ""M4_spin_round_id"":M4_spin_round_id]))",,,,2019-08-24 11:38:35,2019-08-24 11:38:36,0.681s,FAILED

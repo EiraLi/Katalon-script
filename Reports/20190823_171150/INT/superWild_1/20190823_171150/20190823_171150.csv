@@ -1,0 +1,95 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+superWild_1,,,,2019-08-23 17:12:02,2019-08-23 17:13:36,1m - 34.940s,INCOMPLETE
+,,,,,,,
+Test Cases/INT_env/1_Free_Spin_CALL,,"https://staroad.atlassian.net/wiki/spaces/IPD/pages/461176986/NuRgs+API+Features+Use-case+M4-0012+Super+Wilds
+
+#1 situation",,2019-08-23 17:12:02,2019-08-23 17:13:36,1m - 34.732s,ERROR
+NG_top_level = new java.util.ArrayList(),,,,2019-08-23 17:12:03,2019-08-23 17:12:03,0.002s,PASSED
+"NG_top_level.add(""booster_type"")",,,,2019-08-23 17:12:03,2019-08-23 17:12:03,0.001s,PASSED
+"NG_top_level.add(""currency"")",,,,2019-08-23 17:12:03,2019-08-23 17:12:03,0.000s,PASSED
+"NG_top_level.add(""player_id"")",,,,2019-08-23 17:12:03,2019-08-23 17:12:03,0.001s,PASSED
+"NG_top_level.add(""round_id"")",,,,2019-08-23 17:12:03,2019-08-23 17:12:03,0.001s,PASSED
+"NG_top_level.add(""spin_results"")",,,,2019-08-23 17:12:03,2019-08-23 17:12:03,0.001s,PASSED
+NG_spin_result = new java.util.ArrayList(),,,,2019-08-23 17:12:03,2019-08-23 17:12:03,0.000s,PASSED
+"NG_spin_result.add(""balance"")",,,,2019-08-23 17:12:03,2019-08-23 17:12:03,0.000s,PASSED
+"NG_spin_result.add(""bet_value"")",,,,2019-08-23 17:12:03,2019-08-23 17:12:03,0.000s,PASSED
+"NG_spin_result.add(""features_triggered"")",,,,2019-08-23 17:12:03,2019-08-23 17:12:03,0.001s,PASSED
+"NG_spin_result.add(""line"")",,,,2019-08-23 17:12:03,2019-08-23 17:12:03,0.001s,PASSED
+"NG_spin_result.add(""reel_wins"")",,,,2019-08-23 17:12:03,2019-08-23 17:12:03,0.001s,PASSED
+"NG_spin_result.add(""reels"")",,,,2019-08-23 17:12:03,2019-08-23 17:12:03,0.001s,PASSED
+"NG_spin_result.add(""scatter_win"")",,,,2019-08-23 17:12:03,2019-08-23 17:12:03,0.000s,PASSED
+"NG_spin_result.add(""total_bet"")",,,,2019-08-23 17:12:03,2019-08-23 17:12:03,0.001s,PASSED
+"NG_spin_result.add(""total_win"")",,,,2019-08-23 17:12:03,2019-08-23 17:12:03,0.001s,PASSED
+"NG_spin_result.add(""transaction_id"")",,,,2019-08-23 17:12:03,2019-08-23 17:12:03,0.002s,PASSED
+"NG_spin_result.add(""transaction_time"")",,,,2019-08-23 17:12:03,2019-08-23 17:12:03,0.001s,PASSED
+"NG_spin_result.add(""transaction_type"")",,,,2019-08-23 17:12:03,2019-08-23 17:12:03,0.001s,PASSED
+NG_feature_trigger = new java.util.ArrayList(),,,,2019-08-23 17:12:03,2019-08-23 17:12:03,0.001s,PASSED
+"NG_feature_trigger.add(""complete"")",,,,2019-08-23 17:12:03,2019-08-23 17:12:03,0.001s,PASSED
+"NG_feature_trigger.add(""feature_state"")",,,,2019-08-23 17:12:03,2019-08-23 17:12:03,0.001s,PASSED
+"NG_feature_trigger.add(""subfeatures"")",,,,2019-08-23 17:12:03,2019-08-23 17:12:03,0.001s,PASSED
+"NG_feature_trigger.add(""type"")",,,,2019-08-23 17:12:03,2019-08-23 17:12:03,0.001s,PASSED
+NG_feature_state = new java.util.ArrayList(),,,,2019-08-23 17:12:03,2019-08-23 17:12:03,0.000s,PASSED
+"NG_feature_state.add(""free_spins_left"")",,,,2019-08-23 17:12:03,2019-08-23 17:12:03,0.001s,PASSED
+"NG_feature_state.add(""total_free_spin_count"")",,,,2019-08-23 17:12:03,2019-08-23 17:12:03,0.001s,PASSED
+"NG_feature_state.add(""total_free_spin_win_amount"")",,,,2019-08-23 17:12:03,2019-08-23 17:12:03,0.001s,PASSED
+NG_reel = new java.util.ArrayList(),,,,2019-08-23 17:12:03,2019-08-23 17:12:03,0.000s,PASSED
+"NG_reel.add(""symbols"")",,,,2019-08-23 17:12:03,2019-08-23 17:12:03,0.000s,PASSED
+NG_reel_symbol1 = new java.util.ArrayList(),,,,2019-08-23 17:12:03,2019-08-23 17:12:03,0.001s,PASSED
+"NG_reel_symbol1.add(""symbol"")",,,,2019-08-23 17:12:03,2019-08-23 17:12:03,0.000s,PASSED
+NG_reel_symbol2 = new java.util.ArrayList(),,,,2019-08-23 17:12:03,2019-08-23 17:12:03,0.000s,PASSED
+"NG_reel_symbol2.add(""symbol"")",,,,2019-08-23 17:12:03,2019-08-23 17:12:03,0.000s,PASSED
+NG_reel_symbol3 = new java.util.ArrayList(),,,,2019-08-23 17:12:03,2019-08-23 17:12:03,0.000s,PASSED
+"NG_reel_symbol3.add(""symbol"")",,,,2019-08-23 17:12:03,2019-08-23 17:12:03,0.001s,PASSED
+"sendRequestAndVerify(findTestObject(""INT/Wallet/Get_Session_Token"", [""url_krug_gw"":url_krug_gw, ""partner"":Partner, ""secret_key"":secret_key, ""userid"":Userid]))",,,,2019-08-23 17:12:03,2019-08-23 17:12:06,3.054s,PASSED
+"M4_login = sendRequestAndVerify(findTestObject(""INT/RGS(M4)/M4_Login"", [""partner"":Partner, ""game_code"":Game_code, ""session_token"":session_token]))",,,,2019-08-23 17:12:06,2019-08-23 17:12:07,0.667s,PASSED
+"M4_init = sendRequestAndVerify(findTestObject(""INT/RGS(M4)/M4_init"", [""partner"":Partner, ""M4_recorder"":M4_recorder, ""M4_login_user_id"":M4_login_user_id]))",,,,2019-08-23 17:12:07,2019-08-23 17:12:08,0.587s,PASSED
+"for ([i = 0, i <= 300, (i++)])",,,,2019-08-23 17:12:08,2019-08-23 17:13:33,1m - 25.263s,PASSED
+"println(""GlobalVariable.M4_spin_round_id is: "" + M4_spin_round_id)",,,,2019-08-23 17:13:33,2019-08-23 17:13:33,0.000s,PASSED
+"sendRequestAndVerify(findTestObject(""INT/RGS(M4)/1_Round_detail"", [""partner"":Partner, ""M4_spin_round_id"":M4_spin_round_id]))",,,,2019-08-23 17:13:33,2019-08-23 17:13:34,0.809s,PASSED
+M4_round_object_key = M4_round_object.keySet(),,,,2019-08-23 17:13:34,2019-08-23 17:13:34,0.000s,PASSED
+M4_round_spin_result_key = M4_round_spin_result_list.keySet(),,,,2019-08-23 17:13:34,2019-08-23 17:13:34,0.001s,PASSED
+M4_round_reel_key = M4_round_reels1.keySet(),,,,2019-08-23 17:13:34,2019-08-23 17:13:34,0.000s,PASSED
+M4_round_feature_state_key = M4_round_feature_state.keySet(),,,,2019-08-23 17:13:34,2019-08-23 17:13:34,0.000s,PASSED
+M4_round_reels_symbols_key_1 = M4_round_reels0_symbols1.keySet(),,,,2019-08-23 17:13:34,2019-08-23 17:13:34,0.000s,PASSED
+M4_round_reels_symbols_key_2 = M4_round_reels0_symbols2.keySet(),,,,2019-08-23 17:13:34,2019-08-23 17:13:34,0.000s,PASSED
+M4_round_reels_symbols_key_3 = M4_round_reels0_symbols3.keySet(),,,,2019-08-23 17:13:34,2019-08-23 17:13:34,0.001s,PASSED
+M4_round_object_key_list = new java.util.ArrayList(M4_round_object_key),,,,2019-08-23 17:13:34,2019-08-23 17:13:34,0.000s,PASSED
+M4_round_spin_result_key_list = new java.util.ArrayList(M4_round_spin_result_key),,,,2019-08-23 17:13:34,2019-08-23 17:13:34,0.000s,PASSED
+M4_round_reel_key_list = new java.util.ArrayList(M4_round_reel_key),,,,2019-08-23 17:13:34,2019-08-23 17:13:34,0.000s,PASSED
+M4_round_feature_state_key_list = new java.util.ArrayList(M4_round_feature_state_key),,,,2019-08-23 17:13:34,2019-08-23 17:13:34,0.000s,PASSED
+M4_round_reels_symbols_key1 = new java.util.ArrayList(M4_round_reels_symbols_key_1),,,,2019-08-23 17:13:34,2019-08-23 17:13:34,0.001s,PASSED
+M4_round_reels_symbols_key2 = new java.util.ArrayList(M4_round_reels_symbols_key_2),,,,2019-08-23 17:13:34,2019-08-23 17:13:34,0.000s,PASSED
+M4_round_reels_symbols_key3 = new java.util.ArrayList(M4_round_reels_symbols_key_3),,,,2019-08-23 17:13:34,2019-08-23 17:13:34,0.000s,PASSED
+M4_round_spin_result_list = M4_round_spin_result_list,,,,2019-08-23 17:13:34,2019-08-23 17:13:34,0.000s,PASSED
+features_trigger = features_triggered,,,,2019-08-23 17:13:34,2019-08-23 17:13:34,0.000s,PASSED
+"feature_state_key = """"",,,,2019-08-23 17:13:34,2019-08-23 17:13:34,0.001s,PASSED
+"features_triggered = """"",,,,2019-08-23 17:13:34,2019-08-23 17:13:34,0.000s,PASSED
+"for ([i = 0, i < features_trigger.size(), (i++)])",,,,2019-08-23 17:13:34,2019-08-23 17:13:34,0.002s,PASSED
+features_triggered_list = new java.util.ArrayList(features_triggered),,,,2019-08-23 17:13:34,2019-08-23 17:13:34,0.000s,PASSED
+feature_state_list = new java.util.ArrayList(feature_state_key),,,,2019-08-23 17:13:34,2019-08-23 17:13:34,0.000s,PASSED
+"println(""M4_round_object_key_list is:"" + M4_round_object_key_list)",,,,2019-08-23 17:13:34,2019-08-23 17:13:34,0.001s,PASSED
+"println(""M4_round_spin_result_key_list is: "" + M4_round_spin_result_key_list)",,,,2019-08-23 17:13:34,2019-08-23 17:13:34,0.000s,PASSED
+"println(""features_triggered_list is: "" + features_triggered_list)",,,,2019-08-23 17:13:34,2019-08-23 17:13:34,0.000s,PASSED
+"println(""M4_round_reel_key_list is: "" + M4_round_reel_key_list)",,,,2019-08-23 17:13:34,2019-08-23 17:13:34,0.001s,PASSED
+"println(""M4_round_feature_state_key_list is: "" + M4_round_feature_state_key_list)",,,,2019-08-23 17:13:34,2019-08-23 17:13:34,0.000s,PASSED
+"println(""M4_round_reels_symbols_key_1 is: "" + M4_round_reels_symbols_key_1)",,,,2019-08-23 17:13:34,2019-08-23 17:13:34,0.000s,PASSED
+"println(""M4_round_reels_symbols_key_2 is: "" + M4_round_reels_symbols_key_2)",,,,2019-08-23 17:13:34,2019-08-23 17:13:34,0.001s,PASSED
+"println(""M4_round_reels_symbols_key_3 is: "" + M4_round_reels_symbols_key_3)",,,,2019-08-23 17:13:34,2019-08-23 17:13:34,0.000s,PASSED
+"println(""NG_top_level is: "" + NG_top_level)",,,,2019-08-23 17:13:34,2019-08-23 17:13:34,0.000s,PASSED
+"println(""NG_spin_result is:"" + NG_spin_result)",,,,2019-08-23 17:13:34,2019-08-23 17:13:34,0.000s,PASSED
+"println(""NG_feature_trigger is:"" + NG_feature_trigger)",,,,2019-08-23 17:13:34,2019-08-23 17:13:34,0.000s,PASSED
+"println(""NG_reel is: "" + NG_reel)",,,,2019-08-23 17:13:34,2019-08-23 17:13:34,0.001s,PASSED
+"println(""NG_feature_state is: "" + NG_feature_state)",,,,2019-08-23 17:13:34,2019-08-23 17:13:34,0.000s,PASSED
+"println(""NG_reel_symbol1 is: "" + NG_reel_symbol1)",,,,2019-08-23 17:13:34,2019-08-23 17:13:34,0.000s,PASSED
+"println(""NG_reel_symbol2 is: "" + NG_reel_symbol2)",,,,2019-08-23 17:13:34,2019-08-23 17:13:34,0.000s,PASSED
+"println(""NG_reel_symbol3 is: "" + NG_reel_symbol3)",,,,2019-08-23 17:13:34,2019-08-23 17:13:34,0.001s,PASSED
+"println(""feature_state_list is: "" + feature_state_list)",,,,2019-08-23 17:13:34,2019-08-23 17:13:34,0.000s,PASSED
+assert NG_top_level.equals(M4_round_object_key_list),,,,2019-08-23 17:13:34,2019-08-23 17:13:34,0.001s,PASSED
+assert NG_spin_result.equals(M4_round_spin_result_key_list),,,,2019-08-23 17:13:34,2019-08-23 17:13:34,0.001s,PASSED
+assert NG_feature_trigger.equals(features_triggered_list),,,,2019-08-23 17:13:34,2019-08-23 17:13:34,0.000s,PASSED
+assert NG_reel.equals(M4_round_reel_key_list),,,,2019-08-23 17:13:34,2019-08-23 17:13:34,0.000s,PASSED
+assert NG_feature_state.equals(feature_state_list),,,,2019-08-23 17:13:34,2019-08-23 17:13:34,0.000s,PASSED
+assert NG_reel_symbol1.equals(M4_round_reels_symbols_key1),,,,2019-08-23 17:13:34,2019-08-23 17:13:34,0.000s,PASSED
+assert NG_reel_symbol2.equals(M4_round_reels_symbols_key2),,,,2019-08-23 17:13:34,2019-08-23 17:13:34,0.001s,PASSED
+assert NG_reel_symbol3.equals(M4_round_reels_symbols_key3),,,,2019-08-23 17:13:34,2019-08-23 17:13:34,0.000s,PASSED
+"callTestCase(findTestCase(""INT_env/compare_values/1_freeSpin_verify_value""), [""Partner"":Partner, ""Userid"":Userid, ""Game_code"":Game_code, ""url_krug_gw"":url_krug_gw, ""secret_key"":secret_key, ""M4_recorder"":M4_recorder])",,,,2019-08-23 17:13:34,2019-08-23 17:13:36,2.818s,FAILED

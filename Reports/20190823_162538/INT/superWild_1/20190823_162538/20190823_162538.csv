@@ -1,0 +1,44 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+superWild_1,,,,2019-08-23 16:25:50,2019-08-23 16:25:56,6.191s,INCOMPLETE
+,,,,,,,
+Test Cases/INT_env/1_Free_Spin_CALL,,"https://staroad.atlassian.net/wiki/spaces/IPD/pages/461176986/NuRgs+API+Features+Use-case+M4-0012+Super+Wilds
+
+#1 situation",,2019-08-23 16:25:50,2019-08-23 16:25:56,5.968s,FAILED
+NG_top_level = new java.util.ArrayList(),,,,2019-08-23 16:25:52,2019-08-23 16:25:52,0.002s,PASSED
+"NG_top_level.add(""booster_type"")",,,,2019-08-23 16:25:52,2019-08-23 16:25:52,0.001s,PASSED
+"NG_top_level.add(""currency"")",,,,2019-08-23 16:25:52,2019-08-23 16:25:52,0.001s,PASSED
+"NG_top_level.add(""player_id"")",,,,2019-08-23 16:25:52,2019-08-23 16:25:52,0.001s,PASSED
+"NG_top_level.add(""round_id"")",,,,2019-08-23 16:25:52,2019-08-23 16:25:52,0.001s,PASSED
+"NG_top_level.add(""spin_results"")",,,,2019-08-23 16:25:52,2019-08-23 16:25:52,0.000s,PASSED
+NG_spin_result = new java.util.ArrayList(),,,,2019-08-23 16:25:52,2019-08-23 16:25:52,0.001s,PASSED
+"NG_spin_result.add(""balance"")",,,,2019-08-23 16:25:52,2019-08-23 16:25:52,0.001s,PASSED
+"NG_spin_result.add(""bet_value"")",,,,2019-08-23 16:25:52,2019-08-23 16:25:52,0.001s,PASSED
+"NG_spin_result.add(""features_triggered"")",,,,2019-08-23 16:25:52,2019-08-23 16:25:52,0.002s,PASSED
+"NG_spin_result.add(""line"")",,,,2019-08-23 16:25:52,2019-08-23 16:25:52,0.003s,PASSED
+"NG_spin_result.add(""reel_wins"")",,,,2019-08-23 16:25:52,2019-08-23 16:25:52,0.001s,PASSED
+"NG_spin_result.add(""reels"")",,,,2019-08-23 16:25:52,2019-08-23 16:25:52,0.002s,PASSED
+"NG_spin_result.add(""scatter_win"")",,,,2019-08-23 16:25:52,2019-08-23 16:25:52,0.001s,PASSED
+"NG_spin_result.add(""total_bet"")",,,,2019-08-23 16:25:52,2019-08-23 16:25:52,0.002s,PASSED
+"NG_spin_result.add(""total_win"")",,,,2019-08-23 16:25:52,2019-08-23 16:25:52,0.001s,PASSED
+"NG_spin_result.add(""transaction_id"")",,,,2019-08-23 16:25:52,2019-08-23 16:25:52,0.002s,PASSED
+"NG_spin_result.add(""transaction_time"")",,,,2019-08-23 16:25:52,2019-08-23 16:25:52,0.001s,PASSED
+"NG_spin_result.add(""transaction_type"")",,,,2019-08-23 16:25:52,2019-08-23 16:25:52,0.002s,PASSED
+NG_feature_trigger = new java.util.ArrayList(),,,,2019-08-23 16:25:52,2019-08-23 16:25:52,0.001s,PASSED
+"NG_feature_trigger.add(""complete"")",,,,2019-08-23 16:25:52,2019-08-23 16:25:52,0.001s,PASSED
+"NG_feature_trigger.add(""feature_state"")",,,,2019-08-23 16:25:52,2019-08-23 16:25:52,0.001s,PASSED
+"NG_feature_trigger.add(""subfeatures"")",,,,2019-08-23 16:25:52,2019-08-23 16:25:52,0.001s,PASSED
+"NG_feature_trigger.add(""type"")",,,,2019-08-23 16:25:52,2019-08-23 16:25:52,0.001s,PASSED
+NG_feature_state = new java.util.ArrayList(),,,,2019-08-23 16:25:52,2019-08-23 16:25:52,0.001s,PASSED
+"NG_feature_state.add(""free_spins_left"")",,,,2019-08-23 16:25:52,2019-08-23 16:25:52,0.001s,PASSED
+"NG_feature_state.add(""total_free_spin_count"")",,,,2019-08-23 16:25:52,2019-08-23 16:25:52,0.001s,PASSED
+"NG_feature_state.add(""total_free_spin_win_amount"")",,,,2019-08-23 16:25:52,2019-08-23 16:25:52,0.001s,PASSED
+NG_reel = new java.util.ArrayList(),,,,2019-08-23 16:25:52,2019-08-23 16:25:52,0.001s,PASSED
+"NG_reel.add(""symbols"")",,,,2019-08-23 16:25:52,2019-08-23 16:25:52,0.001s,PASSED
+NG_reel_symbol1 = new java.util.ArrayList(),,,,2019-08-23 16:25:52,2019-08-23 16:25:52,0.001s,PASSED
+"NG_reel_symbol1.add(""symbol"")",,,,2019-08-23 16:25:52,2019-08-23 16:25:52,0.001s,PASSED
+NG_reel_symbol2 = new java.util.ArrayList(),,,,2019-08-23 16:25:52,2019-08-23 16:25:52,0.001s,PASSED
+"NG_reel_symbol2.add(""symbol"")",,,,2019-08-23 16:25:52,2019-08-23 16:25:52,0.001s,PASSED
+NG_reel_symbol3 = new java.util.ArrayList(),,,,2019-08-23 16:25:52,2019-08-23 16:25:52,0.000s,PASSED
+"NG_reel_symbol3.add(""symbol"")",,,,2019-08-23 16:25:52,2019-08-23 16:25:52,0.001s,PASSED
+"sendRequestAndVerify(findTestObject(""INT/Wallet/Get_Session_Token"", [""url_krug_gw"":url_krug_gw, ""partner"":Partner, ""secret_key"":secret_key, ""userid"":Userid]))",,,,2019-08-23 16:25:52,2019-08-23 16:25:55,3.370s,PASSED
+"M4_login = sendRequestAndVerify(findTestObject(""INT/RGS(M4)/M4_Login"", [""partner"":Partner, ""game_code"":Game_code, ""session_token"":session_token]))",,,,2019-08-23 16:25:55,2019-08-23 16:25:56,1.010s,FAILED

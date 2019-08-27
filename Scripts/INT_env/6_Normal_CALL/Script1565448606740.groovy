@@ -33,8 +33,8 @@ M4_login = WS.sendRequestAndVerify(findTestObject('INT/RGS(M4)/M4_Login', [('par
 
 def M4_login_user_id = GlobalVariable.M4_login_user_id
 
-M4_init = WS.sendRequestAndVerify(findTestObject('INT/RGS(M4)/M4_init', [('partner') : Partner, ('M4_recorder') : M4_recorder
-            , ('M4_login_user_id') : GlobalVariable.M4_login_user_id]))
+M4_init = WS.sendRequestAndVerify(findTestObject('INT/RGS(M4)/M4_init', [('partner') : Partner, ('gameId') : gameId, ('M4_login_user_id') : GlobalVariable.M4_login_user_id]))
+
 def rgs_session_token = GlobalVariable.rgs_session_token
 
 for (int i = 0; i <= 1000; i++) {
@@ -56,7 +56,6 @@ for (int i = 0; i <= 1000; i++) {
 
 WS.sendRequestAndVerify(findTestObject('INT/RGS(M4)/1_Round_detail', [('partner') : Partner, ('M4_spin_round_id') : GlobalVariable.M4_spin_round_id]))
 
-
 def M4_round_features_triggered = GlobalVariable.M4_round_features_triggered
 
 def wildNormalIndex = -1
@@ -64,7 +63,6 @@ def wildNormalIndex = -1
 def wildNormalFeatureStateKeys = null
 
 for (int i = 0; i < M4_round_features_triggered.size(); i++) {
-    
     if (M4_round_features_triggered[i].type.equals('NORMAL_FREE_SPIN')) {
         wildNormalIndex = i
 
@@ -88,8 +86,8 @@ println('Normal is:' + Normal)
 
 assert Normal_keys.equals(Normal)
 
-WS.callTestCase(findTestCase('INT_env/compare_values/6_Normal_verify_value'), 
-    [('Partner') : Partner, ('Userid') : Userid, ('Game_code') : Game_code
-        , ('url_krug_gw') : url_krug_gw, ('secret_key') : secret_key
-        , ('M4_recorder') : M4_recorder])
+WS.callTestCase(findTestCase('INT_env/compare_values/6_Normal_verify_value'), [('Partner') : Partner
+        , ('Userid') : Userid, ('Game_code') : Game_code, ('url_krug_gw') : url_krug_gw
+        , ('secret_key') : secret_key, ('gameId') : gameId
+        , ('partner_code') : partner_code])
 

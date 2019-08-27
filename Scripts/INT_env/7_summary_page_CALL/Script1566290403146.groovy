@@ -80,8 +80,7 @@ M4_login = WS.sendRequestAndVerify(findTestObject('INT/RGS(M4)/M4_Login', [('par
 
 def M4_login_user_id = GlobalVariable.M4_login_user_id
 
-M4_init = WS.sendRequestAndVerify(findTestObject('INT/RGS(M4)/M4_init', [('partner') : Partner, ('M4_recorder') : M4_recorder
-            , ('M4_login_user_id') : GlobalVariable.M4_login_user_id]))
+M4_init = WS.sendRequestAndVerify(findTestObject('INT/RGS(M4)/M4_init', [('partner') : Partner, ('gameId') : gameId, ('M4_login_user_id') : GlobalVariable.M4_login_user_id]))
 
 def rgs_session_token = GlobalVariable.rgs_session_token
 
@@ -90,7 +89,8 @@ def M4_spin_reels_symbols = GlobalVariable.M4_spin_reels_symbols
 spin_result = WS.sendRequestAndVerify(findTestObject('INT/RGS(M4)/1_M4_spin', [('M4_login_user_id') : GlobalVariable.M4_login_user_id
             , ('rgs_session_token') : GlobalVariable.rgs_session_token, ('partner') : Partner]))
 
-WS.sendRequestAndVerify(findTestObject('INT/RGS(M4)/Summary_history', [('game_code') : 'SW_M4_V1_RECORDER', ('partner') : Partner]))
+WS.sendRequestAndVerify(findTestObject('INT/RGS(M4)/Summary_history', [('partner_code') : partner_code, ('game_code') : Game_code
+            , ('partner') : Partner, ('userid') : Userid]))
 
 def summary_top_level = GlobalVariable.summary_top_level
 
@@ -106,47 +106,35 @@ def summary_data_key = GlobalVariable.summary_data.keySet()
 
 def summary_query_key = GlobalVariable.summary_data.query.keySet()
 
-Collections.sort(top_level)
-
 ArrayList summary_top_level_keylist = new ArrayList(summary_top_level_key)
+
+Collections.sort(top_level)
 
 Collections.sort(summary_top_level_keylist)
 
-assert top_level == summary_top_level_keylist
+ArrayList summary_data_key_list = new ArrayList(summary_data_key)
 
 Collections.sort(data_level)
 
-ArrayList summary_data_key_list = new ArrayList(summary_data_key)
-
 Collections.sort(summary_data_key_list)
-
-assert data_level == summary_data_key_list
-
-Collections.sort(payload_detail)
 
 ArrayList summary_payload_list = new ArrayList(summary_payload)
 
+Collections.sort(payload_detail)
+
 Collections.sort(summary_payload_list)
-
-assert payload_detail == summary_payload_list
-
-Collections.sort(bonus_provider)
 
 ArrayList summary_bonus_provider_list = new ArrayList(summary_bonus_provider)
 
+Collections.sort(bonus_provider)
+
 Collections.sort(summary_bonus_provider_list)
-
-assert bonus_provider == summary_bonus_provider_list
-
-assert summary_feature_track.size() == 0
-
-Collections.sort(query_detail)
 
 ArrayList summary_query_key_list = new ArrayList(summary_query_key)
 
-Collections.sort(summary_query_key_list)
+Collections.sort(query_detail)
 
-assert query_detail == summary_query_key_list
+Collections.sort(summary_query_key_list)
 
 println('top_level' + top_level)
 
@@ -170,9 +158,21 @@ println('query_detail' + query_detail)
 
 println('summary_query_key' + summary_query_key)
 
+assert top_level == summary_top_level_keylist
+
+assert data_level == summary_data_key_list
+
+assert payload_detail == summary_payload_list
+
+assert bonus_provider == summary_bonus_provider_list
+
+assert summary_feature_track.size() == 0
+
+assert query_detail == summary_query_key_list
+
 WS.callTestCase(findTestCase('INT_env/compare_values/7_summary_page_baseSpin_verify_value'), [('Partner') : Partner
         , ('Userid') : Userid, ('Game_code') : Game_code, ('url_krug_gw') : url_krug_gw
-        , ('secret_key') : secret_key, ('M4_recorder') : M4_recorder
+        , ('secret_key') : secret_key, ('gameId') : gameId
         , ('start_date') : start_date, ('end_date') : end_date
-        , ('url_krug') : url_krug])
+        , ('url_krug') : url_krug, ('partner_code') : partner_code])
 

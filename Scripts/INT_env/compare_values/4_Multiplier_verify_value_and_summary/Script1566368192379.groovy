@@ -27,7 +27,7 @@ M4_login = WS.sendRequestAndVerify(findTestObject('INT/RGS(M4)/M4_Login', [('par
 
 def M4_login_user_id = GlobalVariable.M4_login_user_id
 
-M4_init = WS.sendRequestAndVerify(findTestObject('INT/RGS(M4)/M4_init', [('partner') : Partner, ('M4_recorder') : M4_recorder
+M4_init = WS.sendRequestAndVerify(findTestObject('INT/RGS(M4)/M4_init', [('partner') : Partner, ('gameId') : gameId
             , ('M4_login_user_id') : GlobalVariable.M4_login_user_id]))
 
 def rgs_session_token = GlobalVariable.rgs_session_token
@@ -85,14 +85,9 @@ for (int i=0; i < M4_round_features_triggered.size(); i++) {
 
 			
 def config_value = multi * multi1
-
-
 def M4_round_wild_config = GlobalVariable.M4_round_wild_config
 def wildConfig = M4_round_wild_config.value
-
-	
 def M4_round_object = GlobalVariable.M4_round_object
-
 def symbolsReels3 = M4_round_reels3.symbols
 def Reels3list = new ArrayList()
 for (int i=0; i < symbolsReels3.size(); i++) {
@@ -137,8 +132,6 @@ if (Reels3list.contains("WILD_Double") && Reels3list.contains("WILD_Triple")){
 	}
 
 
-
-
 def subfeatures = new ArrayList()
 subfeatures.add("FREE_SPIN")
 
@@ -162,24 +155,24 @@ for (int i = 0; i < feature_trigger.size(); i++){
 	}
 }
 
-WS.sendRequestAndVerify(findTestObject('INT/RGS(M4)/Summary_history', [('game_code') : "SW_M4_V1_RECORDER", ('partner') : Partner]))
+WS.sendRequestAndVerify(findTestObject('INT/RGS(M4)/Summary_history', [('partner_code') : partner_code, ('game_code') : Game_code, ('partner') : Partner, ('userid') : Userid]))
 
 Collections.sort(subfeatures)
 Collections.sort(GlobalVariable.summary_feature_track_1)
-assert subfeatures.equals(GlobalVariable.summary_feature_track_1)
 
+println("GlobalVariable.summary_feature_track_1 is: "+GlobalVariable.summary_feature_track_1)
+println("subfeatures is: "+subfeatures)
 println('GlobalVariable.M4_history_multiplier is: ' + GlobalVariable.M4_history_multiplier)
-
+println("GlobalVariable.summary_with_free_spin_1 is: "+GlobalVariable.summary_with_free_spin_1)
 println('symbol_value is: ' + symbol_value)
-
 println('Config_Value is:' + config_value)
+
 
 //wild_multiplier compare
 assert GlobalVariable.M4_history_multiplier == symbol_value
 //wild_config compare
 assert config_value == GlobalVariable.M4_history_multiplier
-println("GlobalVariable.summary_with_free_spin_1 is: "+GlobalVariable.summary_with_free_spin_1)
+//in-game history summary 
 assert GlobalVariable.summary_with_free_spin_1 == true
-//in-game history summary
-println("GlobalVariable.summary_feature_track_1 is: "+GlobalVariable.summary_feature_track_1)
-println("subfeatures is: "+subfeatures)
+assert subfeatures.equals(GlobalVariable.summary_feature_track_1)
+

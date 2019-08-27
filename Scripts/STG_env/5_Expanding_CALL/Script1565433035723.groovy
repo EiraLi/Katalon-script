@@ -28,6 +28,7 @@ WS.sendRequestAndVerify(findTestObject('STG/Wallet/Get_Session_Token', [('url_kr
 
 M4_login = WS.sendRequestAndVerify(findTestObject('STG/RGS(M4)/M4_Login', [('partner') : Partner, ('game_code') : Game_code
             , ('session_token') : GlobalVariable.session_token]))
+
 def M4_login_user_id = GlobalVariable.M4_login_user_id
 
 M4_init = WS.sendRequestAndVerify(findTestObject('STG/RGS(M4)/M4_init', [('partner') : Partner, ('M4_recorder') : M4_recorder
@@ -82,8 +83,7 @@ println('Expanding_keys is:' + Expanding_keys)
 
 assert Expanding.equals(Expanding_keys)
 
-WS.callTestCase(findTestCase('STG_env/compare_values/5_Expanding_verify_value'), 
-    [('Partner') : Partner, ('Userid') : Userid, ('Game_code') : Game_code
-        , ('url_krug_gw') : url_krug_gw, ('secret_key') : secret_key
-        , ('M4_recorder') : M4_recorder])
+WS.callTestCase(findTestCase('STG_env/compare_values/5_Expanding_verify_value'), [('Partner') : Partner
+        , ('Userid') : Userid, ('Game_code') : Game_code, ('url_krug_gw') : url_krug_gw
+        , ('secret_key') : secret_key, ('gameId') : gameId, ('partner_code') : partner_code])
 

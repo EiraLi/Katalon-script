@@ -28,11 +28,11 @@ WS.sendRequestAndVerify(findTestObject('STG/Wallet/Get_Session_Token', [('url_kr
 
 M4_login = WS.sendRequestAndVerify(findTestObject('STG/RGS(M4)/M4_Login', [('partner') : Partner, ('game_code') : Game_code
             , ('session_token') : GlobalVariable.session_token]))
+
 def M4_login_user_id = GlobalVariable.M4_login_user_id
 
 M4_init = WS.sendRequestAndVerify(findTestObject('STG/RGS(M4)/M4_init', [('partner') : Partner, ('M4_recorder') : M4_recorder
             , ('M4_login_user_id') : GlobalVariable.M4_login_user_id]))
-
 
 def rgs_session_token = GlobalVariable.rgs_session_token
 
@@ -45,7 +45,6 @@ for (int i = 0; i <= 500; i++) {
 
     spin_result = WS.sendRequestAndVerify(findTestObject('STG/RGS(M4)/1_M4_spin', [('M4_login_user_id') : GlobalVariable.M4_login_user_id
                 , ('rgs_session_token') : GlobalVariable.rgs_session_token, ('partner') : Partner]))
-
 
     if ((GlobalVariable.M4_total_bonus_spins_int != 0) && (GlobalVariable.M4_spin_reels_symbols[2].contains('WILD_ExtraFG') || 
     GlobalVariable.M4_spin_reels_symbols[3].contains('WILD_ExtraFG'))) {
@@ -85,8 +84,7 @@ println('ExtraFG is:' + ExtraFG)
 
 assert listOfKeys.equals(ExtraFG)
 
-WS.callTestCase(findTestCase('STG_env/compare_values/3_ExtraFG_verify_value'), 
-    [('Partner') : Partner, ('Userid') : Userid, ('Game_code') : Game_code
-        , ('url_krug_gw') : url_krug_gw, ('secret_key') : secret_key
-        , ('M4_recorder') : M4_recorder])
+WS.callTestCase(findTestCase('STG_env/compare_values/3_ExtraFG_verify_value'), [('Partner') : Partner
+        , ('Userid') : Userid, ('Game_code') : Game_code, ('url_krug_gw') : url_krug_gw
+        , ('secret_key') : secret_key, ('gameId') : gameId, ('partner_code') : partner_code])
 

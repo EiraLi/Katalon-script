@@ -12,7 +12,7 @@
    <httpBodyType></httpBodyType>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>https://${partner}-rgs-history.3655oule.com/api/slot/partnercode/BBIN_Staging/playerid/bbin_int_0001?game_code=SW_M4_V1_RECORDER&amp;page_number=1&amp;page_size=200&amp;period_type=DAY</restUrl>
+   <restUrl>https://${partner}-rgs-history.3655oule.com/api/slot/partnercode/${partner_code}/playerid/${userid}?game_code=${game_code}&amp;page_number=1&amp;page_size=200&amp;period_type=DAY</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -24,6 +24,27 @@
       <id>905f6cc9-3706-4447-9594-4be9fe80a14b</id>
       <masked>false</masked>
       <name>partner</name>
+   </variables>
+   <variables>
+      <defaultValue>findTestData('INT_data').getValue(4, 1)</defaultValue>
+      <description></description>
+      <id>4a3cb8b8-6ffc-45a1-b433-f5f1ee74cc1f</id>
+      <masked>false</masked>
+      <name>userid</name>
+   </variables>
+   <variables>
+      <defaultValue>findTestData('INT_data').getValue(1, 1)</defaultValue>
+      <description></description>
+      <id>6400a279-7d48-47a9-b540-09c86b2753b4</id>
+      <masked>false</masked>
+      <name>partner_code</name>
+   </variables>
+   <variables>
+      <defaultValue>findTestData('INT_data').getValue(5, 1)</defaultValue>
+      <description></description>
+      <id>e7ea62fa-bc10-478c-84af-36306f3f816c</id>
+      <masked>false</masked>
+      <name>game_code</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 

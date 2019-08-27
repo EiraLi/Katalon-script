@@ -47,6 +47,13 @@
       <description></description>
       <id>6d01f2ef-16fd-40bd-ba89-131301154499</id>
       <masked>false</masked>
-      <name>M4_recorder</name>
+      <name>gameId</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('STG_data').getValue(1, 5)</defaultValue>
+      <description></description>
+      <id>4e203867-4b0a-414e-a4f0-c4d432e2602b</id>
+      <masked>false</masked>
+      <name>partner_code</name>
    </variable>
 </TestCaseEntity>

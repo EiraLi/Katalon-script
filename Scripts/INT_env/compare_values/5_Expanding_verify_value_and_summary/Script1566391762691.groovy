@@ -27,7 +27,7 @@ M4_login = WS.sendRequestAndVerify(findTestObject('INT/RGS(M4)/M4_Login', [('par
 
 def M4_login_user_id = GlobalVariable.M4_login_user_id
 
-M4_init = WS.sendRequestAndVerify(findTestObject('INT/RGS(M4)/M4_init', [('partner') : Partner, ('M4_recorder') : M4_recorder
+M4_init = WS.sendRequestAndVerify(findTestObject('INT/RGS(M4)/M4_init', [('partner') : Partner, ('gameId') : gameId
             , ('M4_login_user_id') : GlobalVariable.M4_login_user_id]))
 def rgs_session_token = GlobalVariable.rgs_session_token
 	
@@ -79,7 +79,7 @@ for (int i = 0; i < feature_trigger.size(); i++){
 	}
 }
 
-WS.sendRequestAndVerify(findTestObject('INT/RGS(M4)/Summary_history', [('game_code') : "SW_M4_V1_RECORDER", ('partner') : Partner]))
+WS.sendRequestAndVerify(findTestObject('INT/RGS(M4)/Summary_history', [('partner_code') : partner_code,('game_code') : Game_code, ('partner') : Partner, ('userid') : Userid]))
 
 Collections.sort(subfeatures)
 Collections.sort(GlobalVariable.summary_feature_track_1)

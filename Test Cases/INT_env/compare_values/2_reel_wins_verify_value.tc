@@ -47,6 +47,6 @@
       <description></description>
       <id>2af57fbb-eced-4510-a0a9-6bd3467ab240</id>
       <masked>false</masked>
-      <name>M4_recorder</name>
+      <name>gameId</name>
    </variable>
 </TestCaseEntity>

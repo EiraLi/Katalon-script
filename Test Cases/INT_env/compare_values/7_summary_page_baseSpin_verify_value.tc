@@ -47,7 +47,7 @@
       <description></description>
       <id>653ccc10-698d-4305-9257-16ed43d313fb</id>
       <masked>false</masked>
-      <name>M4_recorder</name>
+      <name>gameId</name>
    </variable>
    <variable>
       <defaultValue>findTestData('INT_data').getValue(7, 1)</defaultValue>
@@ -69,5 +69,12 @@
       <id>c59a5b57-c90d-4b0b-ba88-a017ad31117a</id>
       <masked>false</masked>
       <name>url_krug</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('INT_data').getValue(1, 1)</defaultValue>
+      <description></description>
+      <id>866d1c09-af65-4ad7-b8d4-ab74a2c32b35</id>
+      <masked>false</masked>
+      <name>partner_code</name>
    </variable>
 </TestCaseEntity>

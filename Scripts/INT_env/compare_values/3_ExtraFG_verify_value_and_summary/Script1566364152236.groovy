@@ -21,7 +21,7 @@ M4_login = WS.sendRequestAndVerify(findTestObject('INT/RGS(M4)/M4_Login', [('par
 
 def M4_login_user_id = GlobalVariable.M4_login_user_id
 
-M4_init = WS.sendRequestAndVerify(findTestObject('INT/RGS(M4)/M4_init', [('partner') : Partner, ('M4_recorder') : M4_recorder
+M4_init = WS.sendRequestAndVerify(findTestObject('INT/RGS(M4)/M4_init', [('partner') : Partner, ('gameId') : gameId
             , ('M4_login_user_id') : GlobalVariable.M4_login_user_id]))
 
 
@@ -70,7 +70,7 @@ for (int i = 0; i < feature_trigger.size(); i++){
 	}
 }
 
-WS.sendRequestAndVerify(findTestObject('INT/RGS(M4)/Summary_history', [('game_code') : "SW_M4_V1_RECORDER", ('partner') : Partner]))
+WS.sendRequestAndVerify(findTestObject('INT/RGS(M4)/Summary_history', [('partner_code') : partner_code, ('game_code') : Game_code, ('partner') : Partner, ('userid') : Userid]))
 
 
 
@@ -102,16 +102,16 @@ def freeSpinLeft = GlobalVariable.M4_round_features_triggered[0].feature_state.f
 
 println("extraFreeSpinTypeAndComplete is:"+extraFreeSpinTypeAndComplete)
 println("extraFreeSpinLeft is: "+extraFreeSpinLeft)
-println("extraFreeSpinAdded is: "+extraFreeSpinAdded)
-assert extraFreeSpinTypeAndComplete == true
-assert extraFreeSpinLeft == M4_spin_number
-assert extraFreeSpinAdded == extraFreeSpinLeft - 10
-println("GlobalVariable.summary_with_free_spin_1 is: "+GlobalVariable.summary_with_free_spin_1)
-assert GlobalVariable.summary_with_free_spin_1 == true
 
+println("GlobalVariable.summary_with_free_spin_1 is: "+GlobalVariable.summary_with_free_spin_1)
 Collections.sort(subfeatures)
 Collections.sort(GlobalVariable.summary_feature_track_1)
 println("GlobalVariable.summary_feature_track_1 is: "+GlobalVariable.summary_feature_track_1)
 println("subfeatures is: "+subfeatures)
 
+assert extraFreeSpinTypeAndComplete == true
+assert extraFreeSpinLeft == M4_spin_number
+println("extraFreeSpinAdded is: "+extraFreeSpinAdded)
+//assert extraFreeSpinAdded == extraFreeSpinLeft - 10
+assert GlobalVariable.summary_with_free_spin_1 == true
 assert subfeatures.equals(GlobalVariable.summary_feature_track_1)

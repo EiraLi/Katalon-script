@@ -37,7 +37,7 @@
    </httpHeaderProperties>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>POST</restRequestMethod>
-   <restUrl>https://${partner}.star9ad.com/m4/gameservice/init/${M4_recorder}</restUrl>
+   <restUrl>https://${partner}.star9ad.com/m4/gameservice/init/${gameId}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -63,6 +63,13 @@
       <id>97415d04-1fd3-4110-b06a-96f5784e8d30</id>
       <masked>false</masked>
       <name>M4_login_user_id</name>
+   </variables>
+   <variables>
+      <defaultValue>findTestData('STG_data').getValue(14, 1)</defaultValue>
+      <description></description>
+      <id>cdf8d404-908d-445d-99a9-3d8081437ef4</id>
+      <masked>false</masked>
+      <name>gameId</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 

@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<testsuites name="superWild_1" time="7" tests="0" failures="1" errors="0">
+    <testsuite name="superWild_1" tests="0" failures="1" errors="0" time="7" timestamp="2019-08-23 17:06:55" hostname="eiralee - 172.16.60.194" id="Test Suites/INT/superWild_1">
+        <properties>
+            <property name="deviceName" value=""/>
+            <property name="devicePlatform" value=""/>
+            <property name="logFolder" value="/Users/eiralee/Katalon_Script/SuperWild/Reports/20190823_170644/INT/superWild_1/20190823_170644"/>
+            <property name="logFiles" value="/Users/eiralee/Katalon_Script/SuperWild/Reports/20190823_170644/INT/superWild_1/20190823_170644/execution0.log"/>
+            <property name="attachments" value=""/>
+            <property name="hostName" value="eiralee - 172.16.60.194"/>
+            <property name="hostAddress" value="172.16.60.194"/>
+            <property name="os" value="Mac OS X 64bit"/>
+            <property name="katalonVersion" value="6.3.1.2"/>
+        </properties>
+        <testcase name="Test Cases/INT_env/1_Free_Spin_CALL" classname="Test Cases/INT_env/1_Free_Spin_CALL" status="FAILED">
+            <failure type="FAILED" message="Test Cases/INT_env/1_Free_Spin_CALL FAILED.&#xA;Reason:&#xA;com.kms.katalon.core.exception.StepFailedException: Expected status code is '200' but actual status code is '500'&#xA;&#x9;at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:50)&#xA;&#x9;at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.verifyStatusCode(VerifyResponseStatusCodeKeyword.groovy:52)&#xA;&#x9;at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword$_verifyResponseStatusCode_closure1.doCall(VerifyResponseStatusCodeKeyword.groovy:42)&#xA;&#x9;at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword$_verifyResponseStatusCode_closure1.call(VerifyResponseStatusCodeKeyword.groovy)&#xA;&#x9;at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)&#xA;&#x9;at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.verifyResponseStatusCode(VerifyResponseStatusCodeKeyword.groovy:37)&#xA;&#x9;at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.execute(VerifyResponseStatusCodeKeyword.groovy:32)&#xA;&#x9;at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)&#xA;&#x9;at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.verifyResponseStatusCode(WSBuiltInKeywords.groovy:212)&#xA;&#x9;at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords$verifyResponseStatusCode$0.call(Unknown Source)&#xA;&#x9;at WSVerification1566551222856.run(WSVerification1566551222856:14)&#xA;&#x9;at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)&#xA;&#x9;at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)&#xA;&#x9;at com.kms.katalon.core.main.WSVerificationExecutor.runScript(WSVerificationExecutor.java:146)&#xA;&#x9;at com.kms.katalon.core.main.WSVerificationExecutor.doExecute(WSVerificationExecutor.java:140)&#xA;&#x9;at com.kms.katalon.core.main.WSVerificationExecutor.processExecutionPhase(WSVerificationExecutor.java:123)&#xA;&#x9;at com.kms.katalon.core.main.WSVerificationExecutor.accessMainPhase(WSVerificationExecutor.java:115)&#xA;&#x9;at com.kms.katalon.core.main.WSVerificationExecutor.execute(WSVerificationExecutor.java:103)&#xA;&#x9;at com.kms.katalon.core.main.TestCaseMain.runWSVerificationScript(TestCaseMain.java:127)&#xA;&#x9;at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword$_sendRequestAndVerify_closure1.doCall(SendRequestAndVerifyKeyword.groovy:55)&#xA;&#x9;at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword$_sendRequestAndVerify_closure1.call(SendRequestAndVerifyKeyword.groovy)&#xA;&#x9;at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)&#xA;&#x9;at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword.sendRequestAndVerify(SendRequestAndVerifyKeyword.groovy:43)&#xA;&#x9;at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword.execute(SendRequestAndVerifyKeyword.groovy:38)&#xA;&#x9;at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)&#xA;&#x9;at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequestAndVerify(WSBuiltInKeywords.groovy:65)&#xA;&#x9;at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords$sendRequestAndVerify.call(Unknown Source)&#xA;&#x9;at 1_Free_Spin_CALL.run(1_Free_Spin_CALL:108)&#xA;&#x9;at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)&#xA;&#x9;at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)&#xA;&#x9;at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)&#xA;&#x9;at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)&#xA;&#x9;at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)&#xA;&#x9;at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)&#xA;&#x9;at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)&#xA;&#x9;at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:150)&#xA;&#x9;at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:123)&#xA;&#x9;at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:87)&#xA;&#x9;at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)&#xA;&#x9;at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)&#xA;&#x9;at TempTestSuite1566551214164.run(TempTestSuite1566551214164.groovy:35)&#xA;"/>
+            <system-out>2019-08-23 17:06:56 - [TEST_CASE][FAILED] - Test Cases/INT_env/1_Free_Spin_CALL: Test Cases/INT_env/1_Free_Spin_CALL FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Expected status code is '200' but actual status code is '500'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:50)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.verifyStatusCode(VerifyResponseStatusCodeKeyword.groovy:52)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword$_verifyResponseStatusCode_closure1.doCall(VerifyResponseStatusCodeKeyword.groovy:42)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword$_verifyResponseStatusCode_closure1.call(VerifyResponseStatusCodeKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.verifyResponseStatusCode(VerifyResponseStatusCodeKeyword.groovy:37)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.execute(VerifyResponseStatusCodeKeyword.groovy:32)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.verifyResponseStatusCode(WSBuiltInKeywords.groovy:212)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords$verifyResponseStatusCode$0.call(Unknown Source)
+	at WSVerification1566551222856.run(WSVerification1566551222856:14)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.WSVerificationExecutor.runScript(WSVerificationExecutor.java:146)
+	at com.kms.katalon.core.main.WSVerificationExecutor.doExecute(WSVerificationExecutor.java:140)
+	at com.kms.katalon.core.main.WSVerificationExecutor.processExecutionPhase(WSVerificationExecutor.java:123)
+	at com.kms.katalon.core.main.WSVerificationExecutor.accessMainPhase(WSVerificationExecutor.java:115)
+	at com.kms.katalon.core.main.WSVerificationExecutor.execute(WSVerificationExecutor.java:103)
+	at com.kms.katalon.core.main.TestCaseMain.runWSVerificationScript(TestCaseMain.java:127)
+	at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword$_sendRequestAndVerify_closure1.doCall(SendRequestAndVerifyKeyword.groovy:55)
+	at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword$_sendRequestAndVerify_closure1.call(SendRequestAndVerifyKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword.sendRequestAndVerify(SendRequestAndVerifyKeyword.groovy:43)
+	at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword.execute(SendRequestAndVerifyKeyword.groovy:38)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequestAndVerify(WSBuiltInKeywords.groovy:65)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords$sendRequestAndVerify.call(Unknown Source)
+	at 1_Free_Spin_CALL.run(1_Free_Spin_CALL:108)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:150)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:123)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:87)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1566551214164.run(TempTestSuite1566551214164.groovy:35)
+
+
+2019-08-23 17:06:57 - [TEST_STEP][PASSED] - NG_top_level = new java.util.ArrayList(): null
+
+2019-08-23 17:06:57 - [TEST_STEP][PASSED] - NG_top_level.add("booster_type"): null
+
+2019-08-23 17:06:57 - [TEST_STEP][PASSED] - NG_top_level.add("currency"): null
+
+2019-08-23 17:06:57 - [TEST_STEP][PASSED] - NG_top_level.add("player_id"): null
+
+2019-08-23 17:06:57 - [TEST_STEP][PASSED] - NG_top_level.add("round_id"): null
+
+2019-08-23 17:06:57 - [TEST_STEP][PASSED] - NG_top_level.add("spin_results"): null
+
+2019-08-23 17:06:57 - [TEST_STEP][PASSED] - NG_spin_result = new java.util.ArrayList(): null
+
+2019-08-23 17:06:57 - [TEST_STEP][PASSED] - NG_spin_result.add("balance"): null
+
+2019-08-23 17:06:57 - [TEST_STEP][PASSED] - NG_spin_result.add("bet_value"): null
+
+2019-08-23 17:06:57 - [TEST_STEP][PASSED] - NG_spin_result.add("features_triggered"): null
+
+2019-08-23 17:06:57 - [TEST_STEP][PASSED] - NG_spin_result.add("line"): null
+
+2019-08-23 17:06:57 - [TEST_STEP][PASSED] - NG_spin_result.add("reel_wins"): null
+
+2019-08-23 17:06:57 - [TEST_STEP][PASSED] - NG_spin_result.add("reels"): null
+
+2019-08-23 17:06:57 - [TEST_STEP][PASSED] - NG_spin_result.add("scatter_win"): null
+
+2019-08-23 17:06:57 - [TEST_STEP][PASSED] - NG_spin_result.add("total_bet"): null
+
+2019-08-23 17:06:57 - [TEST_STEP][PASSED] - NG_spin_result.add("total_win"): null
+
+2019-08-23 17:06:57 - [TEST_STEP][PASSED] - NG_spin_result.add("transaction_id"): null
+
+2019-08-23 17:06:57 - [TEST_STEP][PASSED] - NG_spin_result.add("transaction_time"): null
+
+2019-08-23 17:06:57 - [TEST_STEP][PASSED] - NG_spin_result.add("transaction_type"): null
+
+2019-08-23 17:06:57 - [TEST_STEP][PASSED] - NG_feature_trigger = new java.util.ArrayList(): null
+
+2019-08-23 17:06:57 - [TEST_STEP][PASSED] - NG_feature_trigger.add("complete"): null
+
+2019-08-23 17:06:57 - [TEST_STEP][PASSED] - NG_feature_trigger.add("feature_state"): null
+
+2019-08-23 17:06:57 - [TEST_STEP][PASSED] - NG_feature_trigger.add("subfeatures"): null
+
+2019-08-23 17:06:57 - [TEST_STEP][PASSED] - NG_feature_trigger.add("type"): null
+
+2019-08-23 17:06:57 - [TEST_STEP][PASSED] - NG_feature_state = new java.util.ArrayList(): null
+
+2019-08-23 17:06:57 - [TEST_STEP][PASSED] - NG_feature_state.add("free_spins_left"): null
+
+2019-08-23 17:06:57 - [TEST_STEP][PASSED] - NG_feature_state.add("total_free_spin_count"): null
+
+2019-08-23 17:06:57 - [TEST_STEP][PASSED] - NG_feature_state.add("total_free_spin_win_amount"): null
+
+2019-08-23 17:06:57 - [TEST_STEP][PASSED] - NG_reel = new java.util.ArrayList(): null
+
+2019-08-23 17:06:57 - [TEST_STEP][PASSED] - NG_reel.add("symbols"): null
+
+2019-08-23 17:06:57 - [TEST_STEP][PASSED] - NG_reel_symbol1 = new java.util.ArrayList(): null
+
+2019-08-23 17:06:57 - [TEST_STEP][PASSED] - NG_reel_symbol1.add("symbol"): null
+
+2019-08-23 17:06:57 - [TEST_STEP][PASSED] - NG_reel_symbol2 = new java.util.ArrayList(): null
+
+2019-08-23 17:06:57 - [TEST_STEP][PASSED] - NG_reel_symbol2.add("symbol"): null
+
+2019-08-23 17:06:57 - [TEST_STEP][PASSED] - NG_reel_symbol3 = new java.util.ArrayList(): null
+
+2019-08-23 17:06:57 - [TEST_STEP][PASSED] - NG_reel_symbol3.add("symbol"): null
+
+2019-08-23 17:06:57 - [TEST_STEP][PASSED] - sendRequestAndVerify(findTestObject("INT/Wallet/Get_Session_Token", ["url_krug_gw":url_krug_gw, "partner":Partner, "secret_key":secret_key, "userid":Userid])): Send request and verify the response successfully
+
+2019-08-23 17:06:58 - [MESSAGE][INFO] - HAR: /Users/eiralee/Katalon_Script/SuperWild/Reports/20190823_170644/INT/superWild_1/20190823_170644/requests/main/0.har
+
+2019-08-23 17:06:58 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2019-08-23 17:06:58 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2019-08-23 17:06:58 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2019-08-23 17:06:58 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2019-08-23 17:06:58 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-08-23 17:06:58 - [TEST_STEP][PASSED] - getStatusCode()).isEqualTo(200): null
+
+2019-08-23 17:06:59 - [TEST_STEP][PASSED] - getResponseText()).contains("session_token"): null
+
+2019-08-23 17:06:59 - [TEST_STEP][PASSED] - getsession = new groovy.json.JsonSlurper(): null
+
+2019-08-23 17:06:59 - [TEST_STEP][PASSED] - result_getsession = getsession.parseText(response.getResponseBodyContent()): null
+
+2019-08-23 17:06:59 - [TEST_STEP][PASSED] - session_token = session_token: null
+
+2019-08-23 17:06:59 - [TEST_STEP][PASSED] - println("...value extracted is :" + session_token): null
+
+2019-08-23 17:06:59 - [TEST_STEP][PASSED] - session_token = session_token: null
+
+2019-08-23 17:07:00 - [TEST_STEP][PASSED] - println("GlobalVariable is :" + session_token): null
+
+2019-08-23 17:07:00 - [TEST_STEP][PASSED] - internal_balance = internal_balance: null
+
+2019-08-23 17:07:00 - [TEST_STEP][PASSED] - internal_balance = internal_balance: null
+
+2019-08-23 17:07:00 - [MESSAGE][PASSED] - Verify response successfully
+
+2019-08-23 17:07:00 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2019-08-23 17:07:00 - [TEST_STEP][PASSED] - M4_login = sendRequestAndVerify(findTestObject("INT/RGS(M4)/M4_Login", ["partner":Partner, "game_code":Game_code, "session_token":session_token])): Send request and verify the response successfully
+
+2019-08-23 17:07:01 - [MESSAGE][INFO] - HAR: /Users/eiralee/Katalon_Script/SuperWild/Reports/20190823_170644/INT/superWild_1/20190823_170644/requests/main/1.har
+
+2019-08-23 17:07:01 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2019-08-23 17:07:01 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2019-08-23 17:07:02 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2019-08-23 17:07:02 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2019-08-23 17:07:02 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-08-23 17:07:02 - [TEST_STEP][PASSED] - getStatusCode()).isEqualTo(200): null
+
+2019-08-23 17:07:02 - [TEST_STEP][PASSED] - newline = System.getProperty("line.separator"): null
+
+2019-08-23 17:07:02 - [TEST_STEP][PASSED] - M4_login = new groovy.json.JsonSlurper(): null
+
+2019-08-23 17:07:02 - [TEST_STEP][PASSED] - result_M4_login = M4_login.parseText(response.getResponseBodyContent()): null
+
+2019-08-23 17:07:02 - [TEST_STEP][PASSED] - M4_login_user_id = user_id: null
+
+2019-08-23 17:07:02 - [TEST_STEP][PASSED] - println("playerid is: " + M4_login_user_id): null
+
+2019-08-23 17:07:02 - [TEST_STEP][PASSED] - M4_login_user_id = M4_login_user_id: null
+
+2019-08-23 17:07:02 - [MESSAGE][PASSED] - Verify response successfully
+
+2019-08-23 17:07:02 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2019-08-23 17:07:02 - [TEST_STEP][PASSED] - M4_init = sendRequestAndVerify(findTestObject("INT/RGS(M4)/M4_init", ["partner":Partner, "M4_recorder":M4_recorder, "M4_login_user_id":M4_login_user_id])): Send request and verify the response successfully
+
+2019-08-23 17:07:02 - [MESSAGE][INFO] - HAR: /Users/eiralee/Katalon_Script/SuperWild/Reports/20190823_170644/INT/superWild_1/20190823_170644/requests/main/2.har
+
+2019-08-23 17:07:02 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2019-08-23 17:07:02 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2019-08-23 17:07:02 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2019-08-23 17:07:02 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2019-08-23 17:07:02 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-08-23 17:07:02 - [TEST_STEP][PASSED] - getStatusCode()).isEqualTo(200): null
+
+2019-08-23 17:07:02 - [TEST_STEP][PASSED] - newline = System.getProperty("line.separator"): null
+
+2019-08-23 17:07:02 - [TEST_STEP][PASSED] - M4_init = new groovy.json.JsonSlurper(): null
+
+2019-08-23 17:07:02 - [TEST_STEP][PASSED] - result_M4_init = M4_init.parseText(response.getResponseBodyContent()): null
+
+2019-08-23 17:07:02 - [TEST_STEP][PASSED] - rgs_session_token = session_token: null
+
+2019-08-23 17:07:02 - [TEST_STEP][PASSED] - rgs_session_token = rgs_session_token: null
+
+2019-08-23 17:07:02 - [TEST_STEP][PASSED] - M4_init_balance = balance: null
+
+2019-08-23 17:07:02 - [TEST_STEP][PASSED] - M4_init_balance = M4_init_balance: null
+
+2019-08-23 17:07:02 - [TEST_STEP][PASSED] - game_code = genesis_id: null
+
+2019-08-23 17:07:02 - [TEST_STEP][PASSED] - game_code = game_code: null
+
+2019-08-23 17:07:02 - [TEST_STEP][PASSED] - M4_free_round = free_round: null
+
+2019-08-23 17:07:02 - [TEST_STEP][PASSED] - M4_free_round = M4_free_round: null
+
+2019-08-23 17:07:02 - [MESSAGE][PASSED] - Verify response successfully
+
+2019-08-23 17:07:02 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2019-08-23 17:07:02 - [TEST_STEP][FAILED] - for ([i = 0, i &lt;= 300, (i++)]): Unable to send request and verify the response (Root cause: com.kms.katalon.core.exception.StepFailedException: Verification failed
+	at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword$_sendRequestAndVerify_closure1.doCall(SendRequestAndVerifyKeyword.groovy:59)
+	at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword$_sendRequestAndVerify_closure1.call(SendRequestAndVerifyKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword.sendRequestAndVerify(SendRequestAndVerifyKeyword.groovy:43)
+	at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword.execute(SendRequestAndVerifyKeyword.groovy:38)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequestAndVerify(WSBuiltInKeywords.groovy:65)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords$sendRequestAndVerify.call(Unknown Source)
+	at 1_Free_Spin_CALL.run(1_Free_Spin_CALL:108)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:150)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:123)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:87)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1566551214164.run(TempTestSuite1566551214164.groovy:35)
+)
+
+2019-08-23 17:07:02 - [TEST_STEP][FAILED] - spin_result = sendRequestAndVerify(findTestObject("INT/RGS(M4)/1_M4_spin", ["M4_login_user_id":M4_login_user_id, "rgs_session_token":rgs_session_token, "partner":Partner])): Unable to send request and verify the response (Root cause: com.kms.katalon.core.exception.StepFailedException: Verification failed
+	at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword$_sendRequestAndVerify_closure1.doCall(SendRequestAndVerifyKeyword.groovy:59)
+	at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword$_sendRequestAndVerify_closure1.call(SendRequestAndVerifyKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword.sendRequestAndVerify(SendRequestAndVerifyKeyword.groovy:43)
+	at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword.execute(SendRequestAndVerifyKeyword.groovy:38)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequestAndVerify(WSBuiltInKeywords.groovy:65)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords$sendRequestAndVerify.call(Unknown Source)
+	at 1_Free_Spin_CALL.run(1_Free_Spin_CALL:108)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:150)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:123)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:87)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1566551214164.run(TempTestSuite1566551214164.groovy:35)
+)
+
+2019-08-23 17:07:02 - [MESSAGE][INFO] - HAR: /Users/eiralee/Katalon_Script/SuperWild/Reports/20190823_170644/INT/superWild_1/20190823_170644/requests/main/3.har
+
+2019-08-23 17:07:02 - [TEST_CASE][FAILED] - Start Test Case : Verification: Verification FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Expected status code is '200' but actual status code is '500'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:50)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.verifyStatusCode(VerifyResponseStatusCodeKeyword.groovy:52)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword$_verifyResponseStatusCode_closure1.doCall(VerifyResponseStatusCodeKeyword.groovy:42)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword$_verifyResponseStatusCode_closure1.call(VerifyResponseStatusCodeKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.verifyResponseStatusCode(VerifyResponseStatusCodeKeyword.groovy:37)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.execute(VerifyResponseStatusCodeKeyword.groovy:32)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.verifyResponseStatusCode(WSBuiltInKeywords.groovy:212)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords$verifyResponseStatusCode$0.call(Unknown Source)
+	at WSVerification1566551222856.run(WSVerification1566551222856:14)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.WSVerificationExecutor.runScript(WSVerificationExecutor.java:146)
+	at com.kms.katalon.core.main.WSVerificationExecutor.doExecute(WSVerificationExecutor.java:140)
+	at com.kms.katalon.core.main.WSVerificationExecutor.processExecutionPhase(WSVerificationExecutor.java:123)
+	at com.kms.katalon.core.main.WSVerificationExecutor.accessMainPhase(WSVerificationExecutor.java:115)
+	at com.kms.katalon.core.main.WSVerificationExecutor.execute(WSVerificationExecutor.java:103)
+	at com.kms.katalon.core.main.TestCaseMain.runWSVerificationScript(TestCaseMain.java:127)
+	at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword$_sendRequestAndVerify_closure1.doCall(SendRequestAndVerifyKeyword.groovy:55)
+	at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword$_sendRequestAndVerify_closure1.call(SendRequestAndVerifyKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword.sendRequestAndVerify(SendRequestAndVerifyKeyword.groovy:43)
+	at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword.execute(SendRequestAndVerifyKeyword.groovy:38)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequestAndVerify(WSBuiltInKeywords.groovy:65)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords$sendRequestAndVerify.call(Unknown Source)
+	at 1_Free_Spin_CALL.run(1_Free_Spin_CALL:108)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:150)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:123)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:87)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1566551214164.run(TempTestSuite1566551214164.groovy:35)
+
+
+2019-08-23 17:07:02 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2019-08-23 17:07:03 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2019-08-23 17:07:03 - [TEST_STEP][FAILED] - verifyResponseStatusCode(response, 200): Unable to verify response status code (Root cause: com.kms.katalon.core.exception.StepFailedException: Expected status code is '200' but actual status code is '500'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:50)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.verifyStatusCode(VerifyResponseStatusCodeKeyword.groovy:52)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword$_verifyResponseStatusCode_closure1.doCall(VerifyResponseStatusCodeKeyword.groovy:42)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword$_verifyResponseStatusCode_closure1.call(VerifyResponseStatusCodeKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.verifyResponseStatusCode(VerifyResponseStatusCodeKeyword.groovy:37)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.execute(VerifyResponseStatusCodeKeyword.groovy:32)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.verifyResponseStatusCode(WSBuiltInKeywords.groovy:212)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords$verifyResponseStatusCode$0.call(Unknown Source)
+	at WSVerification1566551222856.run(WSVerification1566551222856:14)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.WSVerificationExecutor.runScript(WSVerificationExecutor.java:146)
+	at com.kms.katalon.core.main.WSVerificationExecutor.doExecute(WSVerificationExecutor.java:140)
+	at com.kms.katalon.core.main.WSVerificationExecutor.processExecutionPhase(WSVerificationExecutor.java:123)
+	at com.kms.katalon.core.main.WSVerificationExecutor.accessMainPhase(WSVerificationExecutor.java:115)
+	at com.kms.katalon.core.main.WSVerificationExecutor.execute(WSVerificationExecutor.java:103)
+	at com.kms.katalon.core.main.TestCaseMain.runWSVerificationScript(TestCaseMain.java:127)
+	at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword$_sendRequestAndVerify_closure1.doCall(SendRequestAndVerifyKeyword.groovy:55)
+	at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword$_sendRequestAndVerify_closure1.call(SendRequestAndVerifyKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword.sendRequestAndVerify(SendRequestAndVerifyKeyword.groovy:43)
+	at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword.execute(SendRequestAndVerifyKeyword.groovy:38)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequestAndVerify(WSBuiltInKeywords.groovy:65)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords$sendRequestAndVerify.call(Unknown Source)
+	at 1_Free_Spin_CALL.run(1_Free_Spin_CALL:108)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:150)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:123)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:87)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1566551214164.run(TempTestSuite1566551214164.groovy:35)
+)
+
+2019-08-23 17:07:03 - [MESSAGE][FAILED] - Expected status code is '200' but actual status code is '500'
+
+2019-08-23 17:07:03 - [MESSAGE][FAILED] - Unable to verify response status code (Root cause: com.kms.katalon.core.exception.StepFailedException: Expected status code is '200' but actual status code is '500'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:50)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.verifyStatusCode(VerifyResponseStatusCodeKeyword.groovy:52)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword$_verifyResponseStatusCode_closure1.doCall(VerifyResponseStatusCodeKeyword.groovy:42)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword$_verifyResponseStatusCode_closure1.call(VerifyResponseStatusCodeKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.verifyResponseStatusCode(VerifyResponseStatusCodeKeyword.groovy:37)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.execute(VerifyResponseStatusCodeKeyword.groovy:32)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.verifyResponseStatusCode(WSBuiltInKeywords.groovy:212)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords$verifyResponseStatusCode$0.call(Unknown Source)
+	at WSVerification1566551222856.run(WSVerification1566551222856:14)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.WSVerificationExecutor.runScript(WSVerificationExecutor.java:146)
+	at com.kms.katalon.core.main.WSVerificationExecutor.doExecute(WSVerificationExecutor.java:140)
+	at com.kms.katalon.core.main.WSVerificationExecutor.processExecutionPhase(WSVerificationExecutor.java:123)
+	at com.kms.katalon.core.main.WSVerificationExecutor.accessMainPhase(WSVerificationExecutor.java:115)
+	at com.kms.katalon.core.main.WSVerificationExecutor.execute(WSVerificationExecutor.java:103)
+	at com.kms.katalon.core.main.TestCaseMain.runWSVerificationScript(TestCaseMain.java:127)
+	at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword$_sendRequestAndVerify_closure1.doCall(SendRequestAndVerifyKeyword.groovy:55)
+	at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword$_sendRequestAndVerify_closure1.call(SendRequestAndVerifyKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword.sendRequestAndVerify(SendRequestAndVerifyKeyword.groovy:43)
+	at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword.execute(SendRequestAndVerifyKeyword.groovy:38)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequestAndVerify(WSBuiltInKeywords.groovy:65)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords$sendRequestAndVerify.call(Unknown Source)
+	at 1_Free_Spin_CALL.run(1_Free_Spin_CALL:108)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:150)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:123)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:87)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1566551214164.run(TempTestSuite1566551214164.groovy:35)
+)
+
+2019-08-23 17:07:03 - [MESSAGE][FAILED] - Unable to send request and verify the response (Root cause: com.kms.katalon.core.exception.StepFailedException: Verification failed
+	at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword$_sendRequestAndVerify_closure1.doCall(SendRequestAndVerifyKeyword.groovy:59)
+	at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword$_sendRequestAndVerify_closure1.call(SendRequestAndVerifyKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword.sendRequestAndVerify(SendRequestAndVerifyKeyword.groovy:43)
+	at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword.execute(SendRequestAndVerifyKeyword.groovy:38)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequestAndVerify(WSBuiltInKeywords.groovy:65)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords$sendRequestAndVerify.call(Unknown Source)
+	at 1_Free_Spin_CALL.run(1_Free_Spin_CALL:108)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:150)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:123)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:87)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1566551214164.run(TempTestSuite1566551214164.groovy:35)
+)</system-out>
+            <system-err>2019-08-23 17:06:56 - [TEST_CASE][FAILED] - Test Cases/INT_env/1_Free_Spin_CALL: Test Cases/INT_env/1_Free_Spin_CALL FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Expected status code is '200' but actual status code is '500'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:50)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.verifyStatusCode(VerifyResponseStatusCodeKeyword.groovy:52)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword$_verifyResponseStatusCode_closure1.doCall(VerifyResponseStatusCodeKeyword.groovy:42)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword$_verifyResponseStatusCode_closure1.call(VerifyResponseStatusCodeKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.verifyResponseStatusCode(VerifyResponseStatusCodeKeyword.groovy:37)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.execute(VerifyResponseStatusCodeKeyword.groovy:32)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.verifyResponseStatusCode(WSBuiltInKeywords.groovy:212)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords$verifyResponseStatusCode$0.call(Unknown Source)
+	at WSVerification1566551222856.run(WSVerification1566551222856:14)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.WSVerificationExecutor.runScript(WSVerificationExecutor.java:146)
+	at com.kms.katalon.core.main.WSVerificationExecutor.doExecute(WSVerificationExecutor.java:140)
+	at com.kms.katalon.core.main.WSVerificationExecutor.processExecutionPhase(WSVerificationExecutor.java:123)
+	at com.kms.katalon.core.main.WSVerificationExecutor.accessMainPhase(WSVerificationExecutor.java:115)
+	at com.kms.katalon.core.main.WSVerificationExecutor.execute(WSVerificationExecutor.java:103)
+	at com.kms.katalon.core.main.TestCaseMain.runWSVerificationScript(TestCaseMain.java:127)
+	at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword$_sendRequestAndVerify_closure1.doCall(SendRequestAndVerifyKeyword.groovy:55)
+	at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword$_sendRequestAndVerify_closure1.call(SendRequestAndVerifyKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword.sendRequestAndVerify(SendRequestAndVerifyKeyword.groovy:43)
+	at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword.execute(SendRequestAndVerifyKeyword.groovy:38)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequestAndVerify(WSBuiltInKeywords.groovy:65)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords$sendRequestAndVerify.call(Unknown Source)
+	at 1_Free_Spin_CALL.run(1_Free_Spin_CALL:108)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:150)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:123)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:87)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1566551214164.run(TempTestSuite1566551214164.groovy:35)</system-err>
+        </testcase>
+        <system-out>2019-08-23 17:06:55 - [TEST_SUITE][INCOMPLETE] - superWild_1: null</system-out>
+        <system-err>2019-08-23 17:06:55 - [TEST_SUITE][INCOMPLETE] - superWild_1: null</system-err>
+    </testsuite>
+</testsuites>

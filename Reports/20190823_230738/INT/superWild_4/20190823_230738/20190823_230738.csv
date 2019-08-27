@@ -1,0 +1,40 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+superWild_4,,,,2019-08-23 23:07:50,2019-08-23 23:15:15,7m - 24.633s,PASSED
+,,,,,,,
+Test Cases/INT_env/4_Multiplier_CALL,,"https://staroad.atlassian.net/wiki/spaces/IPD/pages/461176986/NuRgs+API+Features+Use-case+M4-0012+Super+Wilds
+
+#1 situation",,2019-08-23 23:07:51,2019-08-23 23:20:33,12m - 42.594s,PASSED
+Multiplier = new java.util.ArrayList(),,,,2019-08-23 23:07:52,2019-08-23 23:07:52,0.002s,PASSED
+"Multiplier.add(""wild_multiplier"")",,,,2019-08-23 23:07:52,2019-08-23 23:07:52,0.002s,PASSED
+"Multiplier.add(""wild_config"")",,,,2019-08-23 23:07:52,2019-08-23 23:07:52,0.001s,PASSED
+wild_config = new java.util.ArrayList(),,,,2019-08-23 23:07:52,2019-08-23 23:07:52,0.001s,PASSED
+"wild_config.add(""index"")",,,,2019-08-23 23:07:52,2019-08-23 23:07:52,0.001s,PASSED
+"wild_config.add(""value"")",,,,2019-08-23 23:07:52,2019-08-23 23:07:52,0.001s,PASSED
+"sendRequestAndVerify(findTestObject(""INT/Wallet/Get_Session_Token"", [""url_krug_gw"":url_krug_gw, ""partner"":Partner, ""secret_key"":secret_key, ""userid"":Userid]))",,,,2019-08-23 23:07:52,2019-08-23 23:07:56,4.185s,PASSED
+"M4_login = sendRequestAndVerify(findTestObject(""INT/RGS(M4)/M4_Login"", [""partner"":Partner, ""game_code"":Game_code, ""session_token"":session_token]))",,,,2019-08-23 23:07:56,2019-08-23 23:07:57,1.212s,PASSED
+M4_login_user_id = M4_login_user_id,,,,2019-08-23 23:07:57,2019-08-23 23:07:57,0.001s,PASSED
+"M4_init = sendRequestAndVerify(findTestObject(""INT/RGS(M4)/M4_init"", [""partner"":Partner, ""M4_recorder"":M4_recorder, ""M4_login_user_id"":M4_login_user_id]))",,,,2019-08-23 23:07:57,2019-08-23 23:07:58,0.638s,PASSED
+rgs_session_token = rgs_session_token,,,,2019-08-23 23:07:58,2019-08-23 23:07:58,0.002s,PASSED
+"for ([i = 0, i <= 500, (i++)])",,,,2019-08-23 23:07:58,2019-08-23 23:20:02,12m - 3.841s,PASSED
+"sendRequestAndVerify(findTestObject(""INT/RGS(M4)/1_Round_detail"", [""partner"":Partner, ""M4_spin_round_id"":M4_spin_round_id]))",,,,2019-08-23 23:20:02,2019-08-23 23:20:09,6.959s,PASSED
+M4_round_features_triggered = M4_round_features_triggered,,,,2019-08-23 23:20:09,2019-08-23 23:20:09,0.000s,PASSED
+wildMultiplierIndex = -1,,,,2019-08-23 23:20:09,2019-08-23 23:20:09,0.000s,PASSED
+wildMultiplierFeatureStateKeys = null,,,,2019-08-23 23:20:09,2019-08-23 23:20:09,0.000s,PASSED
+"wildMultiplierWildConfigeKeys = """"",,,,2019-08-23 23:20:09,2019-08-23 23:20:09,0.001s,PASSED
+"for ([i = 0, i < M4_round_features_triggered.size(), (i++)])",,,,2019-08-23 23:20:09,2019-08-23 23:20:09,0.002s,PASSED
+println(wildMultiplierIndex),,,,2019-08-23 23:20:09,2019-08-23 23:20:09,0.001s,PASSED
+println(wildMultiplierFeatureStateKeys),,,,2019-08-23 23:20:09,2019-08-23 23:20:09,0.000s,PASSED
+println(wildMultiplierWildConfigeKeys),,,,2019-08-23 23:20:09,2019-08-23 23:20:09,0.000s,PASSED
+multi_keys = new java.util.ArrayList(wildMultiplierFeatureStateKeys),,,,2019-08-23 23:20:09,2019-08-23 23:20:09,0.000s,PASSED
+wildConfig_keys = new java.util.ArrayList(wildMultiplierWildConfigeKeys),,,,2019-08-23 23:20:09,2019-08-23 23:20:09,0.000s,PASSED
+Collections.sort(multi_keys),,,,2019-08-23 23:20:09,2019-08-23 23:20:09,0.005s,PASSED
+Collections.sort(Multiplier),,,,2019-08-23 23:20:09,2019-08-23 23:20:09,0.000s,PASSED
+Collections.sort(wildConfig_keys),,,,2019-08-23 23:20:09,2019-08-23 23:20:09,0.000s,PASSED
+Collections.sort(wild_config),,,,2019-08-23 23:20:09,2019-08-23 23:20:09,0.001s,PASSED
+"println(""multi_keys is:"" + multi_keys)",,,,2019-08-23 23:20:09,2019-08-23 23:20:09,0.000s,PASSED
+"println(""Multiplier is:"" + Multiplier)",,,,2019-08-23 23:20:09,2019-08-23 23:20:09,0.000s,PASSED
+"println(""wildConfig_keys is: "" + wildConfig_keys)",,,,2019-08-23 23:20:09,2019-08-23 23:20:09,0.000s,PASSED
+"println(""wild_config is:"" + wild_config)",,,,2019-08-23 23:20:09,2019-08-23 23:20:09,0.000s,PASSED
+assert multi_keys.equals(Multiplier),,,,2019-08-23 23:20:09,2019-08-23 23:20:09,0.002s,PASSED
+assert wildConfig_keys.equals(wild_config),,,,2019-08-23 23:20:09,2019-08-23 23:20:09,0.000s,PASSED
+"callTestCase(findTestCase(""INT_env/compare_values/4_Multiplier_verify_value_and_summary""), [""Partner"":Partner, ""Userid"":Userid, ""Game_code"":Game_code, ""url_krug_gw"":url_krug_gw, ""secret_key"":secret_key, ""M4_recorder"":M4_recorder])",,,,2019-08-23 23:20:09,2019-08-23 23:20:33,24.402s,PASSED

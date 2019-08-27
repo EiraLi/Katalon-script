@@ -1,0 +1,82 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+superWild_7,,,,2019-08-24 00:25:52,2019-08-24 00:26:05,13.367s,INCOMPLETE
+,,,,,,,
+Test Cases/INT_env/7_summary_page_CALL,,"https://staroad.atlassian.net/wiki/spaces/IPD/pages/461176986/NuRgs+API+Features+Use-case+M4-0012+Super+Wilds
+
+#1 situation",,2019-08-24 00:25:52,2019-08-24 00:26:05,13.168s,FAILED
+top_level = new java.util.ArrayList(),,,,2019-08-24 00:25:54,2019-08-24 00:25:54,0.001s,PASSED
+"top_level.add(""message"")",,,,2019-08-24 00:25:54,2019-08-24 00:25:54,0.001s,PASSED
+"top_level.add(""data"")",,,,2019-08-24 00:25:54,2019-08-24 00:25:54,0.000s,PASSED
+data_level = new java.util.ArrayList(),,,,2019-08-24 00:25:54,2019-08-24 00:25:54,0.001s,PASSED
+"data_level.add(""summary"")",,,,2019-08-24 00:25:54,2019-08-24 00:25:54,0.001s,PASSED
+"data_level.add(""payload"")",,,,2019-08-24 00:25:54,2019-08-24 00:25:54,0.001s,PASSED
+"data_level.add(""query"")",,,,2019-08-24 00:25:54,2019-08-24 00:25:54,0.001s,PASSED
+payload_detail = new java.util.ArrayList(),,,,2019-08-24 00:25:54,2019-08-24 00:25:54,0.001s,PASSED
+"payload_detail.add(""round_id"")",,,,2019-08-24 00:25:54,2019-08-24 00:25:54,0.000s,PASSED
+"payload_detail.add(""total_bet"")",,,,2019-08-24 00:25:54,2019-08-24 00:25:54,0.000s,PASSED
+"payload_detail.add(""bet_value"")",,,,2019-08-24 00:25:54,2019-08-24 00:25:54,0.001s,PASSED
+"payload_detail.add(""total_win"")",,,,2019-08-24 00:25:54,2019-08-24 00:25:54,0.001s,PASSED
+"payload_detail.add(""balance"")",,,,2019-08-24 00:25:54,2019-08-24 00:25:54,0.001s,PASSED
+"payload_detail.add(""date"")",,,,2019-08-24 00:25:54,2019-08-24 00:25:54,0.001s,PASSED
+"payload_detail.add(""round_type"")",,,,2019-08-24 00:25:54,2019-08-24 00:25:54,0.002s,PASSED
+"payload_detail.add(""bonus_provider"")",,,,2019-08-24 00:25:54,2019-08-24 00:25:54,0.001s,PASSED
+"payload_detail.add(""booster_type"")",,,,2019-08-24 00:25:54,2019-08-24 00:25:54,0.000s,PASSED
+"payload_detail.add(""with_free_spin"")",,,,2019-08-24 00:25:54,2019-08-24 00:25:54,0.001s,PASSED
+"payload_detail.add(""feature_track"")",,,,2019-08-24 00:25:54,2019-08-24 00:25:54,0.001s,PASSED
+bonus_provider = new java.util.ArrayList(),,,,2019-08-24 00:25:54,2019-08-24 00:25:54,0.001s,PASSED
+"bonus_provider.add(""provider"")",,,,2019-08-24 00:25:54,2019-08-24 00:25:54,0.001s,PASSED
+"bonus_provider.add(""type"")",,,,2019-08-24 00:25:54,2019-08-24 00:25:54,0.000s,PASSED
+"bonus_provider.add(""bonus_data"")",,,,2019-08-24 00:25:54,2019-08-24 00:25:54,0.001s,PASSED
+query_detail = new java.util.ArrayList(),,,,2019-08-24 00:25:54,2019-08-24 00:25:54,0.001s,PASSED
+"query_detail.add(""pageNumber"")",,,,2019-08-24 00:25:54,2019-08-24 00:25:54,0.000s,PASSED
+"query_detail.add(""pageSize"")",,,,2019-08-24 00:25:54,2019-08-24 00:25:54,0.000s,PASSED
+"query_detail.add(""totalCount"")",,,,2019-08-24 00:25:54,2019-08-24 00:25:54,0.001s,PASSED
+"query_detail.add(""serverTime"")",,,,2019-08-24 00:25:54,2019-08-24 00:25:54,0.001s,PASSED
+"sendRequestAndVerify(findTestObject(""INT/Wallet/Get_Session_Token"", [""url_krug_gw"":url_krug_gw, ""partner"":Partner, ""secret_key"":secret_key, ""userid"":Userid]))",,,,2019-08-24 00:25:54,2019-08-24 00:25:57,3.562s,PASSED
+"M4_login = sendRequestAndVerify(findTestObject(""INT/RGS(M4)/M4_Login"", [""partner"":Partner, ""game_code"":Game_code, ""session_token"":session_token]))",,,,2019-08-24 00:25:57,2019-08-24 00:25:58,0.898s,PASSED
+M4_login_user_id = M4_login_user_id,,,,2019-08-24 00:25:58,2019-08-24 00:25:58,0.001s,PASSED
+"M4_init = sendRequestAndVerify(findTestObject(""INT/RGS(M4)/M4_init"", [""partner"":Partner, ""M4_recorder"":M4_recorder, ""M4_login_user_id"":M4_login_user_id]))",,,,2019-08-24 00:25:58,2019-08-24 00:25:59,0.910s,PASSED
+rgs_session_token = rgs_session_token,,,,2019-08-24 00:25:59,2019-08-24 00:25:59,0.000s,PASSED
+M4_spin_reels_symbols = M4_spin_reels_symbols,,,,2019-08-24 00:25:59,2019-08-24 00:25:59,0.001s,PASSED
+"spin_result = sendRequestAndVerify(findTestObject(""INT/RGS(M4)/1_M4_spin"", [""M4_login_user_id"":M4_login_user_id, ""rgs_session_token"":rgs_session_token, ""partner"":Partner]))",,,,2019-08-24 00:25:59,2019-08-24 00:26:00,0.960s,PASSED
+"sendRequestAndVerify(findTestObject(""INT/RGS(M4)/Summary_history"", [""game_code"":""SW_M4_V1_RECORDER"", ""partner"":Partner, ""userid"":Userid]))",,,,2019-08-24 00:26:00,2019-08-24 00:26:01,0.550s,PASSED
+summary_top_level = summary_top_level,,,,2019-08-24 00:26:01,2019-08-24 00:26:01,0.000s,PASSED
+summary_payload = payload[0].keySet(),,,,2019-08-24 00:26:01,2019-08-24 00:26:01,0.001s,PASSED
+summary_bonus_provider = bonus_provider.keySet(),,,,2019-08-24 00:26:01,2019-08-24 00:26:01,0.000s,PASSED
+summary_feature_track = feature_track,,,,2019-08-24 00:26:01,2019-08-24 00:26:01,0.001s,PASSED
+summary_top_level_key = summary_top_level.keySet(),,,,2019-08-24 00:26:01,2019-08-24 00:26:01,0.000s,PASSED
+summary_data_key = summary_data.keySet(),,,,2019-08-24 00:26:01,2019-08-24 00:26:01,0.000s,PASSED
+summary_query_key = query.keySet(),,,,2019-08-24 00:26:01,2019-08-24 00:26:01,0.001s,PASSED
+summary_top_level_keylist = new java.util.ArrayList(summary_top_level_key),,,,2019-08-24 00:26:01,2019-08-24 00:26:01,0.000s,PASSED
+Collections.sort(top_level),,,,2019-08-24 00:26:01,2019-08-24 00:26:01,0.005s,PASSED
+Collections.sort(summary_top_level_keylist),,,,2019-08-24 00:26:01,2019-08-24 00:26:01,0.000s,PASSED
+summary_data_key_list = new java.util.ArrayList(summary_data_key),,,,2019-08-24 00:26:01,2019-08-24 00:26:01,0.001s,PASSED
+Collections.sort(data_level),,,,2019-08-24 00:26:01,2019-08-24 00:26:01,0.000s,PASSED
+Collections.sort(summary_data_key_list),,,,2019-08-24 00:26:01,2019-08-24 00:26:01,0.001s,PASSED
+summary_payload_list = new java.util.ArrayList(summary_payload),,,,2019-08-24 00:26:01,2019-08-24 00:26:01,0.000s,PASSED
+Collections.sort(payload_detail),,,,2019-08-24 00:26:01,2019-08-24 00:26:01,0.000s,PASSED
+Collections.sort(summary_payload_list),,,,2019-08-24 00:26:01,2019-08-24 00:26:01,0.000s,PASSED
+summary_bonus_provider_list = new java.util.ArrayList(summary_bonus_provider),,,,2019-08-24 00:26:01,2019-08-24 00:26:01,0.000s,PASSED
+Collections.sort(bonus_provider),,,,2019-08-24 00:26:01,2019-08-24 00:26:01,0.001s,PASSED
+Collections.sort(summary_bonus_provider_list),,,,2019-08-24 00:26:01,2019-08-24 00:26:01,0.000s,PASSED
+summary_query_key_list = new java.util.ArrayList(summary_query_key),,,,2019-08-24 00:26:01,2019-08-24 00:26:01,0.000s,PASSED
+Collections.sort(query_detail),,,,2019-08-24 00:26:01,2019-08-24 00:26:01,0.000s,PASSED
+Collections.sort(summary_query_key_list),,,,2019-08-24 00:26:01,2019-08-24 00:26:01,0.000s,PASSED
+"println(""top_level"" + top_level)",,,,2019-08-24 00:26:01,2019-08-24 00:26:01,0.000s,PASSED
+"println(""summary_top_level_key"" + summary_top_level_key)",,,,2019-08-24 00:26:01,2019-08-24 00:26:01,0.001s,PASSED
+"println(""data_level"" + data_level)",,,,2019-08-24 00:26:01,2019-08-24 00:26:01,0.000s,PASSED
+"println(""summary_data_key"" + summary_data_key)",,,,2019-08-24 00:26:01,2019-08-24 00:26:01,0.001s,PASSED
+"println(""payload_detail"" + payload_detail)",,,,2019-08-24 00:26:01,2019-08-24 00:26:01,0.000s,PASSED
+"println(""summary_payload"" + summary_payload)",,,,2019-08-24 00:26:01,2019-08-24 00:26:01,0.001s,PASSED
+"println(""bonus_provider"" + bonus_provider)",,,,2019-08-24 00:26:01,2019-08-24 00:26:01,0.000s,PASSED
+"println(""summary_bonus_provider"" + summary_bonus_provider)",,,,2019-08-24 00:26:01,2019-08-24 00:26:01,0.001s,PASSED
+"println(""summary_feature_track"" + summary_feature_track)",,,,2019-08-24 00:26:01,2019-08-24 00:26:01,0.000s,PASSED
+"println(""query_detail"" + query_detail)",,,,2019-08-24 00:26:01,2019-08-24 00:26:01,0.001s,PASSED
+"println(""summary_query_key"" + summary_query_key)",,,,2019-08-24 00:26:01,2019-08-24 00:26:01,0.000s,PASSED
+assert top_level == summary_top_level_keylist,,,,2019-08-24 00:26:01,2019-08-24 00:26:01,0.001s,PASSED
+assert data_level == summary_data_key_list,,,,2019-08-24 00:26:01,2019-08-24 00:26:01,0.000s,PASSED
+assert payload_detail == summary_payload_list,,,,2019-08-24 00:26:01,2019-08-24 00:26:01,0.000s,PASSED
+assert bonus_provider == summary_bonus_provider_list,,,,2019-08-24 00:26:01,2019-08-24 00:26:01,0.000s,PASSED
+assert summary_feature_track.size() == 0,,,,2019-08-24 00:26:01,2019-08-24 00:26:01,0.001s,PASSED
+assert query_detail == summary_query_key_list,,,,2019-08-24 00:26:01,2019-08-24 00:26:01,0.000s,PASSED
+"callTestCase(findTestCase(""INT_env/compare_values/7_summary_page_baseSpin_verify_value""), [""Partner"":Partner, ""Userid"":Userid, ""Game_code"":Game_code, ""url_krug_gw"":url_krug_gw, ""secret_key"":secret_key, ""M4_recorder"":M4_recorder, ... ])",,,,2019-08-24 00:26:01,2019-08-24 00:26:05,4.698s,FAILED

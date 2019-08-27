@@ -148,6 +148,32 @@ ArrayList M4_round_reels_symbols_key2 = new ArrayList(M4_round_reels_symbols_key
 
 ArrayList M4_round_reels_symbols_key3 = new ArrayList(M4_round_reels_symbols_key_3)
 
+def M4_round_spin_result_list = GlobalVariable.M4_round_spin_result_list
+
+def features_trigger = M4_round_spin_result_list.features_triggered
+
+def feature_state_key = ''
+
+def features_triggered = ''
+
+for (int i = 0; i < features_trigger.size(); i++) {
+    def feature_type = features_trigger[i].type
+
+    if (feature_type == 'FREE_SPIN') {
+        println('feature_type is:' + feature_type)
+
+        def feature_state = features_trigger[i].feature_state
+
+        feature_state_key = feature_state.keySet()
+
+        features_triggered = features_trigger[i].keySet()
+    }
+}
+
+ArrayList features_triggered_list = new ArrayList(features_triggered)
+
+ArrayList feature_state_list = new ArrayList(feature_state_key)
+
 println('M4_round_object_key_list is:' + M4_round_object_key_list)
 
 println('M4_round_spin_result_key_list is: ' + M4_round_spin_result_key_list)
@@ -180,6 +206,8 @@ println('NG_reel_symbol2 is: ' + NG_reel_symbol2)
 
 println('NG_reel_symbol3 is: ' + NG_reel_symbol3)
 
+println('feature_state_list is: ' + feature_state_list)
+
 assert NG_top_level.equals(M4_round_object_key_list)
 
 assert NG_spin_result.equals(M4_round_spin_result_key_list)
@@ -196,7 +224,7 @@ assert NG_reel_symbol2.equals(M4_round_reels_symbols_key2)
 
 assert NG_reel_symbol3.equals(M4_round_reels_symbols_key3)
 
-//WS.callTestCase(findTestCase('STG_env/compare_values/1_freeSpin_verify_value'), [('Partner') : Partner
-//        , ('Userid') : Userid, ('Game_code') : Game_code, ('url_krug_gw') : url_krug_gw
-//        , ('secret_key') : secret_key, ('M4_recorder') : M4_recorder])
+WS.callTestCase(findTestCase('STG_env/compare_values/1_freeSpin_verify_value'), [('Partner') : Partner
+        , ('Userid') : Userid, ('Game_code') : Game_code, ('url_krug_gw') : url_krug_gw
+        , ('secret_key') : secret_key, ('gameId') : gameId, ('partner_code') : partner_code])
 

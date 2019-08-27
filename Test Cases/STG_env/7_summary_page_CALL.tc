@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>https://staroad.atlassian.net/wiki/spaces/IPD/pages/461176986/NuRgs+API+Features+Use-case+M4-0012+Super+Wilds
+
+#1 situation</description>
+   <name>7_summary_page_CALL</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>91becd73-c149-48f0-998f-44c4ae13b5fd</testCaseGuid>
+   <variable>
+      <defaultValue>findTestData('STG_data').getValue(2, 1)</defaultValue>
+      <description></description>
+      <id>c319270c-b271-4593-8740-b3edd95c334a</id>
+      <masked>false</masked>
+      <name>Partner</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('STG_data').getValue(4, 1)</defaultValue>
+      <description></description>
+      <id>ab1fcc26-f0bc-4cde-ac11-40b5eca52578</id>
+      <masked>false</masked>
+      <name>Userid</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('STG_data').getValue(5, 1)</defaultValue>
+      <description></description>
+      <id>725e18da-28c6-4b42-ab62-201d4ad3a3e8</id>
+      <masked>false</masked>
+      <name>Game_code</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('STG_data').getValue(10, 1)</defaultValue>
+      <description></description>
+      <id>0d15c78d-13c6-4667-bb1f-b393fc5dd17e</id>
+      <masked>false</masked>
+      <name>url_krug_gw</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('STG_data').getValue(3, 1)</defaultValue>
+      <description></description>
+      <id>0396d8a9-9e1e-4995-a4d1-9abb0e9e0f9f</id>
+      <masked>false</masked>
+      <name>secret_key</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('STG_data').getValue(14, 1)</defaultValue>
+      <description></description>
+      <id>8ef61311-c3ca-4c19-ada2-71b1ee02fe77</id>
+      <masked>false</masked>
+      <name>gameId</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('STG_data').getValue(7, 1)</defaultValue>
+      <description></description>
+      <id>a7699f61-2067-45a6-bfb5-f9c89d3d6019</id>
+      <masked>false</masked>
+      <name>start_date</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('STG_data').getValue(8, 1)</defaultValue>
+      <description></description>
+      <id>b4789936-15bd-41d4-a61a-0935eeb606f7</id>
+      <masked>false</masked>
+      <name>end_date</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('STG_data').getValue(10, 1)</defaultValue>
+      <description></description>
+      <id>9b58c488-b868-422d-a34d-c23929a89c97</id>
+      <masked>false</masked>
+      <name>url_krug</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('STG_data').getValue(1, 1)</defaultValue>
+      <description></description>
+      <id>0a618cf2-4f3d-4ef1-89b3-a98cd7ea694e</id>
+      <masked>false</masked>
+      <name>partner_code</name>
+   </variable>
+</TestCaseEntity>

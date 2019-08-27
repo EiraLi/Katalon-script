@@ -12,7 +12,7 @@
    <httpBodyType></httpBodyType>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>https://${url_krug}/history/transactions/all/players/${userid}?startDate=${start_date}&amp;endDate=${end_date}&amp;partnerToken=${partner}&amp;timeZoneId=GMT%2B8&amp;pageNumber=1&amp;pageSize=200&amp;action=ROLLBACK%2CAdjustment_Add%2CAdjustment_Remove%2CDeposit%2CWithdraw</restUrl>
+   <restUrl>https://${url_krug}/history/transactions/all/players/${userid}?startDate=${start_date}&amp;endDate=${end_date}&amp;partnerToken=${partner}&amp;timeZoneId=GMT%2B8&amp;pageNumber=1&amp;pageSize=200&amp;action=ROLLBACK%2CAdjustment_Remove%2CDeposit</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>

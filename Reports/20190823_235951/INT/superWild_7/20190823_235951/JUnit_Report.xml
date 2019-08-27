@@ -1,0 +1,1572 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<testsuites name="superWild_7" time="15" tests="0" failures="1" errors="0">
+    <testsuite name="superWild_7" tests="0" failures="1" errors="0" time="15" timestamp="2019-08-24 00:00:05" hostname="eiralee - 172.20.10.2" id="Test Suites/INT/superWild_7">
+        <properties>
+            <property name="deviceName" value=""/>
+            <property name="devicePlatform" value=""/>
+            <property name="logFolder" value="/Users/eiralee/Katalon_Script/SuperWild/Reports/20190823_235951/INT/superWild_7/20190823_235951"/>
+            <property name="logFiles" value="/Users/eiralee/Katalon_Script/SuperWild/Reports/20190823_235951/INT/superWild_7/20190823_235951/execution0.log"/>
+            <property name="attachments" value=""/>
+            <property name="hostName" value="eiralee - 172.20.10.2"/>
+            <property name="hostAddress" value="172.20.10.2"/>
+            <property name="os" value="Mac OS X 64bit"/>
+            <property name="katalonVersion" value="6.3.1.2"/>
+        </properties>
+        <testcase name="Test Cases/INT_env/7_summary_page_CALL" classname="Test Cases/INT_env/7_summary_page_CALL" status="FAILED">
+            <failure type="FAILED" message="Test Cases/INT_env/7_summary_page_CALL FAILED.&#xA;Reason:&#xA;com.kms.katalon.core.exception.StepFailedException: Call Test Case 'Test Cases/INT_env/compare_values/7_summary_page_baseSpin_verify_value' failed&#xA;&#x9;at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:63)&#xA;&#x9;at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)&#xA;&#x9;at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)&#xA;&#x9;at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)&#xA;&#x9;at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)&#xA;&#x9;at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)&#xA;&#x9;at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:350)&#xA;&#x9;at 7_summary_page_CALL.run(7_summary_page_CALL:167)&#xA;&#x9;at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)&#xA;&#x9;at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)&#xA;&#x9;at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)&#xA;&#x9;at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)&#xA;&#x9;at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)&#xA;&#x9;at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)&#xA;&#x9;at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)&#xA;&#x9;at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:150)&#xA;&#x9;at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:123)&#xA;&#x9;at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:87)&#xA;&#x9;at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)&#xA;&#x9;at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)&#xA;&#x9;at TempTestSuite1566576003341.run(TempTestSuite1566576003341.groovy:35)&#xA;Caused by: Assertion failed: &#xA;&#xA;assert GlobalVariable.summary_totalCount  == GlobalVariable.bo_totalCount&#xA;                      |                   |                 |&#xA;                      1778                false             1780&#xA;&#xA;&#x9;at 7_summary_page_baseSpin_verify_value.run(7_summary_page_baseSpin_verify_value:123)&#xA;&#x9;at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)&#xA;&#x9;at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)&#xA;&#x9;at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)&#xA;&#x9;at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)&#xA;&#x9;at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)&#xA;&#x9;at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)&#xA;&#x9;at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)&#xA;&#x9;at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)&#xA;&#x9;at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)&#xA;&#x9;... 20 more&#xA;"/>
+            <system-out>2019-08-24 00:00:05 - [TEST_CASE][FAILED] - Test Cases/INT_env/7_summary_page_CALL: Test Cases/INT_env/7_summary_page_CALL FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Call Test Case 'Test Cases/INT_env/compare_values/7_summary_page_baseSpin_verify_value' failed
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:63)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:350)
+	at 7_summary_page_CALL.run(7_summary_page_CALL:167)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:150)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:123)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:87)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1566576003341.run(TempTestSuite1566576003341.groovy:35)
+Caused by: Assertion failed: 
+
+assert GlobalVariable.summary_totalCount  == GlobalVariable.bo_totalCount
+                      |                   |                 |
+                      1778                false             1780
+
+	at 7_summary_page_baseSpin_verify_value.run(7_summary_page_baseSpin_verify_value:123)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more
+
+
+2019-08-24 00:00:07 - [TEST_STEP][PASSED] - top_level = new java.util.ArrayList(): null
+
+2019-08-24 00:00:07 - [TEST_STEP][PASSED] - top_level.add("message"): null
+
+2019-08-24 00:00:07 - [TEST_STEP][PASSED] - top_level.add("data"): null
+
+2019-08-24 00:00:07 - [TEST_STEP][PASSED] - data_level = new java.util.ArrayList(): null
+
+2019-08-24 00:00:07 - [TEST_STEP][PASSED] - data_level.add("summary"): null
+
+2019-08-24 00:00:07 - [TEST_STEP][PASSED] - data_level.add("payload"): null
+
+2019-08-24 00:00:07 - [TEST_STEP][PASSED] - data_level.add("query"): null
+
+2019-08-24 00:00:07 - [TEST_STEP][PASSED] - payload_detail = new java.util.ArrayList(): null
+
+2019-08-24 00:00:07 - [TEST_STEP][PASSED] - payload_detail.add("round_id"): null
+
+2019-08-24 00:00:07 - [TEST_STEP][PASSED] - payload_detail.add("total_bet"): null
+
+2019-08-24 00:00:07 - [TEST_STEP][PASSED] - payload_detail.add("bet_value"): null
+
+2019-08-24 00:00:07 - [TEST_STEP][PASSED] - payload_detail.add("total_win"): null
+
+2019-08-24 00:00:07 - [TEST_STEP][PASSED] - payload_detail.add("balance"): null
+
+2019-08-24 00:00:07 - [TEST_STEP][PASSED] - payload_detail.add("date"): null
+
+2019-08-24 00:00:07 - [TEST_STEP][PASSED] - payload_detail.add("round_type"): null
+
+2019-08-24 00:00:07 - [TEST_STEP][PASSED] - payload_detail.add("bonus_provider"): null
+
+2019-08-24 00:00:07 - [TEST_STEP][PASSED] - payload_detail.add("booster_type"): null
+
+2019-08-24 00:00:07 - [TEST_STEP][PASSED] - payload_detail.add("with_free_spin"): null
+
+2019-08-24 00:00:07 - [TEST_STEP][PASSED] - payload_detail.add("feature_track"): null
+
+2019-08-24 00:00:07 - [TEST_STEP][PASSED] - bonus_provider = new java.util.ArrayList(): null
+
+2019-08-24 00:00:07 - [TEST_STEP][PASSED] - bonus_provider.add("provider"): null
+
+2019-08-24 00:00:07 - [TEST_STEP][PASSED] - bonus_provider.add("type"): null
+
+2019-08-24 00:00:07 - [TEST_STEP][PASSED] - bonus_provider.add("bonus_data"): null
+
+2019-08-24 00:00:07 - [TEST_STEP][PASSED] - query_detail = new java.util.ArrayList(): null
+
+2019-08-24 00:00:07 - [TEST_STEP][PASSED] - query_detail.add("pageNumber"): null
+
+2019-08-24 00:00:07 - [TEST_STEP][PASSED] - query_detail.add("pageSize"): null
+
+2019-08-24 00:00:07 - [TEST_STEP][PASSED] - query_detail.add("totalCount"): null
+
+2019-08-24 00:00:07 - [TEST_STEP][PASSED] - query_detail.add("serverTime"): null
+
+2019-08-24 00:00:07 - [TEST_STEP][PASSED] - sendRequestAndVerify(findTestObject("INT/Wallet/Get_Session_Token", ["url_krug_gw":url_krug_gw, "partner":Partner, "secret_key":secret_key, "userid":Userid])): Send request and verify the response successfully
+
+2019-08-24 00:00:08 - [MESSAGE][INFO] - HAR: /Users/eiralee/Katalon_Script/SuperWild/Reports/20190823_235951/INT/superWild_7/20190823_235951/requests/main/0.har
+
+2019-08-24 00:00:08 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2019-08-24 00:00:08 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2019-08-24 00:00:08 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2019-08-24 00:00:08 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2019-08-24 00:00:08 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-08-24 00:00:08 - [TEST_STEP][PASSED] - getStatusCode()).isEqualTo(200): null
+
+2019-08-24 00:00:09 - [TEST_STEP][PASSED] - getResponseText()).contains("session_token"): null
+
+2019-08-24 00:00:09 - [TEST_STEP][PASSED] - getsession = new groovy.json.JsonSlurper(): null
+
+2019-08-24 00:00:09 - [TEST_STEP][PASSED] - result_getsession = getsession.parseText(response.getResponseBodyContent()): null
+
+2019-08-24 00:00:09 - [TEST_STEP][PASSED] - session_token = session_token: null
+
+2019-08-24 00:00:09 - [TEST_STEP][PASSED] - println("...value extracted is :" + session_token): null
+
+2019-08-24 00:00:09 - [TEST_STEP][PASSED] - session_token = session_token: null
+
+2019-08-24 00:00:10 - [TEST_STEP][PASSED] - println("GlobalVariable is :" + session_token): null
+
+2019-08-24 00:00:10 - [TEST_STEP][PASSED] - internal_balance = internal_balance: null
+
+2019-08-24 00:00:10 - [TEST_STEP][PASSED] - internal_balance = internal_balance: null
+
+2019-08-24 00:00:10 - [MESSAGE][PASSED] - Verify response successfully
+
+2019-08-24 00:00:10 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2019-08-24 00:00:10 - [TEST_STEP][PASSED] - M4_login = sendRequestAndVerify(findTestObject("INT/RGS(M4)/M4_Login", ["partner":Partner, "game_code":Game_code, "session_token":session_token])): Send request and verify the response successfully
+
+2019-08-24 00:00:11 - [MESSAGE][INFO] - HAR: /Users/eiralee/Katalon_Script/SuperWild/Reports/20190823_235951/INT/superWild_7/20190823_235951/requests/main/1.har
+
+2019-08-24 00:00:12 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2019-08-24 00:00:12 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2019-08-24 00:00:12 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2019-08-24 00:00:12 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2019-08-24 00:00:12 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-08-24 00:00:12 - [TEST_STEP][PASSED] - getStatusCode()).isEqualTo(200): null
+
+2019-08-24 00:00:12 - [TEST_STEP][PASSED] - newline = System.getProperty("line.separator"): null
+
+2019-08-24 00:00:12 - [TEST_STEP][PASSED] - M4_login = new groovy.json.JsonSlurper(): null
+
+2019-08-24 00:00:12 - [TEST_STEP][PASSED] - result_M4_login = M4_login.parseText(response.getResponseBodyContent()): null
+
+2019-08-24 00:00:12 - [TEST_STEP][PASSED] - M4_login_user_id = user_id: null
+
+2019-08-24 00:00:12 - [TEST_STEP][PASSED] - println("playerid is: " + M4_login_user_id): null
+
+2019-08-24 00:00:12 - [TEST_STEP][PASSED] - M4_login_user_id = M4_login_user_id: null
+
+2019-08-24 00:00:12 - [MESSAGE][PASSED] - Verify response successfully
+
+2019-08-24 00:00:12 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2019-08-24 00:00:12 - [TEST_STEP][PASSED] - M4_login_user_id = M4_login_user_id: null
+
+2019-08-24 00:00:12 - [TEST_STEP][PASSED] - M4_init = sendRequestAndVerify(findTestObject("INT/RGS(M4)/M4_init", ["partner":Partner, "M4_recorder":M4_recorder, "M4_login_user_id":M4_login_user_id])): Send request and verify the response successfully
+
+2019-08-24 00:00:12 - [MESSAGE][INFO] - HAR: /Users/eiralee/Katalon_Script/SuperWild/Reports/20190823_235951/INT/superWild_7/20190823_235951/requests/main/2.har
+
+2019-08-24 00:00:12 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2019-08-24 00:00:12 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2019-08-24 00:00:13 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2019-08-24 00:00:13 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2019-08-24 00:00:13 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-08-24 00:00:13 - [TEST_STEP][PASSED] - getStatusCode()).isEqualTo(200): null
+
+2019-08-24 00:00:13 - [TEST_STEP][PASSED] - newline = System.getProperty("line.separator"): null
+
+2019-08-24 00:00:13 - [TEST_STEP][PASSED] - M4_init = new groovy.json.JsonSlurper(): null
+
+2019-08-24 00:00:13 - [TEST_STEP][PASSED] - result_M4_init = M4_init.parseText(response.getResponseBodyContent()): null
+
+2019-08-24 00:00:13 - [TEST_STEP][PASSED] - rgs_session_token = session_token: null
+
+2019-08-24 00:00:13 - [TEST_STEP][PASSED] - rgs_session_token = rgs_session_token: null
+
+2019-08-24 00:00:13 - [TEST_STEP][PASSED] - M4_init_balance = balance: null
+
+2019-08-24 00:00:13 - [TEST_STEP][PASSED] - M4_init_balance = M4_init_balance: null
+
+2019-08-24 00:00:13 - [TEST_STEP][PASSED] - game_code = genesis_id: null
+
+2019-08-24 00:00:13 - [TEST_STEP][PASSED] - game_code = game_code: null
+
+2019-08-24 00:00:13 - [TEST_STEP][PASSED] - M4_free_round = free_round: null
+
+2019-08-24 00:00:13 - [TEST_STEP][PASSED] - M4_free_round = M4_free_round: null
+
+2019-08-24 00:00:13 - [MESSAGE][PASSED] - Verify response successfully
+
+2019-08-24 00:00:13 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2019-08-24 00:00:13 - [TEST_STEP][PASSED] - rgs_session_token = rgs_session_token: null
+
+2019-08-24 00:00:13 - [TEST_STEP][PASSED] - M4_spin_reels_symbols = M4_spin_reels_symbols: null
+
+2019-08-24 00:00:13 - [TEST_STEP][PASSED] - spin_result = sendRequestAndVerify(findTestObject("INT/RGS(M4)/1_M4_spin", ["M4_login_user_id":M4_login_user_id, "rgs_session_token":rgs_session_token, "partner":Partner])): Send request and verify the response successfully
+
+2019-08-24 00:00:13 - [MESSAGE][INFO] - HAR: /Users/eiralee/Katalon_Script/SuperWild/Reports/20190823_235951/INT/superWild_7/20190823_235951/requests/main/3.har
+
+2019-08-24 00:00:13 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2019-08-24 00:00:13 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2019-08-24 00:00:14 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - getStatusCode()).isEqualTo(200): null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - newline = System.getProperty("line.separator"): null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - M4_spin = new groovy.json.JsonSlurper(): null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - result_M4_spin = M4_spin.parseText(response.getResponseBodyContent()): null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - M4_spin_current_balance = current_balance: null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - M4_spin_current_balance = M4_spin_current_balance: null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - M4_spin_transaction_id = causality: null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - M4_spin_transaction_id = M4_spin_transaction_id: null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - M4_spin_round_id = round_id: null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - M4_spin_round_id = M4_spin_round_id: null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - M4_spin_line_wins = line_wins: null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - M4_spin_line_wins = M4_spin_line_wins: null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - M4_total_bonus_spins_int = total_bonus_spins: null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - println("******M4_total_bonus_spins type is:*******" + newline + getClass().getName()): null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - M4_total_bonus_spins_int = M4_total_bonus_spins_int: null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - M4_total_bonus_spins = Integer.toString(M4_total_bonus_spins_int): null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - M4_total_bonus_spins = M4_total_bonus_spins: null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - println("M4_total_bonus_spins is:" + M4_total_bonus_spins): null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - M4_spin_bonus_data = bonus_data: null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - M4_spin_features_triggered = result_M4_spin: null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - wild = []: null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - wild[0] = "WILD_Expanding": null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - wild[1] = "WILD_Normal": null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - wild[2] = "WILD_Double": null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - wild[3] = "WILD_ExtraFG": null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - wild[4] = "WILD_Triple": null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - wildList = Arrays.asList(wild): null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - wildList = wildList: null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - free_spin_reel_counter = []: null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - free_spin_reel_counter[0] = 0: null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - free_spin_reel_counter[1] = 0: null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - free_spin_reel_counter[2] = 0: null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - M4_spin_reels = reels: null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - for ([i = 0, i &lt; M4_spin_reels.size(), (i++)]): null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - symbols = symbols: null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - for ([j = 0, j &lt; symbols.size(), (j++)]): null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - symbol = symbol: null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - println(symbol): null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - if (i == 2 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - if (i == 3 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - if (i == 4 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - symbol = symbol: null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - println(symbol): null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - if (i == 2 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - if (i == 3 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - if (i == 4 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - symbol = symbol: null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - println(symbol): null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - if (i == 2 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - if (i == 3 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - if (i == 4 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - symbols = symbols: null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - for ([j = 0, j &lt; symbols.size(), (j++)]): null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - symbol = symbol: null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - println(symbol): null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - if (i == 2 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - if (i == 3 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - if (i == 4 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - symbol = symbol: null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - println(symbol): null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - if (i == 2 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - if (i == 3 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - if (i == 4 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - symbol = symbol: null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - println(symbol): null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - if (i == 2 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - if (i == 3 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - if (i == 4 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - symbols = symbols: null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - for ([j = 0, j &lt; symbols.size(), (j++)]): null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - symbol = symbol: null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - println(symbol): null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - if (i == 2 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - if (i == 3 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - if (i == 4 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - symbol = symbol: null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - println(symbol): null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - if (i == 2 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - if (i == 3 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - if (i == 4 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - symbol = symbol: null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - println(symbol): null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - if (i == 2 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - if (i == 3 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - if (i == 4 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - symbols = symbols: null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - for ([j = 0, j &lt; symbols.size(), (j++)]): null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - symbol = symbol: null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - println(symbol): null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - if (i == 2 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - if (i == 3 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - if (i == 4 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - symbol = symbol: null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - println(symbol): null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - if (i == 2 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - if (i == 3 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - if (i == 4 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - symbol = symbol: null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - println(symbol): null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - if (i == 2 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - if (i == 3 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - if (i == 4 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - symbols = symbols: null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - for ([j = 0, j &lt; symbols.size(), (j++)]): null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - symbol = symbol: null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - println(symbol): null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - if (i == 2 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - if (i == 3 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - if (i == 4 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - println("wild found on reel 5, adding counter by 1"): null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - free_spin_reel_counter[2] = free_spin_reel_counter[2] + 1: null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - symbol = symbol: null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - println(symbol): null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - if (i == 2 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - if (i == 3 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - if (i == 4 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - symbol = symbol: null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - println(symbol): null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - if (i == 2 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - if (i == 3 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - if (i == 4 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - free_spin_reel_counter = free_spin_reel_counter: null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - println("reel 3 wild found: " + free_spin_reel_counter[0]): null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - println("reel 4 wild found: " + free_spin_reel_counter[1]): null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - println("reel 5 wild found: " + free_spin_reel_counter[2]): null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - M4_spin_reels = M4_spin_reels: null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - M4_spin_reels_symbols = symbol: null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - M4_spin_reels_symbols = M4_spin_reels_symbols: null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - M4_spin_reel_wins = reel_wins: null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - M4_spin_reel_wins = M4_spin_reel_wins: null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - println("GlobalVariable.M4_spin_reel_wins is: " + M4_spin_reel_wins): null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - M4_spin_total_bonus_win_this_round = total_bonus_win_this_round: null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - M4_spin_total_bonus_win_this_round = M4_spin_total_bonus_win_this_round: null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - println("GlobalVariable.M4_spin_total_bonus_win_this_round is: " + M4_spin_total_bonus_win_this_round): null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - M4_spin_bonus_spin_result = spin_result: null
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - M4_spin_bonus_spin_result = M4_spin_bonus_spin_result: null
+
+2019-08-24 00:00:14 - [MESSAGE][PASSED] - Verify response successfully
+
+2019-08-24 00:00:14 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2019-08-24 00:00:14 - [TEST_STEP][PASSED] - sendRequestAndVerify(findTestObject("INT/RGS(M4)/Summary_history", ["game_code":"SW_M4_V1_RECORDER", "partner":Partner, "userid":Userid])): Send request and verify the response successfully
+
+2019-08-24 00:00:14 - [MESSAGE][INFO] - HAR: /Users/eiralee/Katalon_Script/SuperWild/Reports/20190823_235951/INT/superWild_7/20190823_235951/requests/main/4.har
+
+2019-08-24 00:00:15 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2019-08-24 00:00:15 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2019-08-24 00:00:15 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2019-08-24 00:00:15 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2019-08-24 00:00:15 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-08-24 00:00:15 - [TEST_STEP][PASSED] - getStatusCode()).isEqualTo(200): null
+
+2019-08-24 00:00:15 - [TEST_STEP][PASSED] - summary_detail = new groovy.json.JsonSlurper(): null
+
+2019-08-24 00:00:15 - [TEST_STEP][PASSED] - summary_history = summary_detail.parseText(response.getResponseBodyContent()): null
+
+2019-08-24 00:00:15 - [TEST_STEP][PASSED] - summary_top_level = summary_history: null
+
+2019-08-24 00:00:15 - [TEST_STEP][PASSED] - summary_top_level = summary_top_level: null
+
+2019-08-24 00:00:15 - [TEST_STEP][PASSED] - summary_data = data: null
+
+2019-08-24 00:00:15 - [TEST_STEP][PASSED] - summary_data = summary_data: null
+
+2019-08-24 00:00:15 - [TEST_STEP][PASSED] - summary_query = query: null
+
+2019-08-24 00:00:15 - [TEST_STEP][PASSED] - summary_query = summary_query: null
+
+2019-08-24 00:00:15 - [TEST_STEP][PASSED] - summary_payload = payload: null
+
+2019-08-24 00:00:15 - [TEST_STEP][PASSED] - summary_payload = summary_payload: null
+
+2019-08-24 00:00:15 - [TEST_STEP][PASSED] - summary_round_id_1 = round_id: null
+
+2019-08-24 00:00:15 - [TEST_STEP][PASSED] - summary_round_id_1 = summary_round_id_1: null
+
+2019-08-24 00:00:15 - [TEST_STEP][PASSED] - summary_total_bet_1 = total_bet: null
+
+2019-08-24 00:00:15 - [TEST_STEP][PASSED] - summary_total_bet_1 = summary_total_bet_1: null
+
+2019-08-24 00:00:15 - [TEST_STEP][PASSED] - summary_bet_value_1 = bet_value: null
+
+2019-08-24 00:00:15 - [TEST_STEP][PASSED] - summary_bet_value_1 = summary_bet_value_1: null
+
+2019-08-24 00:00:15 - [TEST_STEP][PASSED] - summary_total_win_1 = total_win: null
+
+2019-08-24 00:00:15 - [TEST_STEP][PASSED] - summary_total_win_1 = summary_total_win_1: null
+
+2019-08-24 00:00:15 - [TEST_STEP][PASSED] - summary_balance_1 = balance: null
+
+2019-08-24 00:00:15 - [TEST_STEP][PASSED] - summary_balance_1 = summary_balance_1: null
+
+2019-08-24 00:00:15 - [TEST_STEP][PASSED] - summary_date_1 = date: null
+
+2019-08-24 00:00:15 - [TEST_STEP][PASSED] - summary_date_1 = summary_date_1: null
+
+2019-08-24 00:00:15 - [TEST_STEP][PASSED] - summary_round_type_1 = round_type: null
+
+2019-08-24 00:00:15 - [TEST_STEP][PASSED] - summary_round_type_1 = summary_round_type_1: null
+
+2019-08-24 00:00:15 - [TEST_STEP][PASSED] - summary_bonus_provider_1 = bonus_provider: null
+
+2019-08-24 00:00:15 - [TEST_STEP][PASSED] - summary_bonus_provider_1 = summary_bonus_provider_1: null
+
+2019-08-24 00:00:15 - [TEST_STEP][PASSED] - summary_booster_type_1 = booster_type: null
+
+2019-08-24 00:00:15 - [TEST_STEP][PASSED] - summary_booster_type_1 = summary_booster_type_1: null
+
+2019-08-24 00:00:15 - [TEST_STEP][PASSED] - summary_with_free_spin_1 = with_free_spin: null
+
+2019-08-24 00:00:15 - [TEST_STEP][PASSED] - summary_with_free_spin_1 = summary_with_free_spin_1: null
+
+2019-08-24 00:00:15 - [TEST_STEP][PASSED] - summary_feature_track_1 = feature_track: null
+
+2019-08-24 00:00:15 - [TEST_STEP][PASSED] - summary_feature_track_1 = summary_feature_track_1: null
+
+2019-08-24 00:00:15 - [TEST_STEP][PASSED] - summary_totalCount = totalCount: null
+
+2019-08-24 00:00:15 - [TEST_STEP][PASSED] - summary_totalCount = summary_totalCount: null
+
+2019-08-24 00:00:15 - [MESSAGE][PASSED] - Verify response successfully
+
+2019-08-24 00:00:15 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2019-08-24 00:00:15 - [TEST_STEP][PASSED] - summary_top_level = summary_top_level: null
+
+2019-08-24 00:00:15 - [TEST_STEP][PASSED] - summary_payload = payload[0].keySet(): null
+
+2019-08-24 00:00:15 - [TEST_STEP][PASSED] - summary_bonus_provider = bonus_provider.keySet(): null
+
+2019-08-24 00:00:15 - [TEST_STEP][PASSED] - summary_feature_track = feature_track: null
+
+2019-08-24 00:00:15 - [TEST_STEP][PASSED] - summary_top_level_key = summary_top_level.keySet(): null
+
+2019-08-24 00:00:15 - [TEST_STEP][PASSED] - summary_data_key = summary_data.keySet(): null
+
+2019-08-24 00:00:15 - [TEST_STEP][PASSED] - summary_query_key = query.keySet(): null
+
+2019-08-24 00:00:15 - [TEST_STEP][PASSED] - summary_top_level_keylist = new java.util.ArrayList(summary_top_level_key): null
+
+2019-08-24 00:00:15 - [TEST_STEP][PASSED] - Collections.sort(top_level): null
+
+2019-08-24 00:00:15 - [TEST_STEP][PASSED] - Collections.sort(summary_top_level_keylist): null
+
+2019-08-24 00:00:15 - [TEST_STEP][PASSED] - summary_data_key_list = new java.util.ArrayList(summary_data_key): null
+
+2019-08-24 00:00:15 - [TEST_STEP][PASSED] - Collections.sort(data_level): null
+
+2019-08-24 00:00:15 - [TEST_STEP][PASSED] - Collections.sort(summary_data_key_list): null
+
+2019-08-24 00:00:15 - [TEST_STEP][PASSED] - summary_payload_list = new java.util.ArrayList(summary_payload): null
+
+2019-08-24 00:00:15 - [TEST_STEP][PASSED] - Collections.sort(payload_detail): null
+
+2019-08-24 00:00:15 - [TEST_STEP][PASSED] - Collections.sort(summary_payload_list): null
+
+2019-08-24 00:00:15 - [TEST_STEP][PASSED] - summary_bonus_provider_list = new java.util.ArrayList(summary_bonus_provider): null
+
+2019-08-24 00:00:15 - [TEST_STEP][PASSED] - Collections.sort(bonus_provider): null
+
+2019-08-24 00:00:15 - [TEST_STEP][PASSED] - Collections.sort(summary_bonus_provider_list): null
+
+2019-08-24 00:00:15 - [TEST_STEP][PASSED] - summary_query_key_list = new java.util.ArrayList(summary_query_key): null
+
+2019-08-24 00:00:15 - [TEST_STEP][PASSED] - Collections.sort(query_detail): null
+
+2019-08-24 00:00:15 - [TEST_STEP][PASSED] - Collections.sort(summary_query_key_list): null
+
+2019-08-24 00:00:15 - [TEST_STEP][PASSED] - println("top_level" + top_level): null
+
+2019-08-24 00:00:15 - [TEST_STEP][PASSED] - println("summary_top_level_key" + summary_top_level_key): null
+
+2019-08-24 00:00:15 - [TEST_STEP][PASSED] - println("data_level" + data_level): null
+
+2019-08-24 00:00:15 - [TEST_STEP][PASSED] - println("summary_data_key" + summary_data_key): null
+
+2019-08-24 00:00:15 - [TEST_STEP][PASSED] - println("payload_detail" + payload_detail): null
+
+2019-08-24 00:00:15 - [TEST_STEP][PASSED] - println("summary_payload" + summary_payload): null
+
+2019-08-24 00:00:15 - [TEST_STEP][PASSED] - println("bonus_provider" + bonus_provider): null
+
+2019-08-24 00:00:15 - [TEST_STEP][PASSED] - println("summary_bonus_provider" + summary_bonus_provider): null
+
+2019-08-24 00:00:15 - [TEST_STEP][PASSED] - println("summary_feature_track" + summary_feature_track): null
+
+2019-08-24 00:00:15 - [TEST_STEP][PASSED] - println("query_detail" + query_detail): null
+
+2019-08-24 00:00:15 - [TEST_STEP][PASSED] - println("summary_query_key" + summary_query_key): null
+
+2019-08-24 00:00:15 - [TEST_STEP][PASSED] - assert top_level == summary_top_level_keylist: null
+
+2019-08-24 00:00:15 - [TEST_STEP][PASSED] - assert data_level == summary_data_key_list: null
+
+2019-08-24 00:00:15 - [TEST_STEP][PASSED] - assert payload_detail == summary_payload_list: null
+
+2019-08-24 00:00:15 - [TEST_STEP][PASSED] - assert bonus_provider == summary_bonus_provider_list: null
+
+2019-08-24 00:00:15 - [TEST_STEP][PASSED] - assert summary_feature_track.size() == 0: null
+
+2019-08-24 00:00:15 - [TEST_STEP][PASSED] - assert query_detail == summary_query_key_list: null
+
+2019-08-24 00:00:15 - [TEST_STEP][FAILED] - callTestCase(findTestCase("INT_env/compare_values/7_summary_page_baseSpin_verify_value"), ["Partner":Partner, "Userid":Userid, "Game_code":Game_code, "url_krug_gw":url_krug_gw, "secret_key":secret_key, "M4_recorder":M4_recorder, ... ]): Unable to call Test Case 'Test Cases/INT_env/compare_values/7_summary_page_baseSpin_verify_value' (Root cause: com.kms.katalon.core.exception.StepFailedException: Call Test Case 'Test Cases/INT_env/compare_values/7_summary_page_baseSpin_verify_value' failed
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:63)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:350)
+	at 7_summary_page_CALL.run(7_summary_page_CALL:167)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:150)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:123)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:87)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1566576003341.run(TempTestSuite1566576003341.groovy:35)
+Caused by: Assertion failed: 
+
+assert GlobalVariable.summary_totalCount  == GlobalVariable.bo_totalCount
+                      |                   |                 |
+                      1778                false             1780
+
+	at 7_summary_page_baseSpin_verify_value.run(7_summary_page_baseSpin_verify_value:123)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more
+)
+
+2019-08-24 00:00:15 - [TEST_CASE][FAILED] - Test Cases/INT_env/compare_values/7_summary_page_baseSpin_verify_value: Test Cases/INT_env/compare_values/7_summary_page_baseSpin_verify_value FAILED.
+Reason:
+Assertion failed: 
+
+assert GlobalVariable.summary_totalCount  == GlobalVariable.bo_totalCount
+                      |                   |                 |
+                      1778                false             1780
+
+	at 7_summary_page_baseSpin_verify_value.run(7_summary_page_baseSpin_verify_value:123)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:350)
+	at 7_summary_page_CALL.run(7_summary_page_CALL:167)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:150)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:123)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:87)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1566576003341.run(TempTestSuite1566576003341.groovy:35)
+
+
+2019-08-24 00:00:15 - [TEST_STEP][PASSED] - sendRequestAndVerify(findTestObject("INT/Wallet/Get_Session_Token", ["url_krug_gw":url_krug_gw, "partner":Partner, "secret_key":secret_key, "userid":Userid])): Send request and verify the response successfully
+
+2019-08-24 00:00:15 - [MESSAGE][INFO] - HAR: /Users/eiralee/Katalon_Script/SuperWild/Reports/20190823_235951/INT/superWild_7/20190823_235951/requests/main/5.har
+
+2019-08-24 00:00:15 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2019-08-24 00:00:15 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2019-08-24 00:00:16 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2019-08-24 00:00:16 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2019-08-24 00:00:16 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-08-24 00:00:16 - [TEST_STEP][PASSED] - getStatusCode()).isEqualTo(200): null
+
+2019-08-24 00:00:16 - [TEST_STEP][PASSED] - getResponseText()).contains("session_token"): null
+
+2019-08-24 00:00:16 - [TEST_STEP][PASSED] - getsession = new groovy.json.JsonSlurper(): null
+
+2019-08-24 00:00:16 - [TEST_STEP][PASSED] - result_getsession = getsession.parseText(response.getResponseBodyContent()): null
+
+2019-08-24 00:00:16 - [TEST_STEP][PASSED] - session_token = session_token: null
+
+2019-08-24 00:00:16 - [TEST_STEP][PASSED] - println("...value extracted is :" + session_token): null
+
+2019-08-24 00:00:16 - [TEST_STEP][PASSED] - session_token = session_token: null
+
+2019-08-24 00:00:16 - [TEST_STEP][PASSED] - println("GlobalVariable is :" + session_token): null
+
+2019-08-24 00:00:16 - [TEST_STEP][PASSED] - internal_balance = internal_balance: null
+
+2019-08-24 00:00:16 - [TEST_STEP][PASSED] - internal_balance = internal_balance: null
+
+2019-08-24 00:00:16 - [MESSAGE][PASSED] - Verify response successfully
+
+2019-08-24 00:00:16 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2019-08-24 00:00:16 - [TEST_STEP][PASSED] - M4_login = sendRequestAndVerify(findTestObject("INT/RGS(M4)/M4_Login", ["partner":Partner, "game_code":Game_code, "session_token":session_token])): Send request and verify the response successfully
+
+2019-08-24 00:00:16 - [MESSAGE][INFO] - HAR: /Users/eiralee/Katalon_Script/SuperWild/Reports/20190823_235951/INT/superWild_7/20190823_235951/requests/main/6.har
+
+2019-08-24 00:00:16 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2019-08-24 00:00:16 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2019-08-24 00:00:16 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2019-08-24 00:00:16 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2019-08-24 00:00:16 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-08-24 00:00:16 - [TEST_STEP][PASSED] - getStatusCode()).isEqualTo(200): null
+
+2019-08-24 00:00:16 - [TEST_STEP][PASSED] - newline = System.getProperty("line.separator"): null
+
+2019-08-24 00:00:16 - [TEST_STEP][PASSED] - M4_login = new groovy.json.JsonSlurper(): null
+
+2019-08-24 00:00:16 - [TEST_STEP][PASSED] - result_M4_login = M4_login.parseText(response.getResponseBodyContent()): null
+
+2019-08-24 00:00:16 - [TEST_STEP][PASSED] - M4_login_user_id = user_id: null
+
+2019-08-24 00:00:16 - [TEST_STEP][PASSED] - println("playerid is: " + M4_login_user_id): null
+
+2019-08-24 00:00:16 - [TEST_STEP][PASSED] - M4_login_user_id = M4_login_user_id: null
+
+2019-08-24 00:00:16 - [MESSAGE][PASSED] - Verify response successfully
+
+2019-08-24 00:00:16 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2019-08-24 00:00:16 - [TEST_STEP][PASSED] - M4_login_user_id = M4_login_user_id: null
+
+2019-08-24 00:00:16 - [TEST_STEP][PASSED] - M4_init = sendRequestAndVerify(findTestObject("INT/RGS(M4)/M4_init", ["partner":Partner, "M4_recorder":M4_recorder, "M4_login_user_id":M4_login_user_id])): Send request and verify the response successfully
+
+2019-08-24 00:00:16 - [MESSAGE][INFO] - HAR: /Users/eiralee/Katalon_Script/SuperWild/Reports/20190823_235951/INT/superWild_7/20190823_235951/requests/main/7.har
+
+2019-08-24 00:00:17 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2019-08-24 00:00:17 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - getStatusCode()).isEqualTo(200): null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - newline = System.getProperty("line.separator"): null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - M4_init = new groovy.json.JsonSlurper(): null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - result_M4_init = M4_init.parseText(response.getResponseBodyContent()): null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - rgs_session_token = session_token: null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - rgs_session_token = rgs_session_token: null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - M4_init_balance = balance: null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - M4_init_balance = M4_init_balance: null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - game_code = genesis_id: null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - game_code = game_code: null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - M4_free_round = free_round: null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - M4_free_round = M4_free_round: null
+
+2019-08-24 00:00:17 - [MESSAGE][PASSED] - Verify response successfully
+
+2019-08-24 00:00:17 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - rgs_session_token = rgs_session_token: null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - M4_spin_reels_symbols = M4_spin_reels_symbols: null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - spin_result = sendRequestAndVerify(findTestObject("INT/RGS(M4)/1_M4_spin", ["M4_login_user_id":M4_login_user_id, "rgs_session_token":rgs_session_token, "partner":Partner])): Send request and verify the response successfully
+
+2019-08-24 00:00:17 - [MESSAGE][INFO] - HAR: /Users/eiralee/Katalon_Script/SuperWild/Reports/20190823_235951/INT/superWild_7/20190823_235951/requests/main/8.har
+
+2019-08-24 00:00:17 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2019-08-24 00:00:17 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - getStatusCode()).isEqualTo(200): null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - newline = System.getProperty("line.separator"): null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - M4_spin = new groovy.json.JsonSlurper(): null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - result_M4_spin = M4_spin.parseText(response.getResponseBodyContent()): null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - M4_spin_current_balance = current_balance: null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - M4_spin_current_balance = M4_spin_current_balance: null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - M4_spin_transaction_id = causality: null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - M4_spin_transaction_id = M4_spin_transaction_id: null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - M4_spin_round_id = round_id: null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - M4_spin_round_id = M4_spin_round_id: null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - M4_spin_line_wins = line_wins: null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - M4_spin_line_wins = M4_spin_line_wins: null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - M4_total_bonus_spins_int = total_bonus_spins: null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - println("******M4_total_bonus_spins type is:*******" + newline + getClass().getName()): null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - M4_total_bonus_spins_int = M4_total_bonus_spins_int: null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - M4_total_bonus_spins = Integer.toString(M4_total_bonus_spins_int): null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - M4_total_bonus_spins = M4_total_bonus_spins: null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - println("M4_total_bonus_spins is:" + M4_total_bonus_spins): null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - M4_spin_bonus_data = bonus_data: null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - M4_spin_features_triggered = result_M4_spin: null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - wild = []: null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - wild[0] = "WILD_Expanding": null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - wild[1] = "WILD_Normal": null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - wild[2] = "WILD_Double": null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - wild[3] = "WILD_ExtraFG": null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - wild[4] = "WILD_Triple": null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - wildList = Arrays.asList(wild): null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - wildList = wildList: null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - free_spin_reel_counter = []: null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - free_spin_reel_counter[0] = 0: null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - free_spin_reel_counter[1] = 0: null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - free_spin_reel_counter[2] = 0: null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - M4_spin_reels = reels: null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - for ([i = 0, i &lt; M4_spin_reels.size(), (i++)]): null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - symbols = symbols: null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - for ([j = 0, j &lt; symbols.size(), (j++)]): null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - symbol = symbol: null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - println(symbol): null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - if (i == 2 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - if (i == 3 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - if (i == 4 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - symbol = symbol: null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - println(symbol): null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - if (i == 2 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - if (i == 3 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - if (i == 4 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - symbol = symbol: null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - println(symbol): null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - if (i == 2 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - if (i == 3 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - if (i == 4 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - symbols = symbols: null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - for ([j = 0, j &lt; symbols.size(), (j++)]): null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - symbol = symbol: null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - println(symbol): null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - if (i == 2 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - if (i == 3 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - if (i == 4 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - symbol = symbol: null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - println(symbol): null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - if (i == 2 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - if (i == 3 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - if (i == 4 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - symbol = symbol: null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - println(symbol): null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - if (i == 2 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - if (i == 3 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - if (i == 4 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - symbols = symbols: null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - for ([j = 0, j &lt; symbols.size(), (j++)]): null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - symbol = symbol: null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - println(symbol): null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - if (i == 2 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - if (i == 3 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - if (i == 4 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - symbol = symbol: null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - println(symbol): null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - if (i == 2 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - if (i == 3 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - if (i == 4 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - symbol = symbol: null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - println(symbol): null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - if (i == 2 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - if (i == 3 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - if (i == 4 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - symbols = symbols: null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - for ([j = 0, j &lt; symbols.size(), (j++)]): null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - symbol = symbol: null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - println(symbol): null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - if (i == 2 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - if (i == 3 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - if (i == 4 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - symbol = symbol: null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - println(symbol): null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - if (i == 2 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - if (i == 3 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - if (i == 4 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - symbol = symbol: null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - println(symbol): null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - if (i == 2 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - if (i == 3 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - if (i == 4 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - symbols = symbols: null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - for ([j = 0, j &lt; symbols.size(), (j++)]): null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - symbol = symbol: null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - println(symbol): null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - if (i == 2 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - if (i == 3 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - if (i == 4 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - symbol = symbol: null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - println(symbol): null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - if (i == 2 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - if (i == 3 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - if (i == 4 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - symbol = symbol: null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - println(symbol): null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - if (i == 2 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - if (i == 3 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - if (i == 4 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - free_spin_reel_counter = free_spin_reel_counter: null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - println("reel 3 wild found: " + free_spin_reel_counter[0]): null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - println("reel 4 wild found: " + free_spin_reel_counter[1]): null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - println("reel 5 wild found: " + free_spin_reel_counter[2]): null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - M4_spin_reels = M4_spin_reels: null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - M4_spin_reels_symbols = symbol: null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - M4_spin_reels_symbols = M4_spin_reels_symbols: null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - M4_spin_reel_wins = reel_wins: null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - M4_spin_reel_wins = M4_spin_reel_wins: null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - println("GlobalVariable.M4_spin_reel_wins is: " + M4_spin_reel_wins): null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - M4_spin_total_bonus_win_this_round = total_bonus_win_this_round: null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - M4_spin_total_bonus_win_this_round = M4_spin_total_bonus_win_this_round: null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - println("GlobalVariable.M4_spin_total_bonus_win_this_round is: " + M4_spin_total_bonus_win_this_round): null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - M4_spin_bonus_spin_result = spin_result: null
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - M4_spin_bonus_spin_result = M4_spin_bonus_spin_result: null
+
+2019-08-24 00:00:17 - [MESSAGE][PASSED] - Verify response successfully
+
+2019-08-24 00:00:17 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2019-08-24 00:00:17 - [TEST_STEP][PASSED] - sendRequestAndVerify(findTestObject("INT/RGS(M4)/in_game_history_BaseSpin", ["partner":Partner, "M4_spin_transaction_id":M4_spin_transaction_id, "M4_login_user_id":M4_login_user_id])): Send request and verify the response successfully
+
+2019-08-24 00:00:18 - [MESSAGE][INFO] - HAR: /Users/eiralee/Katalon_Script/SuperWild/Reports/20190823_235951/INT/superWild_7/20190823_235951/requests/main/9.har
+
+2019-08-24 00:00:18 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2019-08-24 00:00:18 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2019-08-24 00:00:18 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2019-08-24 00:00:18 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2019-08-24 00:00:18 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-08-24 00:00:18 - [TEST_STEP][PASSED] - getStatusCode()).isEqualTo(200): null
+
+2019-08-24 00:00:18 - [TEST_STEP][PASSED] - newline = System.getProperty("line.separator"): null
+
+2019-08-24 00:00:18 - [TEST_STEP][PASSED] - M4_game_history = new groovy.json.JsonSlurper(): null
+
+2019-08-24 00:00:18 - [TEST_STEP][PASSED] - M4_history = M4_game_history.parseText(response.getResponseBodyContent()): null
+
+2019-08-24 00:00:18 - [TEST_STEP][PASSED] - M4_history_currency = currency: null
+
+2019-08-24 00:00:18 - [TEST_STEP][PASSED] - M4_history_currency = M4_history_currency: null
+
+2019-08-24 00:00:18 - [TEST_STEP][PASSED] - M4_history_spin_transaction = spin_transaction: null
+
+2019-08-24 00:00:18 - [TEST_STEP][PASSED] - M4_history_spin_transaction = M4_history_spin_transaction: null
+
+2019-08-24 00:00:18 - [TEST_STEP][PASSED] - M4_history_date = date: null
+
+2019-08-24 00:00:18 - [TEST_STEP][PASSED] - M4_history_date = M4_history_date: null
+
+2019-08-24 00:00:18 - [TEST_STEP][PASSED] - M4_history_game_id = game_id: null
+
+2019-08-24 00:00:18 - [TEST_STEP][PASSED] - M4_history_tx_id = tx_id: null
+
+2019-08-24 00:00:18 - [TEST_STEP][PASSED] - M4_history_causality = causality: null
+
+2019-08-24 00:00:18 - [TEST_STEP][PASSED] - M4_history_causality = M4_history_causality: null
+
+2019-08-24 00:00:18 - [TEST_STEP][PASSED] - M4_history_round_id = round_id: null
+
+2019-08-24 00:00:18 - [TEST_STEP][PASSED] - M4_history_round_id = M4_history_round_id: null
+
+2019-08-24 00:00:18 - [TEST_STEP][PASSED] - M4_history_game_total_won = total_won: null
+
+2019-08-24 00:00:18 - [TEST_STEP][PASSED] - M4_history_game_total_won = M4_history_game_total_won: null
+
+2019-08-24 00:00:18 - [TEST_STEP][PASSED] - M4_history_game_total_bet = total_bet: null
+
+2019-08-24 00:00:18 - [TEST_STEP][PASSED] - M4_history_total_bet = M4_history_game_total_bet: null
+
+2019-08-24 00:00:18 - [TEST_STEP][PASSED] - M4_history_lines = lines: null
+
+2019-08-24 00:00:18 - [TEST_STEP][PASSED] - M4_history_total_won = total_won: null
+
+2019-08-24 00:00:18 - [TEST_STEP][PASSED] - M4_history_total_won = M4_history_total_won: null
+
+2019-08-24 00:00:18 - [TEST_STEP][PASSED] - M4_history_bonus_name = bonus_name: null
+
+2019-08-24 00:00:18 - [TEST_STEP][PASSED] - M4_history_bonus_retrigger = bonus_retrigger: null
+
+2019-08-24 00:00:18 - [TEST_STEP][PASSED] - M4_history_key = key: null
+
+2019-08-24 00:00:18 - [TEST_STEP][PASSED] - M4_history_data = data: null
+
+2019-08-24 00:00:18 - [TEST_STEP][PASSED] - M4_history_total_bet = total_bet: null
+
+2019-08-24 00:00:18 - [TEST_STEP][PASSED] - M4_history_total_bet = M4_history_total_bet: null
+
+2019-08-24 00:00:18 - [TEST_STEP][PASSED] - M4_history_balance = balance: null
+
+2019-08-24 00:00:18 - [TEST_STEP][PASSED] - M4_history_balance = M4_history_balance: null
+
+2019-08-24 00:00:18 - [TEST_STEP][PASSED] - M4_history_type = type: null
+
+2019-08-24 00:00:18 - [TEST_STEP][PASSED] - M4_history_type = M4_history_type: null
+
+2019-08-24 00:00:18 - [TEST_STEP][PASSED] - M4_history_reel_symbol = symbols: null
+
+2019-08-24 00:00:18 - [TEST_STEP][PASSED] - M4_history_reel_symbol = M4_history_reel_symbol: null
+
+2019-08-24 00:00:18 - [TEST_STEP][PASSED] - M4_history_reels = reels: null
+
+2019-08-24 00:00:18 - [TEST_STEP][PASSED] - M4_history_reels = M4_history_reels: null
+
+2019-08-24 00:00:18 - [TEST_STEP][PASSED] - M4_history_bonuses1 = bonuses[1]: null
+
+2019-08-24 00:00:18 - [TEST_STEP][PASSED] - M4_history_bonuses1 = M4_history_bonuses1: null
+
+2019-08-24 00:00:18 - [MESSAGE][PASSED] - Verify response successfully
+
+2019-08-24 00:00:18 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2019-08-24 00:00:18 - [TEST_STEP][PASSED] - M4_history_round_id = M4_history_round_id: null
+
+2019-08-24 00:00:18 - [TEST_STEP][PASSED] - M4_history_date = M4_history_date: null
+
+2019-08-24 00:00:18 - [TEST_STEP][PASSED] - sendRequestAndVerify(findTestObject("INT/RGS(M4)/Summary_history", ["game_code":"SW_M4_V1_RECORDER", "partner":Partner, "userid":Userid])): Send request and verify the response successfully
+
+2019-08-24 00:00:19 - [MESSAGE][INFO] - HAR: /Users/eiralee/Katalon_Script/SuperWild/Reports/20190823_235951/INT/superWild_7/20190823_235951/requests/main/10.har
+
+2019-08-24 00:00:19 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2019-08-24 00:00:19 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2019-08-24 00:00:19 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2019-08-24 00:00:19 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2019-08-24 00:00:19 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-08-24 00:00:19 - [TEST_STEP][PASSED] - getStatusCode()).isEqualTo(200): null
+
+2019-08-24 00:00:19 - [TEST_STEP][PASSED] - summary_detail = new groovy.json.JsonSlurper(): null
+
+2019-08-24 00:00:19 - [TEST_STEP][PASSED] - summary_history = summary_detail.parseText(response.getResponseBodyContent()): null
+
+2019-08-24 00:00:19 - [TEST_STEP][PASSED] - summary_top_level = summary_history: null
+
+2019-08-24 00:00:19 - [TEST_STEP][PASSED] - summary_top_level = summary_top_level: null
+
+2019-08-24 00:00:19 - [TEST_STEP][PASSED] - summary_data = data: null
+
+2019-08-24 00:00:19 - [TEST_STEP][PASSED] - summary_data = summary_data: null
+
+2019-08-24 00:00:19 - [TEST_STEP][PASSED] - summary_query = query: null
+
+2019-08-24 00:00:19 - [TEST_STEP][PASSED] - summary_query = summary_query: null
+
+2019-08-24 00:00:19 - [TEST_STEP][PASSED] - summary_payload = payload: null
+
+2019-08-24 00:00:19 - [TEST_STEP][PASSED] - summary_payload = summary_payload: null
+
+2019-08-24 00:00:19 - [TEST_STEP][PASSED] - summary_round_id_1 = round_id: null
+
+2019-08-24 00:00:19 - [TEST_STEP][PASSED] - summary_round_id_1 = summary_round_id_1: null
+
+2019-08-24 00:00:19 - [TEST_STEP][PASSED] - summary_total_bet_1 = total_bet: null
+
+2019-08-24 00:00:19 - [TEST_STEP][PASSED] - summary_total_bet_1 = summary_total_bet_1: null
+
+2019-08-24 00:00:19 - [TEST_STEP][PASSED] - summary_bet_value_1 = bet_value: null
+
+2019-08-24 00:00:19 - [TEST_STEP][PASSED] - summary_bet_value_1 = summary_bet_value_1: null
+
+2019-08-24 00:00:19 - [TEST_STEP][PASSED] - summary_total_win_1 = total_win: null
+
+2019-08-24 00:00:19 - [TEST_STEP][PASSED] - summary_total_win_1 = summary_total_win_1: null
+
+2019-08-24 00:00:19 - [TEST_STEP][PASSED] - summary_balance_1 = balance: null
+
+2019-08-24 00:00:19 - [TEST_STEP][PASSED] - summary_balance_1 = summary_balance_1: null
+
+2019-08-24 00:00:19 - [TEST_STEP][PASSED] - summary_date_1 = date: null
+
+2019-08-24 00:00:19 - [TEST_STEP][PASSED] - summary_date_1 = summary_date_1: null
+
+2019-08-24 00:00:19 - [TEST_STEP][PASSED] - summary_round_type_1 = round_type: null
+
+2019-08-24 00:00:19 - [TEST_STEP][PASSED] - summary_round_type_1 = summary_round_type_1: null
+
+2019-08-24 00:00:19 - [TEST_STEP][PASSED] - summary_bonus_provider_1 = bonus_provider: null
+
+2019-08-24 00:00:19 - [TEST_STEP][PASSED] - summary_bonus_provider_1 = summary_bonus_provider_1: null
+
+2019-08-24 00:00:19 - [TEST_STEP][PASSED] - summary_booster_type_1 = booster_type: null
+
+2019-08-24 00:00:19 - [TEST_STEP][PASSED] - summary_booster_type_1 = summary_booster_type_1: null
+
+2019-08-24 00:00:19 - [TEST_STEP][PASSED] - summary_with_free_spin_1 = with_free_spin: null
+
+2019-08-24 00:00:19 - [TEST_STEP][PASSED] - summary_with_free_spin_1 = summary_with_free_spin_1: null
+
+2019-08-24 00:00:19 - [TEST_STEP][PASSED] - summary_feature_track_1 = feature_track: null
+
+2019-08-24 00:00:19 - [TEST_STEP][PASSED] - summary_feature_track_1 = summary_feature_track_1: null
+
+2019-08-24 00:00:19 - [TEST_STEP][PASSED] - summary_totalCount = totalCount: null
+
+2019-08-24 00:00:19 - [TEST_STEP][PASSED] - summary_totalCount = summary_totalCount: null
+
+2019-08-24 00:00:19 - [MESSAGE][PASSED] - Verify response successfully
+
+2019-08-24 00:00:19 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2019-08-24 00:00:19 - [TEST_STEP][PASSED] - sendRequestAndVerify(findTestObject("INT/RGS(M4)/BOpth_summary", ["url_krug":url_krug, "userid":Userid, "start_date":start_date, "end_date":end_date, "partner":Partner])): Send request and verify the response successfully
+
+2019-08-24 00:00:20 - [MESSAGE][INFO] - HAR: /Users/eiralee/Katalon_Script/SuperWild/Reports/20190823_235951/INT/superWild_7/20190823_235951/requests/main/11.har
+
+2019-08-24 00:00:20 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2019-08-24 00:00:20 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2019-08-24 00:00:20 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2019-08-24 00:00:20 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2019-08-24 00:00:20 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-08-24 00:00:20 - [TEST_STEP][PASSED] - getStatusCode()).isEqualTo(200): null
+
+2019-08-24 00:00:20 - [TEST_STEP][PASSED] - boquery = new groovy.json.JsonSlurper(): null
+
+2019-08-24 00:00:20 - [TEST_STEP][PASSED] - result_boquery = boquery.parseText(response.getResponseBodyContent()): null
+
+2019-08-24 00:00:20 - [TEST_STEP][PASSED] - bo_top_level = result_boquery: null
+
+2019-08-24 00:00:20 - [TEST_STEP][PASSED] - bo_top_level = bo_top_level: null
+
+2019-08-24 00:00:20 - [TEST_STEP][PASSED] - bo_payload = payload: null
+
+2019-08-24 00:00:20 - [TEST_STEP][PASSED] - bo_payload = bo_payload: null
+
+2019-08-24 00:00:20 - [TEST_STEP][PASSED] - bo_balance = balance: null
+
+2019-08-24 00:00:20 - [TEST_STEP][PASSED] - latest_bo_balance = Double.parseDouble(bo_balance) * 100: null
+
+2019-08-24 00:00:20 - [TEST_STEP][PASSED] - latest_bo_balance = latest_bo_balance: null
+
+2019-08-24 00:00:20 - [TEST_STEP][PASSED] - bo_round_id = roundId: null
+
+2019-08-24 00:00:20 - [TEST_STEP][PASSED] - bo_round_id = bo_round_id: null
+
+2019-08-24 00:00:20 - [TEST_STEP][PASSED] - bo_timeStamp = timeStamp: null
+
+2019-08-24 00:00:20 - [TEST_STEP][PASSED] - bo_timeStamp = bo_timeStamp: null
+
+2019-08-24 00:00:20 - [TEST_STEP][PASSED] - bo_totalCount = totalCount: null
+
+2019-08-24 00:00:20 - [TEST_STEP][PASSED] - bo_totalCount = bo_totalCount: null
+
+2019-08-24 00:00:20 - [MESSAGE][PASSED] - Verify response successfully
+
+2019-08-24 00:00:20 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2019-08-24 00:00:20 - [TEST_STEP][PASSED] - summary_top_level = summary_top_level: null
+
+2019-08-24 00:00:20 - [TEST_STEP][PASSED] - summary_message = message: null
+
+2019-08-24 00:00:20 - [TEST_STEP][PASSED] - summary_provider = provider: null
+
+2019-08-24 00:00:20 - [TEST_STEP][PASSED] - summary_type = type: null
+
+2019-08-24 00:00:20 - [TEST_STEP][PASSED] - summary_bonus_data = bonus_data: null
+
+2019-08-24 00:00:20 - [TEST_STEP][PASSED] - summary_date = summary_date_1 + "Z": null
+
+2019-08-24 00:00:20 - [TEST_STEP][PASSED] - println("GlobalVariable.summary_round_id_1: " + summary_round_id_1): null
+
+2019-08-24 00:00:20 - [TEST_STEP][PASSED] - println("M4_history_round_id: " + M4_history_round_id): null
+
+2019-08-24 00:00:20 - [TEST_STEP][PASSED] - println("GlobalVariable.summary_total_bet_1: " + summary_total_bet_1): null
+
+2019-08-24 00:00:20 - [TEST_STEP][PASSED] - println("GlobalVariable.M4_history_total_bet: " + M4_history_total_bet): null
+
+2019-08-24 00:00:20 - [TEST_STEP][PASSED] - println("GlobalVariable.summary_bet_value_1: " + summary_bet_value_1): null
+
+2019-08-24 00:00:20 - [TEST_STEP][PASSED] - println("GlobalVariable.summary_total_win_1: " + summary_total_win_1): null
+
+2019-08-24 00:00:20 - [TEST_STEP][PASSED] - println("GlobalVariable.M4_history_total_won: " + M4_history_total_won): null
+
+2019-08-24 00:00:20 - [TEST_STEP][PASSED] - println("GlobalVariable.summary_balance_1: " + summary_balance_1): null
+
+2019-08-24 00:00:20 - [TEST_STEP][PASSED] - println("summary_date: " + summary_date): null
+
+2019-08-24 00:00:20 - [TEST_STEP][PASSED] - println("GlobalVariable.M4_history_date: " + M4_history_date): null
+
+2019-08-24 00:00:20 - [TEST_STEP][PASSED] - println("GlobalVariable.summary_round_type_1: " + summary_round_type_1): null
+
+2019-08-24 00:00:20 - [TEST_STEP][PASSED] - println("GlobalVariable.M4_history_type: " + M4_history_type): null
+
+2019-08-24 00:00:20 - [TEST_STEP][PASSED] - println("GlobalVariable.summary_totalCount is: " + summary_totalCount): null
+
+2019-08-24 00:00:20 - [TEST_STEP][PASSED] - println("GlobalVariable.bo_totalCount  is: " + bo_totalCount): null
+
+2019-08-24 00:00:20 - [TEST_STEP][PASSED] - assert summary_message == null: null
+
+2019-08-24 00:00:20 - [TEST_STEP][PASSED] - assert summary_round_id_1 == M4_history_round_id: null
+
+2019-08-24 00:00:20 - [TEST_STEP][PASSED] - assert summary_total_bet_1 == M4_history_total_bet: null
+
+2019-08-24 00:00:20 - [TEST_STEP][PASSED] - assert summary_bet_value_1 == M4_history_total_bet: null
+
+2019-08-24 00:00:20 - [TEST_STEP][PASSED] - assert summary_total_win_1 == M4_history_total_won: null
+
+2019-08-24 00:00:20 - [TEST_STEP][PASSED] - M4_history_balance_str = Long.toString(M4_history_balance): null
+
+2019-08-24 00:00:20 - [TEST_STEP][PASSED] - println("M4_history_balance_str: " + M4_history_balance_str): null
+
+2019-08-24 00:00:20 - [TEST_STEP][PASSED] - assert summary_balance_1 == M4_history_balance_str: null
+
+2019-08-24 00:00:20 - [TEST_STEP][PASSED] - assert summary_date == M4_history_date: null
+
+2019-08-24 00:00:20 - [TEST_STEP][PASSED] - assert summary_round_type_1 == M4_history_type: null
+
+2019-08-24 00:00:20 - [TEST_STEP][PASSED] - assert summary_provider == null: null
+
+2019-08-24 00:00:20 - [TEST_STEP][PASSED] - assert summary_type == null: null
+
+2019-08-24 00:00:20 - [TEST_STEP][PASSED] - assert summary_bonus_data == null: null
+
+2019-08-24 00:00:20 - [TEST_STEP][PASSED] - assert summary_booster_type_1 == null: null
+
+2019-08-24 00:00:20 - [TEST_STEP][PASSED] - assert summary_with_free_spin_1 == false: null
+
+2019-08-24 00:00:20 - [TEST_STEP][PASSED] - assert summary_feature_track_1.size() == 0: null
+
+2019-08-24 00:00:20 - [TEST_STEP][PASSED] - assert summary_totalCount == bo_totalCount: null
+
+2019-08-24 00:00:20 - [MESSAGE][FAILED] - Unable to call Test Case 'Test Cases/INT_env/compare_values/7_summary_page_baseSpin_verify_value' (Root cause: com.kms.katalon.core.exception.StepFailedException: Call Test Case 'Test Cases/INT_env/compare_values/7_summary_page_baseSpin_verify_value' failed
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:63)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:350)
+	at 7_summary_page_CALL.run(7_summary_page_CALL:167)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:150)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:123)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:87)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1566576003341.run(TempTestSuite1566576003341.groovy:35)
+Caused by: Assertion failed: 
+
+assert GlobalVariable.summary_totalCount  == GlobalVariable.bo_totalCount
+                      |                   |                 |
+                      1778                false             1780
+
+	at 7_summary_page_baseSpin_verify_value.run(7_summary_page_baseSpin_verify_value:123)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more
+)</system-out>
+            <system-err>2019-08-24 00:00:05 - [TEST_CASE][FAILED] - Test Cases/INT_env/7_summary_page_CALL: Test Cases/INT_env/7_summary_page_CALL FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Call Test Case 'Test Cases/INT_env/compare_values/7_summary_page_baseSpin_verify_value' failed
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:63)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:350)
+	at 7_summary_page_CALL.run(7_summary_page_CALL:167)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:150)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:123)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:87)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1566576003341.run(TempTestSuite1566576003341.groovy:35)
+Caused by: Assertion failed: 
+
+assert GlobalVariable.summary_totalCount  == GlobalVariable.bo_totalCount
+                      |                   |                 |
+                      1778                false             1780
+
+	at 7_summary_page_baseSpin_verify_value.run(7_summary_page_baseSpin_verify_value:123)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more</system-err>
+        </testcase>
+        <system-out>2019-08-24 00:00:05 - [TEST_SUITE][INCOMPLETE] - superWild_7: null</system-out>
+        <system-err>2019-08-24 00:00:05 - [TEST_SUITE][INCOMPLETE] - superWild_7: null</system-err>
+    </testsuite>
+</testsuites>

@@ -1,0 +1,1378 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<testsuites name="superWild_7" time="11" tests="1" failures="0" errors="0">
+    <testsuite name="superWild_7" tests="1" failures="0" errors="0" time="11" timestamp="2019-08-23 16:02:15" hostname="eiralee - 172.16.60.194" id="Test Suites/INT/superWild_7">
+        <properties>
+            <property name="deviceName" value=""/>
+            <property name="devicePlatform" value=""/>
+            <property name="logFolder" value="/Users/eiralee/Katalon_Script/SuperWild/Reports/20190823_160201/INT/superWild_7/20190823_160201"/>
+            <property name="logFiles" value="/Users/eiralee/Katalon_Script/SuperWild/Reports/20190823_160201/INT/superWild_7/20190823_160201/execution0.log"/>
+            <property name="attachments" value=""/>
+            <property name="hostName" value="eiralee - 172.16.60.194"/>
+            <property name="hostAddress" value="172.16.60.194"/>
+            <property name="os" value="Mac OS X 64bit"/>
+            <property name="katalonVersion" value="6.3.1.2"/>
+        </properties>
+        <testcase name="Test Cases/INT_env/7_summary_page_CALL" classname="Test Cases/INT_env/7_summary_page_CALL" status="PASSED">
+            <system-out>2019-08-23 16:02:15 - [TEST_CASE][PASSED] - Test Cases/INT_env/7_summary_page_CALL: Test Cases/INT_env/7_summary_page_CALL
+
+2019-08-23 16:02:17 - [TEST_STEP][PASSED] - top_level = new java.util.ArrayList(): null
+
+2019-08-23 16:02:17 - [TEST_STEP][PASSED] - top_level.add("message"): null
+
+2019-08-23 16:02:17 - [TEST_STEP][PASSED] - top_level.add("data"): null
+
+2019-08-23 16:02:17 - [TEST_STEP][PASSED] - data_level = new java.util.ArrayList(): null
+
+2019-08-23 16:02:17 - [TEST_STEP][PASSED] - data_level.add("summary"): null
+
+2019-08-23 16:02:17 - [TEST_STEP][PASSED] - data_level.add("payload"): null
+
+2019-08-23 16:02:17 - [TEST_STEP][PASSED] - data_level.add("query"): null
+
+2019-08-23 16:02:17 - [TEST_STEP][PASSED] - payload_detail = new java.util.ArrayList(): null
+
+2019-08-23 16:02:17 - [TEST_STEP][PASSED] - payload_detail.add("round_id"): null
+
+2019-08-23 16:02:17 - [TEST_STEP][PASSED] - payload_detail.add("total_bet"): null
+
+2019-08-23 16:02:17 - [TEST_STEP][PASSED] - payload_detail.add("bet_value"): null
+
+2019-08-23 16:02:17 - [TEST_STEP][PASSED] - payload_detail.add("total_win"): null
+
+2019-08-23 16:02:17 - [TEST_STEP][PASSED] - payload_detail.add("balance"): null
+
+2019-08-23 16:02:17 - [TEST_STEP][PASSED] - payload_detail.add("date"): null
+
+2019-08-23 16:02:17 - [TEST_STEP][PASSED] - payload_detail.add("round_type"): null
+
+2019-08-23 16:02:17 - [TEST_STEP][PASSED] - payload_detail.add("bonus_provider"): null
+
+2019-08-23 16:02:17 - [TEST_STEP][PASSED] - payload_detail.add("booster_type"): null
+
+2019-08-23 16:02:17 - [TEST_STEP][PASSED] - payload_detail.add("with_free_spin"): null
+
+2019-08-23 16:02:17 - [TEST_STEP][PASSED] - payload_detail.add("feature_track"): null
+
+2019-08-23 16:02:17 - [TEST_STEP][PASSED] - bonus_provider = new java.util.ArrayList(): null
+
+2019-08-23 16:02:17 - [TEST_STEP][PASSED] - bonus_provider.add("provider"): null
+
+2019-08-23 16:02:17 - [TEST_STEP][PASSED] - bonus_provider.add("type"): null
+
+2019-08-23 16:02:17 - [TEST_STEP][PASSED] - bonus_provider.add("bonus_data"): null
+
+2019-08-23 16:02:17 - [TEST_STEP][PASSED] - query_detail = new java.util.ArrayList(): null
+
+2019-08-23 16:02:17 - [TEST_STEP][PASSED] - query_detail.add("pageNumber"): null
+
+2019-08-23 16:02:17 - [TEST_STEP][PASSED] - query_detail.add("pageSize"): null
+
+2019-08-23 16:02:17 - [TEST_STEP][PASSED] - query_detail.add("totalCount"): null
+
+2019-08-23 16:02:17 - [TEST_STEP][PASSED] - query_detail.add("serverTime"): null
+
+2019-08-23 16:02:17 - [TEST_STEP][PASSED] - sendRequestAndVerify(findTestObject("INT/Wallet/Get_Session_Token", ["url_krug_gw":url_krug_gw, "partner":Partner, "secret_key":secret_key, "userid":Userid])): Send request and verify the response successfully
+
+2019-08-23 16:02:17 - [MESSAGE][INFO] - HAR: /Users/eiralee/Katalon_Script/SuperWild/Reports/20190823_160201/INT/superWild_7/20190823_160201/requests/main/0.har
+
+2019-08-23 16:02:17 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2019-08-23 16:02:18 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2019-08-23 16:02:18 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2019-08-23 16:02:18 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2019-08-23 16:02:18 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-08-23 16:02:18 - [TEST_STEP][PASSED] - getStatusCode()).isEqualTo(200): null
+
+2019-08-23 16:02:18 - [TEST_STEP][PASSED] - getResponseText()).contains("session_token"): null
+
+2019-08-23 16:02:18 - [TEST_STEP][PASSED] - getsession = new groovy.json.JsonSlurper(): null
+
+2019-08-23 16:02:18 - [TEST_STEP][PASSED] - result_getsession = getsession.parseText(response.getResponseBodyContent()): null
+
+2019-08-23 16:02:18 - [TEST_STEP][PASSED] - session_token = session_token: null
+
+2019-08-23 16:02:18 - [TEST_STEP][PASSED] - println("...value extracted is :" + session_token): null
+
+2019-08-23 16:02:18 - [TEST_STEP][PASSED] - session_token = session_token: null
+
+2019-08-23 16:02:19 - [TEST_STEP][PASSED] - println("GlobalVariable is :" + session_token): null
+
+2019-08-23 16:02:19 - [TEST_STEP][PASSED] - internal_balance = internal_balance: null
+
+2019-08-23 16:02:19 - [TEST_STEP][PASSED] - internal_balance = internal_balance: null
+
+2019-08-23 16:02:19 - [MESSAGE][PASSED] - Verify response successfully
+
+2019-08-23 16:02:19 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2019-08-23 16:02:19 - [TEST_STEP][PASSED] - M4_login = sendRequestAndVerify(findTestObject("INT/RGS(M4)/M4_Login", ["partner":Partner, "game_code":Game_code, "session_token":session_token])): Send request and verify the response successfully
+
+2019-08-23 16:02:20 - [MESSAGE][INFO] - HAR: /Users/eiralee/Katalon_Script/SuperWild/Reports/20190823_160201/INT/superWild_7/20190823_160201/requests/main/1.har
+
+2019-08-23 16:02:20 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2019-08-23 16:02:20 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2019-08-23 16:02:20 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2019-08-23 16:02:20 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2019-08-23 16:02:20 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-08-23 16:02:20 - [TEST_STEP][PASSED] - getStatusCode()).isEqualTo(200): null
+
+2019-08-23 16:02:20 - [TEST_STEP][PASSED] - newline = System.getProperty("line.separator"): null
+
+2019-08-23 16:02:20 - [TEST_STEP][PASSED] - M4_login = new groovy.json.JsonSlurper(): null
+
+2019-08-23 16:02:20 - [TEST_STEP][PASSED] - result_M4_login = M4_login.parseText(response.getResponseBodyContent()): null
+
+2019-08-23 16:02:20 - [TEST_STEP][PASSED] - M4_login_user_id = user_id: null
+
+2019-08-23 16:02:20 - [TEST_STEP][PASSED] - println("playerid is: " + M4_login_user_id): null
+
+2019-08-23 16:02:20 - [TEST_STEP][PASSED] - M4_login_user_id = M4_login_user_id: null
+
+2019-08-23 16:02:20 - [MESSAGE][PASSED] - Verify response successfully
+
+2019-08-23 16:02:20 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2019-08-23 16:02:20 - [TEST_STEP][PASSED] - M4_login_user_id = M4_login_user_id: null
+
+2019-08-23 16:02:20 - [TEST_STEP][PASSED] - M4_init = sendRequestAndVerify(findTestObject("INT/RGS(M4)/M4_init", ["partner":Partner, "M4_recorder":M4_recorder, "M4_login_user_id":M4_login_user_id])): Send request and verify the response successfully
+
+2019-08-23 16:02:20 - [MESSAGE][INFO] - HAR: /Users/eiralee/Katalon_Script/SuperWild/Reports/20190823_160201/INT/superWild_7/20190823_160201/requests/main/2.har
+
+2019-08-23 16:02:20 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2019-08-23 16:02:20 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2019-08-23 16:02:20 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2019-08-23 16:02:20 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2019-08-23 16:02:20 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-08-23 16:02:20 - [TEST_STEP][PASSED] - getStatusCode()).isEqualTo(200): null
+
+2019-08-23 16:02:20 - [TEST_STEP][PASSED] - newline = System.getProperty("line.separator"): null
+
+2019-08-23 16:02:20 - [TEST_STEP][PASSED] - M4_init = new groovy.json.JsonSlurper(): null
+
+2019-08-23 16:02:20 - [TEST_STEP][PASSED] - result_M4_init = M4_init.parseText(response.getResponseBodyContent()): null
+
+2019-08-23 16:02:20 - [TEST_STEP][PASSED] - rgs_session_token = session_token: null
+
+2019-08-23 16:02:20 - [TEST_STEP][PASSED] - rgs_session_token = rgs_session_token: null
+
+2019-08-23 16:02:20 - [TEST_STEP][PASSED] - M4_init_balance = balance: null
+
+2019-08-23 16:02:20 - [TEST_STEP][PASSED] - M4_init_balance = M4_init_balance: null
+
+2019-08-23 16:02:20 - [TEST_STEP][PASSED] - game_code = genesis_id: null
+
+2019-08-23 16:02:20 - [TEST_STEP][PASSED] - game_code = game_code: null
+
+2019-08-23 16:02:20 - [TEST_STEP][PASSED] - M4_free_round = free_round: null
+
+2019-08-23 16:02:20 - [TEST_STEP][PASSED] - M4_free_round = M4_free_round: null
+
+2019-08-23 16:02:20 - [MESSAGE][PASSED] - Verify response successfully
+
+2019-08-23 16:02:20 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2019-08-23 16:02:20 - [TEST_STEP][PASSED] - rgs_session_token = rgs_session_token: null
+
+2019-08-23 16:02:20 - [TEST_STEP][PASSED] - M4_spin_reels_symbols = M4_spin_reels_symbols: null
+
+2019-08-23 16:02:20 - [TEST_STEP][PASSED] - spin_result = sendRequestAndVerify(findTestObject("INT/RGS(M4)/1_M4_spin", ["M4_login_user_id":M4_login_user_id, "rgs_session_token":rgs_session_token, "partner":Partner])): Send request and verify the response successfully
+
+2019-08-23 16:02:22 - [MESSAGE][INFO] - HAR: /Users/eiralee/Katalon_Script/SuperWild/Reports/20190823_160201/INT/superWild_7/20190823_160201/requests/main/3.har
+
+2019-08-23 16:02:22 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2019-08-23 16:02:22 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2019-08-23 16:02:22 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2019-08-23 16:02:22 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2019-08-23 16:02:22 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-08-23 16:02:22 - [TEST_STEP][PASSED] - getStatusCode()).isEqualTo(200): null
+
+2019-08-23 16:02:22 - [TEST_STEP][PASSED] - newline = System.getProperty("line.separator"): null
+
+2019-08-23 16:02:22 - [TEST_STEP][PASSED] - M4_spin = new groovy.json.JsonSlurper(): null
+
+2019-08-23 16:02:22 - [TEST_STEP][PASSED] - result_M4_spin = M4_spin.parseText(response.getResponseBodyContent()): null
+
+2019-08-23 16:02:22 - [TEST_STEP][PASSED] - M4_spin_current_balance = current_balance: null
+
+2019-08-23 16:02:22 - [TEST_STEP][PASSED] - M4_spin_current_balance = M4_spin_current_balance: null
+
+2019-08-23 16:02:22 - [TEST_STEP][PASSED] - M4_spin_transaction_id = causality: null
+
+2019-08-23 16:02:22 - [TEST_STEP][PASSED] - M4_spin_transaction_id = M4_spin_transaction_id: null
+
+2019-08-23 16:02:22 - [TEST_STEP][PASSED] - M4_spin_round_id = round_id: null
+
+2019-08-23 16:02:22 - [TEST_STEP][PASSED] - M4_spin_round_id = M4_spin_round_id: null
+
+2019-08-23 16:02:22 - [TEST_STEP][PASSED] - M4_spin_line_wins = line_wins: null
+
+2019-08-23 16:02:22 - [TEST_STEP][PASSED] - M4_spin_line_wins = M4_spin_line_wins: null
+
+2019-08-23 16:02:22 - [TEST_STEP][PASSED] - M4_total_bonus_spins_int = total_bonus_spins: null
+
+2019-08-23 16:02:22 - [TEST_STEP][PASSED] - println("******M4_total_bonus_spins type is:*******" + newline + getClass().getName()): null
+
+2019-08-23 16:02:22 - [TEST_STEP][PASSED] - M4_total_bonus_spins_int = M4_total_bonus_spins_int: null
+
+2019-08-23 16:02:22 - [TEST_STEP][PASSED] - M4_total_bonus_spins = Integer.toString(M4_total_bonus_spins_int): null
+
+2019-08-23 16:02:22 - [TEST_STEP][PASSED] - M4_total_bonus_spins = M4_total_bonus_spins: null
+
+2019-08-23 16:02:22 - [TEST_STEP][PASSED] - println("M4_total_bonus_spins is:" + M4_total_bonus_spins): null
+
+2019-08-23 16:02:22 - [TEST_STEP][PASSED] - M4_spin_bonus_data = bonus_data: null
+
+2019-08-23 16:02:22 - [TEST_STEP][PASSED] - M4_spin_features_triggered = result_M4_spin: null
+
+2019-08-23 16:02:22 - [TEST_STEP][PASSED] - wild = []: null
+
+2019-08-23 16:02:22 - [TEST_STEP][PASSED] - wild[0] = "WILD_Expanding": null
+
+2019-08-23 16:02:22 - [TEST_STEP][PASSED] - wild[1] = "WILD_Normal": null
+
+2019-08-23 16:02:22 - [TEST_STEP][PASSED] - wild[2] = "WILD_Double": null
+
+2019-08-23 16:02:22 - [TEST_STEP][PASSED] - wild[3] = "WILD_ExtraFG": null
+
+2019-08-23 16:02:22 - [TEST_STEP][PASSED] - wild[4] = "WILD_Triple": null
+
+2019-08-23 16:02:22 - [TEST_STEP][PASSED] - wildList = Arrays.asList(wild): null
+
+2019-08-23 16:02:22 - [TEST_STEP][PASSED] - wildList = wildList: null
+
+2019-08-23 16:02:22 - [TEST_STEP][PASSED] - free_spin_reel_counter = []: null
+
+2019-08-23 16:02:22 - [TEST_STEP][PASSED] - free_spin_reel_counter[0] = 0: null
+
+2019-08-23 16:02:22 - [TEST_STEP][PASSED] - free_spin_reel_counter[1] = 0: null
+
+2019-08-23 16:02:22 - [TEST_STEP][PASSED] - free_spin_reel_counter[2] = 0: null
+
+2019-08-23 16:02:22 - [TEST_STEP][PASSED] - M4_spin_reels = reels: null
+
+2019-08-23 16:02:22 - [TEST_STEP][PASSED] - for ([i = 0, i &lt; M4_spin_reels.size(), (i++)]): null
+
+2019-08-23 16:02:22 - [TEST_STEP][PASSED] - symbols = symbols: null
+
+2019-08-23 16:02:22 - [TEST_STEP][PASSED] - for ([j = 0, j &lt; symbols.size(), (j++)]): null
+
+2019-08-23 16:02:22 - [TEST_STEP][PASSED] - symbol = symbol: null
+
+2019-08-23 16:02:22 - [TEST_STEP][PASSED] - println(symbol): null
+
+2019-08-23 16:02:22 - [TEST_STEP][PASSED] - if (i == 2 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-23 16:02:22 - [TEST_STEP][PASSED] - if (i == 3 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-23 16:02:22 - [TEST_STEP][PASSED] - if (i == 4 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-23 16:02:22 - [TEST_STEP][PASSED] - symbol = symbol: null
+
+2019-08-23 16:02:22 - [TEST_STEP][PASSED] - println(symbol): null
+
+2019-08-23 16:02:22 - [TEST_STEP][PASSED] - if (i == 2 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-23 16:02:22 - [TEST_STEP][PASSED] - if (i == 3 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-23 16:02:22 - [TEST_STEP][PASSED] - if (i == 4 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-23 16:02:22 - [TEST_STEP][PASSED] - symbol = symbol: null
+
+2019-08-23 16:02:22 - [TEST_STEP][PASSED] - println(symbol): null
+
+2019-08-23 16:02:22 - [TEST_STEP][PASSED] - if (i == 2 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-23 16:02:22 - [TEST_STEP][PASSED] - if (i == 3 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-23 16:02:22 - [TEST_STEP][PASSED] - if (i == 4 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-23 16:02:22 - [TEST_STEP][PASSED] - symbols = symbols: null
+
+2019-08-23 16:02:22 - [TEST_STEP][PASSED] - for ([j = 0, j &lt; symbols.size(), (j++)]): null
+
+2019-08-23 16:02:22 - [TEST_STEP][PASSED] - symbol = symbol: null
+
+2019-08-23 16:02:22 - [TEST_STEP][PASSED] - println(symbol): null
+
+2019-08-23 16:02:22 - [TEST_STEP][PASSED] - if (i == 2 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-23 16:02:22 - [TEST_STEP][PASSED] - if (i == 3 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-23 16:02:22 - [TEST_STEP][PASSED] - if (i == 4 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-23 16:02:22 - [TEST_STEP][PASSED] - symbol = symbol: null
+
+2019-08-23 16:02:22 - [TEST_STEP][PASSED] - println(symbol): null
+
+2019-08-23 16:02:22 - [TEST_STEP][PASSED] - if (i == 2 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-23 16:02:22 - [TEST_STEP][PASSED] - if (i == 3 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-23 16:02:22 - [TEST_STEP][PASSED] - if (i == 4 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-23 16:02:22 - [TEST_STEP][PASSED] - symbol = symbol: null
+
+2019-08-23 16:02:22 - [TEST_STEP][PASSED] - println(symbol): null
+
+2019-08-23 16:02:22 - [TEST_STEP][PASSED] - if (i == 2 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-23 16:02:22 - [TEST_STEP][PASSED] - if (i == 3 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-23 16:02:22 - [TEST_STEP][PASSED] - if (i == 4 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-23 16:02:22 - [TEST_STEP][PASSED] - symbols = symbols: null
+
+2019-08-23 16:02:22 - [TEST_STEP][PASSED] - for ([j = 0, j &lt; symbols.size(), (j++)]): null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - symbol = symbol: null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - println(symbol): null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - if (i == 2 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - if (i == 3 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - if (i == 4 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - symbol = symbol: null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - println(symbol): null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - if (i == 2 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - if (i == 3 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - if (i == 4 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - symbol = symbol: null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - println(symbol): null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - if (i == 2 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - if (i == 3 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - if (i == 4 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - symbols = symbols: null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - for ([j = 0, j &lt; symbols.size(), (j++)]): null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - symbol = symbol: null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - println(symbol): null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - if (i == 2 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - if (i == 3 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - if (i == 4 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - symbol = symbol: null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - println(symbol): null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - if (i == 2 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - if (i == 3 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - if (i == 4 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - symbol = symbol: null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - println(symbol): null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - if (i == 2 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - if (i == 3 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - if (i == 4 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - symbols = symbols: null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - for ([j = 0, j &lt; symbols.size(), (j++)]): null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - symbol = symbol: null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - println(symbol): null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - if (i == 2 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - if (i == 3 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - if (i == 4 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - symbol = symbol: null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - println(symbol): null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - if (i == 2 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - if (i == 3 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - if (i == 4 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - symbol = symbol: null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - println(symbol): null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - if (i == 2 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - if (i == 3 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - if (i == 4 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - free_spin_reel_counter = free_spin_reel_counter: null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - println("reel 3 wild found: " + free_spin_reel_counter[0]): null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - println("reel 4 wild found: " + free_spin_reel_counter[1]): null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - println("reel 5 wild found: " + free_spin_reel_counter[2]): null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - M4_spin_reels = M4_spin_reels: null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - M4_spin_reels_symbols = symbol: null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - M4_spin_reels_symbols = M4_spin_reels_symbols: null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - M4_spin_reel_wins = reel_wins: null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - M4_spin_reel_wins = M4_spin_reel_wins: null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - println("GlobalVariable.M4_spin_reel_wins is: " + M4_spin_reel_wins): null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - M4_spin_total_bonus_win_this_round = total_bonus_win_this_round: null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - M4_spin_total_bonus_win_this_round = M4_spin_total_bonus_win_this_round: null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - println("GlobalVariable.M4_spin_total_bonus_win_this_round is: " + M4_spin_total_bonus_win_this_round): null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - M4_spin_bonus_spin_result = spin_result: null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - M4_spin_bonus_spin_result = M4_spin_bonus_spin_result: null
+
+2019-08-23 16:02:23 - [MESSAGE][PASSED] - Verify response successfully
+
+2019-08-23 16:02:23 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - sendRequestAndVerify(findTestObject("INT/RGS(M4)/Summary_history", ["game_code":"SW_M4_V1_RECORDER", "partner":Partner, "userid":Userid])): Send request and verify the response successfully
+
+2019-08-23 16:02:23 - [MESSAGE][INFO] - HAR: /Users/eiralee/Katalon_Script/SuperWild/Reports/20190823_160201/INT/superWild_7/20190823_160201/requests/main/4.har
+
+2019-08-23 16:02:23 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2019-08-23 16:02:23 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - getStatusCode()).isEqualTo(200): null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - summary_detail = new groovy.json.JsonSlurper(): null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - summary_history = summary_detail.parseText(response.getResponseBodyContent()): null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - summary_top_level = summary_history: null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - summary_top_level = summary_top_level: null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - summary_data = data: null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - summary_data = summary_data: null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - summary_query = query: null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - summary_query = summary_query: null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - summary_payload = payload: null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - summary_payload = summary_payload: null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - summary_round_id_1 = round_id: null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - summary_round_id_1 = summary_round_id_1: null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - summary_total_bet_1 = total_bet: null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - summary_total_bet_1 = summary_total_bet_1: null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - summary_bet_value_1 = bet_value: null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - summary_bet_value_1 = summary_bet_value_1: null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - summary_total_win_1 = total_win: null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - summary_total_win_1 = summary_total_win_1: null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - summary_balance_1 = balance: null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - summary_balance_1 = summary_balance_1: null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - summary_date_1 = date: null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - summary_date_1 = summary_date_1: null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - summary_round_type_1 = round_type: null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - summary_round_type_1 = summary_round_type_1: null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - summary_bonus_provider_1 = bonus_provider: null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - summary_bonus_provider_1 = summary_bonus_provider_1: null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - summary_booster_type_1 = booster_type: null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - summary_booster_type_1 = summary_booster_type_1: null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - summary_with_free_spin_1 = with_free_spin: null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - summary_with_free_spin_1 = summary_with_free_spin_1: null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - summary_feature_track_1 = feature_track: null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - summary_feature_track_1 = summary_feature_track_1: null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - summary_totalCount = totalCount: null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - summary_totalCount = summary_totalCount: null
+
+2019-08-23 16:02:23 - [MESSAGE][PASSED] - Verify response successfully
+
+2019-08-23 16:02:23 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - summary_top_level = summary_top_level: null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - summary_payload = payload[0].keySet(): null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - summary_bonus_provider = bonus_provider.keySet(): null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - summary_feature_track = feature_track: null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - summary_top_level_key = summary_top_level.keySet(): null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - summary_data_key = summary_data.keySet(): null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - summary_query_key = query.keySet(): null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - summary_top_level_keylist = new java.util.ArrayList(summary_top_level_key): null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - Collections.sort(top_level): null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - Collections.sort(summary_top_level_keylist): null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - summary_data_key_list = new java.util.ArrayList(summary_data_key): null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - Collections.sort(data_level): null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - Collections.sort(summary_data_key_list): null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - summary_payload_list = new java.util.ArrayList(summary_payload): null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - Collections.sort(payload_detail): null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - Collections.sort(summary_payload_list): null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - summary_bonus_provider_list = new java.util.ArrayList(summary_bonus_provider): null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - Collections.sort(bonus_provider): null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - Collections.sort(summary_bonus_provider_list): null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - summary_query_key_list = new java.util.ArrayList(summary_query_key): null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - Collections.sort(query_detail): null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - Collections.sort(summary_query_key_list): null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - println("top_level" + top_level): null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - println("summary_top_level_key" + summary_top_level_key): null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - println("data_level" + data_level): null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - println("summary_data_key" + summary_data_key): null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - println("payload_detail" + payload_detail): null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - println("summary_payload" + summary_payload): null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - println("bonus_provider" + bonus_provider): null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - println("summary_bonus_provider" + summary_bonus_provider): null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - println("summary_feature_track" + summary_feature_track): null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - println("query_detail" + query_detail): null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - println("summary_query_key" + summary_query_key): null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - assert top_level == summary_top_level_keylist: null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - assert data_level == summary_data_key_list: null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - assert payload_detail == summary_payload_list: null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - assert bonus_provider == summary_bonus_provider_list: null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - assert summary_feature_track.size() == 0: null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - assert query_detail == summary_query_key_list: null
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - callTestCase(findTestCase("INT_env/compare_values/7_summary_page_baseSpin_verify_value"), ["Partner":Partner, "Userid":Userid, "Game_code":Game_code, "url_krug_gw":url_krug_gw, "secret_key":secret_key, "M4_recorder":M4_recorder, ... ]): Call Test Case 'Test Cases/INT_env/compare_values/7_summary_page_baseSpin_verify_value' successfully
+
+2019-08-23 16:02:23 - [TEST_CASE][PASSED] - Test Cases/INT_env/compare_values/7_summary_page_baseSpin_verify_value: Test Cases/INT_env/compare_values/7_summary_page_baseSpin_verify_value
+
+2019-08-23 16:02:23 - [TEST_STEP][PASSED] - sendRequestAndVerify(findTestObject("INT/Wallet/Get_Session_Token", ["url_krug_gw":url_krug_gw, "partner":Partner, "secret_key":secret_key, "userid":Userid])): Send request and verify the response successfully
+
+2019-08-23 16:02:24 - [MESSAGE][INFO] - HAR: /Users/eiralee/Katalon_Script/SuperWild/Reports/20190823_160201/INT/superWild_7/20190823_160201/requests/main/5.har
+
+2019-08-23 16:02:24 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2019-08-23 16:02:24 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2019-08-23 16:02:24 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2019-08-23 16:02:24 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2019-08-23 16:02:24 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-08-23 16:02:24 - [TEST_STEP][PASSED] - getStatusCode()).isEqualTo(200): null
+
+2019-08-23 16:02:24 - [TEST_STEP][PASSED] - getResponseText()).contains("session_token"): null
+
+2019-08-23 16:02:24 - [TEST_STEP][PASSED] - getsession = new groovy.json.JsonSlurper(): null
+
+2019-08-23 16:02:24 - [TEST_STEP][PASSED] - result_getsession = getsession.parseText(response.getResponseBodyContent()): null
+
+2019-08-23 16:02:24 - [TEST_STEP][PASSED] - session_token = session_token: null
+
+2019-08-23 16:02:24 - [TEST_STEP][PASSED] - println("...value extracted is :" + session_token): null
+
+2019-08-23 16:02:24 - [TEST_STEP][PASSED] - session_token = session_token: null
+
+2019-08-23 16:02:24 - [TEST_STEP][PASSED] - println("GlobalVariable is :" + session_token): null
+
+2019-08-23 16:02:24 - [TEST_STEP][PASSED] - internal_balance = internal_balance: null
+
+2019-08-23 16:02:24 - [TEST_STEP][PASSED] - internal_balance = internal_balance: null
+
+2019-08-23 16:02:24 - [MESSAGE][PASSED] - Verify response successfully
+
+2019-08-23 16:02:24 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2019-08-23 16:02:24 - [TEST_STEP][PASSED] - M4_login = sendRequestAndVerify(findTestObject("INT/RGS(M4)/M4_Login", ["partner":Partner, "game_code":Game_code, "session_token":session_token])): Send request and verify the response successfully
+
+2019-08-23 16:02:24 - [MESSAGE][INFO] - HAR: /Users/eiralee/Katalon_Script/SuperWild/Reports/20190823_160201/INT/superWild_7/20190823_160201/requests/main/6.har
+
+2019-08-23 16:02:24 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2019-08-23 16:02:24 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2019-08-23 16:02:24 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2019-08-23 16:02:24 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2019-08-23 16:02:24 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-08-23 16:02:24 - [TEST_STEP][PASSED] - getStatusCode()).isEqualTo(200): null
+
+2019-08-23 16:02:24 - [TEST_STEP][PASSED] - newline = System.getProperty("line.separator"): null
+
+2019-08-23 16:02:24 - [TEST_STEP][PASSED] - M4_login = new groovy.json.JsonSlurper(): null
+
+2019-08-23 16:02:24 - [TEST_STEP][PASSED] - result_M4_login = M4_login.parseText(response.getResponseBodyContent()): null
+
+2019-08-23 16:02:24 - [TEST_STEP][PASSED] - M4_login_user_id = user_id: null
+
+2019-08-23 16:02:24 - [TEST_STEP][PASSED] - println("playerid is: " + M4_login_user_id): null
+
+2019-08-23 16:02:24 - [TEST_STEP][PASSED] - M4_login_user_id = M4_login_user_id: null
+
+2019-08-23 16:02:24 - [MESSAGE][PASSED] - Verify response successfully
+
+2019-08-23 16:02:24 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2019-08-23 16:02:24 - [TEST_STEP][PASSED] - M4_login_user_id = M4_login_user_id: null
+
+2019-08-23 16:02:24 - [TEST_STEP][PASSED] - M4_init = sendRequestAndVerify(findTestObject("INT/RGS(M4)/M4_init", ["partner":Partner, "M4_recorder":M4_recorder, "M4_login_user_id":M4_login_user_id])): Send request and verify the response successfully
+
+2019-08-23 16:02:24 - [MESSAGE][INFO] - HAR: /Users/eiralee/Katalon_Script/SuperWild/Reports/20190823_160201/INT/superWild_7/20190823_160201/requests/main/7.har
+
+2019-08-23 16:02:24 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2019-08-23 16:02:25 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - getStatusCode()).isEqualTo(200): null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - newline = System.getProperty("line.separator"): null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - M4_init = new groovy.json.JsonSlurper(): null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - result_M4_init = M4_init.parseText(response.getResponseBodyContent()): null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - rgs_session_token = session_token: null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - rgs_session_token = rgs_session_token: null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - M4_init_balance = balance: null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - M4_init_balance = M4_init_balance: null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - game_code = genesis_id: null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - game_code = game_code: null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - M4_free_round = free_round: null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - M4_free_round = M4_free_round: null
+
+2019-08-23 16:02:25 - [MESSAGE][PASSED] - Verify response successfully
+
+2019-08-23 16:02:25 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - rgs_session_token = rgs_session_token: null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - M4_spin_reels_symbols = M4_spin_reels_symbols: null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - spin_result = sendRequestAndVerify(findTestObject("INT/RGS(M4)/1_M4_spin", ["M4_login_user_id":M4_login_user_id, "rgs_session_token":rgs_session_token, "partner":Partner])): Send request and verify the response successfully
+
+2019-08-23 16:02:25 - [MESSAGE][INFO] - HAR: /Users/eiralee/Katalon_Script/SuperWild/Reports/20190823_160201/INT/superWild_7/20190823_160201/requests/main/8.har
+
+2019-08-23 16:02:25 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2019-08-23 16:02:25 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - getStatusCode()).isEqualTo(200): null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - newline = System.getProperty("line.separator"): null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - M4_spin = new groovy.json.JsonSlurper(): null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - result_M4_spin = M4_spin.parseText(response.getResponseBodyContent()): null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - M4_spin_current_balance = current_balance: null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - M4_spin_current_balance = M4_spin_current_balance: null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - M4_spin_transaction_id = causality: null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - M4_spin_transaction_id = M4_spin_transaction_id: null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - M4_spin_round_id = round_id: null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - M4_spin_round_id = M4_spin_round_id: null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - M4_spin_line_wins = line_wins: null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - M4_spin_line_wins = M4_spin_line_wins: null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - M4_total_bonus_spins_int = total_bonus_spins: null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - println("******M4_total_bonus_spins type is:*******" + newline + getClass().getName()): null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - M4_total_bonus_spins_int = M4_total_bonus_spins_int: null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - M4_total_bonus_spins = Integer.toString(M4_total_bonus_spins_int): null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - M4_total_bonus_spins = M4_total_bonus_spins: null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - println("M4_total_bonus_spins is:" + M4_total_bonus_spins): null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - M4_spin_bonus_data = bonus_data: null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - M4_spin_features_triggered = result_M4_spin: null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - wild = []: null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - wild[0] = "WILD_Expanding": null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - wild[1] = "WILD_Normal": null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - wild[2] = "WILD_Double": null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - wild[3] = "WILD_ExtraFG": null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - wild[4] = "WILD_Triple": null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - wildList = Arrays.asList(wild): null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - wildList = wildList: null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - free_spin_reel_counter = []: null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - free_spin_reel_counter[0] = 0: null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - free_spin_reel_counter[1] = 0: null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - free_spin_reel_counter[2] = 0: null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - M4_spin_reels = reels: null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - for ([i = 0, i &lt; M4_spin_reels.size(), (i++)]): null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - symbols = symbols: null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - for ([j = 0, j &lt; symbols.size(), (j++)]): null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - symbol = symbol: null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - println(symbol): null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - if (i == 2 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - if (i == 3 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - if (i == 4 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - symbol = symbol: null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - println(symbol): null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - if (i == 2 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - if (i == 3 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - if (i == 4 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - symbol = symbol: null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - println(symbol): null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - if (i == 2 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - if (i == 3 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - if (i == 4 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - symbols = symbols: null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - for ([j = 0, j &lt; symbols.size(), (j++)]): null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - symbol = symbol: null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - println(symbol): null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - if (i == 2 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - if (i == 3 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - if (i == 4 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - symbol = symbol: null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - println(symbol): null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - if (i == 2 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - if (i == 3 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - if (i == 4 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - symbol = symbol: null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - println(symbol): null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - if (i == 2 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - if (i == 3 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - if (i == 4 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - symbols = symbols: null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - for ([j = 0, j &lt; symbols.size(), (j++)]): null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - symbol = symbol: null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - println(symbol): null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - if (i == 2 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - if (i == 3 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - if (i == 4 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - symbol = symbol: null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - println(symbol): null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - if (i == 2 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - if (i == 3 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - if (i == 4 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - symbol = symbol: null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - println(symbol): null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - if (i == 2 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - println("wild found on reel 3, adding counter by 1"): null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - free_spin_reel_counter[0] = free_spin_reel_counter[0] + 1: null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - if (i == 3 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - if (i == 4 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - symbols = symbols: null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - for ([j = 0, j &lt; symbols.size(), (j++)]): null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - symbol = symbol: null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - println(symbol): null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - if (i == 2 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - if (i == 3 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - if (i == 4 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - symbol = symbol: null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - println(symbol): null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - if (i == 2 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - if (i == 3 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - if (i == 4 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - symbol = symbol: null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - println(symbol): null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - if (i == 2 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - if (i == 3 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - println("wild found on reel 4, adding counter by 1"): null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - free_spin_reel_counter[1] = free_spin_reel_counter[1] + 1: null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - if (i == 4 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - symbols = symbols: null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - for ([j = 0, j &lt; symbols.size(), (j++)]): null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - symbol = symbol: null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - println(symbol): null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - if (i == 2 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - if (i == 3 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - if (i == 4 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - symbol = symbol: null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - println(symbol): null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - if (i == 2 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - if (i == 3 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - if (i == 4 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - symbol = symbol: null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - println(symbol): null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - if (i == 2 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - if (i == 3 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - if (i == 4 &amp;&amp; wildList.indexOf(symbol) != -1): null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - free_spin_reel_counter = free_spin_reel_counter: null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - println("reel 3 wild found: " + free_spin_reel_counter[0]): null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - println("reel 4 wild found: " + free_spin_reel_counter[1]): null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - println("reel 5 wild found: " + free_spin_reel_counter[2]): null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - M4_spin_reels = M4_spin_reels: null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - M4_spin_reels_symbols = symbol: null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - M4_spin_reels_symbols = M4_spin_reels_symbols: null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - M4_spin_reel_wins = reel_wins: null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - M4_spin_reel_wins = M4_spin_reel_wins: null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - println("GlobalVariable.M4_spin_reel_wins is: " + M4_spin_reel_wins): null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - M4_spin_total_bonus_win_this_round = total_bonus_win_this_round: null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - M4_spin_total_bonus_win_this_round = M4_spin_total_bonus_win_this_round: null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - println("GlobalVariable.M4_spin_total_bonus_win_this_round is: " + M4_spin_total_bonus_win_this_round): null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - M4_spin_bonus_spin_result = spin_result: null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - M4_spin_bonus_spin_result = M4_spin_bonus_spin_result: null
+
+2019-08-23 16:02:25 - [MESSAGE][PASSED] - Verify response successfully
+
+2019-08-23 16:02:25 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - sendRequestAndVerify(findTestObject("INT/RGS(M4)/in_game_history_BaseSpin", ["partner":Partner, "M4_spin_transaction_id":M4_spin_transaction_id, "M4_login_user_id":M4_login_user_id])): Send request and verify the response successfully
+
+2019-08-23 16:02:25 - [MESSAGE][INFO] - HAR: /Users/eiralee/Katalon_Script/SuperWild/Reports/20190823_160201/INT/superWild_7/20190823_160201/requests/main/9.har
+
+2019-08-23 16:02:25 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2019-08-23 16:02:25 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - getStatusCode()).isEqualTo(200): null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - newline = System.getProperty("line.separator"): null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - M4_game_history = new groovy.json.JsonSlurper(): null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - M4_history = M4_game_history.parseText(response.getResponseBodyContent()): null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - M4_history_currency = currency: null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - M4_history_currency = M4_history_currency: null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - M4_history_spin_transaction = spin_transaction: null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - M4_history_spin_transaction = M4_history_spin_transaction: null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - M4_history_date = date: null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - M4_history_date = M4_history_date: null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - M4_history_game_id = game_id: null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - M4_history_tx_id = tx_id: null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - M4_history_causality = causality: null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - M4_history_causality = M4_history_causality: null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - M4_history_round_id = round_id: null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - M4_history_round_id = M4_history_round_id: null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - M4_history_game_total_won = total_won: null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - M4_history_game_total_won = M4_history_game_total_won: null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - M4_history_game_total_bet = total_bet: null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - M4_history_total_bet = M4_history_game_total_bet: null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - M4_history_lines = lines: null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - M4_history_total_won = total_won: null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - M4_history_total_won = M4_history_total_won: null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - M4_history_bonus_name = bonus_name: null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - M4_history_bonus_retrigger = bonus_retrigger: null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - M4_history_key = key: null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - M4_history_data = data: null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - M4_history_total_bet = total_bet: null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - M4_history_total_bet = M4_history_total_bet: null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - M4_history_balance = balance: null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - M4_history_balance = M4_history_balance: null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - M4_history_type = type: null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - M4_history_type = M4_history_type: null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - M4_history_reel_symbol = symbols: null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - M4_history_reel_symbol = M4_history_reel_symbol: null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - M4_history_reels = reels: null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - M4_history_reels = M4_history_reels: null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - M4_history_bonuses1 = bonuses[1]: null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - M4_history_bonuses1 = M4_history_bonuses1: null
+
+2019-08-23 16:02:25 - [MESSAGE][PASSED] - Verify response successfully
+
+2019-08-23 16:02:25 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - M4_history_round_id = M4_history_round_id: null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - M4_history_date = M4_history_date: null
+
+2019-08-23 16:02:25 - [TEST_STEP][PASSED] - sendRequestAndVerify(findTestObject("INT/RGS(M4)/Summary_history", ["game_code":"SW_M4_V1_RECORDER", "partner":Partner, "userid":Userid])): Send request and verify the response successfully
+
+2019-08-23 16:02:26 - [MESSAGE][INFO] - HAR: /Users/eiralee/Katalon_Script/SuperWild/Reports/20190823_160201/INT/superWild_7/20190823_160201/requests/main/10.har
+
+2019-08-23 16:02:26 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2019-08-23 16:02:26 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2019-08-23 16:02:26 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2019-08-23 16:02:26 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2019-08-23 16:02:26 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-08-23 16:02:26 - [TEST_STEP][PASSED] - getStatusCode()).isEqualTo(200): null
+
+2019-08-23 16:02:26 - [TEST_STEP][PASSED] - summary_detail = new groovy.json.JsonSlurper(): null
+
+2019-08-23 16:02:26 - [TEST_STEP][PASSED] - summary_history = summary_detail.parseText(response.getResponseBodyContent()): null
+
+2019-08-23 16:02:26 - [TEST_STEP][PASSED] - summary_top_level = summary_history: null
+
+2019-08-23 16:02:26 - [TEST_STEP][PASSED] - summary_top_level = summary_top_level: null
+
+2019-08-23 16:02:26 - [TEST_STEP][PASSED] - summary_data = data: null
+
+2019-08-23 16:02:26 - [TEST_STEP][PASSED] - summary_data = summary_data: null
+
+2019-08-23 16:02:26 - [TEST_STEP][PASSED] - summary_query = query: null
+
+2019-08-23 16:02:26 - [TEST_STEP][PASSED] - summary_query = summary_query: null
+
+2019-08-23 16:02:26 - [TEST_STEP][PASSED] - summary_payload = payload: null
+
+2019-08-23 16:02:26 - [TEST_STEP][PASSED] - summary_payload = summary_payload: null
+
+2019-08-23 16:02:26 - [TEST_STEP][PASSED] - summary_round_id_1 = round_id: null
+
+2019-08-23 16:02:26 - [TEST_STEP][PASSED] - summary_round_id_1 = summary_round_id_1: null
+
+2019-08-23 16:02:26 - [TEST_STEP][PASSED] - summary_total_bet_1 = total_bet: null
+
+2019-08-23 16:02:26 - [TEST_STEP][PASSED] - summary_total_bet_1 = summary_total_bet_1: null
+
+2019-08-23 16:02:26 - [TEST_STEP][PASSED] - summary_bet_value_1 = bet_value: null
+
+2019-08-23 16:02:26 - [TEST_STEP][PASSED] - summary_bet_value_1 = summary_bet_value_1: null
+
+2019-08-23 16:02:26 - [TEST_STEP][PASSED] - summary_total_win_1 = total_win: null
+
+2019-08-23 16:02:26 - [TEST_STEP][PASSED] - summary_total_win_1 = summary_total_win_1: null
+
+2019-08-23 16:02:26 - [TEST_STEP][PASSED] - summary_balance_1 = balance: null
+
+2019-08-23 16:02:26 - [TEST_STEP][PASSED] - summary_balance_1 = summary_balance_1: null
+
+2019-08-23 16:02:26 - [TEST_STEP][PASSED] - summary_date_1 = date: null
+
+2019-08-23 16:02:26 - [TEST_STEP][PASSED] - summary_date_1 = summary_date_1: null
+
+2019-08-23 16:02:26 - [TEST_STEP][PASSED] - summary_round_type_1 = round_type: null
+
+2019-08-23 16:02:26 - [TEST_STEP][PASSED] - summary_round_type_1 = summary_round_type_1: null
+
+2019-08-23 16:02:26 - [TEST_STEP][PASSED] - summary_bonus_provider_1 = bonus_provider: null
+
+2019-08-23 16:02:26 - [TEST_STEP][PASSED] - summary_bonus_provider_1 = summary_bonus_provider_1: null
+
+2019-08-23 16:02:26 - [TEST_STEP][PASSED] - summary_booster_type_1 = booster_type: null
+
+2019-08-23 16:02:26 - [TEST_STEP][PASSED] - summary_booster_type_1 = summary_booster_type_1: null
+
+2019-08-23 16:02:26 - [TEST_STEP][PASSED] - summary_with_free_spin_1 = with_free_spin: null
+
+2019-08-23 16:02:26 - [TEST_STEP][PASSED] - summary_with_free_spin_1 = summary_with_free_spin_1: null
+
+2019-08-23 16:02:26 - [TEST_STEP][PASSED] - summary_feature_track_1 = feature_track: null
+
+2019-08-23 16:02:26 - [TEST_STEP][PASSED] - summary_feature_track_1 = summary_feature_track_1: null
+
+2019-08-23 16:02:26 - [TEST_STEP][PASSED] - summary_totalCount = totalCount: null
+
+2019-08-23 16:02:26 - [TEST_STEP][PASSED] - summary_totalCount = summary_totalCount: null
+
+2019-08-23 16:02:26 - [MESSAGE][PASSED] - Verify response successfully
+
+2019-08-23 16:02:26 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2019-08-23 16:02:26 - [TEST_STEP][PASSED] - sendRequestAndVerify(findTestObject("INT/RGS(M4)/BOpth_summary", ["url_krug":url_krug, "userid":Userid, "start_date":start_date, "end_date":end_date, "partner":Partner])): Send request and verify the response successfully
+
+2019-08-23 16:02:26 - [MESSAGE][INFO] - HAR: /Users/eiralee/Katalon_Script/SuperWild/Reports/20190823_160201/INT/superWild_7/20190823_160201/requests/main/11.har
+
+2019-08-23 16:02:26 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2019-08-23 16:02:26 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2019-08-23 16:02:26 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2019-08-23 16:02:26 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2019-08-23 16:02:26 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-08-23 16:02:26 - [TEST_STEP][PASSED] - getStatusCode()).isEqualTo(200): null
+
+2019-08-23 16:02:26 - [TEST_STEP][PASSED] - boquery = new groovy.json.JsonSlurper(): null
+
+2019-08-23 16:02:26 - [TEST_STEP][PASSED] - result_boquery = boquery.parseText(response.getResponseBodyContent()): null
+
+2019-08-23 16:02:26 - [TEST_STEP][PASSED] - bo_top_level = result_boquery: null
+
+2019-08-23 16:02:26 - [TEST_STEP][PASSED] - bo_top_level = bo_top_level: null
+
+2019-08-23 16:02:26 - [TEST_STEP][PASSED] - bo_payload = payload: null
+
+2019-08-23 16:02:26 - [TEST_STEP][PASSED] - bo_payload = bo_payload: null
+
+2019-08-23 16:02:26 - [TEST_STEP][PASSED] - bo_balance = balance: null
+
+2019-08-23 16:02:26 - [TEST_STEP][PASSED] - latest_bo_balance = Double.parseDouble(bo_balance) * 100: null
+
+2019-08-23 16:02:26 - [TEST_STEP][PASSED] - latest_bo_balance = latest_bo_balance: null
+
+2019-08-23 16:02:26 - [TEST_STEP][PASSED] - bo_round_id = roundId: null
+
+2019-08-23 16:02:26 - [TEST_STEP][PASSED] - bo_round_id = bo_round_id: null
+
+2019-08-23 16:02:26 - [TEST_STEP][PASSED] - bo_timeStamp = timeStamp: null
+
+2019-08-23 16:02:26 - [TEST_STEP][PASSED] - bo_timeStamp = bo_timeStamp: null
+
+2019-08-23 16:02:26 - [TEST_STEP][PASSED] - bo_totalCount = totalCount: null
+
+2019-08-23 16:02:26 - [TEST_STEP][PASSED] - bo_totalCount = bo_totalCount: null
+
+2019-08-23 16:02:26 - [MESSAGE][PASSED] - Verify response successfully
+
+2019-08-23 16:02:26 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2019-08-23 16:02:26 - [TEST_STEP][PASSED] - summary_top_level = summary_top_level: null
+
+2019-08-23 16:02:26 - [TEST_STEP][PASSED] - summary_message = message: null
+
+2019-08-23 16:02:26 - [TEST_STEP][PASSED] - summary_provider = provider: null
+
+2019-08-23 16:02:26 - [TEST_STEP][PASSED] - summary_type = type: null
+
+2019-08-23 16:02:26 - [TEST_STEP][PASSED] - summary_bonus_data = bonus_data: null
+
+2019-08-23 16:02:26 - [TEST_STEP][PASSED] - summary_date = summary_date_1 + "Z": null
+
+2019-08-23 16:02:26 - [TEST_STEP][PASSED] - println("GlobalVariable.summary_round_id_1: " + summary_round_id_1): null
+
+2019-08-23 16:02:26 - [TEST_STEP][PASSED] - println("M4_history_round_id: " + M4_history_round_id): null
+
+2019-08-23 16:02:26 - [TEST_STEP][PASSED] - println("GlobalVariable.summary_total_bet_1: " + summary_total_bet_1): null
+
+2019-08-23 16:02:26 - [TEST_STEP][PASSED] - println("GlobalVariable.M4_history_total_bet: " + M4_history_total_bet): null
+
+2019-08-23 16:02:26 - [TEST_STEP][PASSED] - println("GlobalVariable.summary_bet_value_1: " + summary_bet_value_1): null
+
+2019-08-23 16:02:26 - [TEST_STEP][PASSED] - println("GlobalVariable.summary_total_win_1: " + summary_total_win_1): null
+
+2019-08-23 16:02:26 - [TEST_STEP][PASSED] - println("GlobalVariable.M4_history_total_won: " + M4_history_total_won): null
+
+2019-08-23 16:02:26 - [TEST_STEP][PASSED] - println("GlobalVariable.summary_balance_1: " + summary_balance_1): null
+
+2019-08-23 16:02:26 - [TEST_STEP][PASSED] - println("summary_date: " + summary_date): null
+
+2019-08-23 16:02:26 - [TEST_STEP][PASSED] - println("GlobalVariable.M4_history_date: " + M4_history_date): null
+
+2019-08-23 16:02:26 - [TEST_STEP][PASSED] - println("GlobalVariable.summary_round_type_1: " + summary_round_type_1): null
+
+2019-08-23 16:02:26 - [TEST_STEP][PASSED] - println("GlobalVariable.M4_history_type: " + M4_history_type): null
+
+2019-08-23 16:02:26 - [TEST_STEP][PASSED] - println("GlobalVariable.summary_totalCount is: " + summary_totalCount): null
+
+2019-08-23 16:02:26 - [TEST_STEP][PASSED] - println("GlobalVariable.bo_totalCount  is: " + bo_totalCount): null
+
+2019-08-23 16:02:26 - [TEST_STEP][PASSED] - assert summary_message == null: null
+
+2019-08-23 16:02:26 - [TEST_STEP][PASSED] - assert summary_round_id_1 == M4_history_round_id: null
+
+2019-08-23 16:02:26 - [TEST_STEP][PASSED] - assert summary_total_bet_1 == M4_history_total_bet: null
+
+2019-08-23 16:02:26 - [TEST_STEP][PASSED] - assert summary_bet_value_1 == M4_history_total_bet: null
+
+2019-08-23 16:02:26 - [TEST_STEP][PASSED] - assert summary_total_win_1 == M4_history_total_won: null
+
+2019-08-23 16:02:26 - [TEST_STEP][PASSED] - M4_history_balance_str = Long.toString(M4_history_balance): null
+
+2019-08-23 16:02:26 - [TEST_STEP][PASSED] - println("M4_history_balance_str: " + M4_history_balance_str): null
+
+2019-08-23 16:02:26 - [TEST_STEP][PASSED] - assert summary_balance_1 == M4_history_balance_str: null
+
+2019-08-23 16:02:26 - [TEST_STEP][PASSED] - assert summary_date == M4_history_date: null
+
+2019-08-23 16:02:26 - [TEST_STEP][PASSED] - assert summary_round_type_1 == M4_history_type: null
+
+2019-08-23 16:02:26 - [TEST_STEP][PASSED] - assert summary_provider == null: null
+
+2019-08-23 16:02:26 - [TEST_STEP][PASSED] - assert summary_type == null: null
+
+2019-08-23 16:02:26 - [TEST_STEP][PASSED] - assert summary_bonus_data == null: null
+
+2019-08-23 16:02:26 - [TEST_STEP][PASSED] - assert summary_booster_type_1 == null: null
+
+2019-08-23 16:02:26 - [TEST_STEP][PASSED] - assert summary_with_free_spin_1 == false: null
+
+2019-08-23 16:02:26 - [TEST_STEP][PASSED] - assert summary_feature_track_1.size() == 0: null
+
+2019-08-23 16:02:26 - [TEST_STEP][PASSED] - assert summary_totalCount == bo_totalCount: null
+
+2019-08-23 16:02:26 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/INT_env/compare_values/7_summary_page_baseSpin_verify_value' successfully</system-out>
+            <system-err></system-err>
+        </testcase>
+        <system-out>2019-08-23 16:02:15 - [TEST_SUITE][INCOMPLETE] - superWild_7: null</system-out>
+        <system-err>2019-08-23 16:02:15 - [TEST_SUITE][INCOMPLETE] - superWild_7: null</system-err>
+    </testsuite>
+</testsuites>

@@ -75,7 +75,9 @@ content.putAt('A36', "F_reels3_03_symbols")
 content.putAt('A37', "F_reels4_01_symbols")
 content.putAt('A38', "F_reels4_02_symbols")
 content.putAt('A39', "F_reels4_03_symbols")
-
+content.putAt('A40', "free_spins_left")
+content.putAt('A41', "total_free_spin_count")
+content.putAt('A42', "total_free_spin_win_amount")
 
 
 
@@ -127,7 +129,9 @@ content1.putAt('A36', "F_reels3_03_symbols")
 content1.putAt('A37', "F_reels4_01_symbols")
 content1.putAt('A38', "F_reels4_02_symbols")
 content1.putAt('A39', "F_reels4_03_symbols")
-
+content1.putAt('A40', "free_spins_left")
+content1.putAt('A41', "total_free_spin_count")
+content1.putAt('A42', "total_free_spin_win_amount")
 
 ExcelKeywords.setValueToCellByAddresses(M4_historyOrOthersAPI, content1)
 ExcelKeywords.saveWorkbook(excelTestFile02, workbook01)
@@ -150,6 +154,22 @@ def M4_spin_reels_symbols = GlobalVariable.M4_spin_reels_symbols
 
 
 WS.sendRequestAndVerify(findTestObject('STG/RGS(M4)/1_Round_detail', [('partner') : Partner, ('M4_spin_round_id') : GlobalVariable.M4_spin_round_id]))
+def M4_round_spin_result_list = GlobalVariable.M4_round_spin_result_list
+def features_trigger = M4_round_spin_result_list.features_triggered
+def total_free_spin_count = ''
+def free_spins_left =  ''
+def total_free_spin_win_amount = ''
+for (int i = 0; i < features_trigger.size(); i++){
+	def feature_type = features_trigger[i].type
+	println("M4_round_spin_result_list is: "+M4_round_spin_result_list)
+	println(i)
+	if (feature_type == "FREE_SPIN"){
+		println("feature_type is:" +feature_type )
+		total_free_spin_count = features_trigger[i].feature_state.total_free_spin_count
+		free_spins_left = features_trigger[i].feature_state.free_spins_left
+		total_free_spin_win_amount = features_trigger[i].feature_state.total_free_spin_win_amount
+	}
+}
 
 
 def M4_balance = GlobalVariable.M4_round_balance
@@ -175,7 +195,19 @@ for (i = 0; i < M4_round_spin_result.size(); i++) {
 
 
 WS.sendRequestAndVerify(findTestObject('STG/RGS(M4)/in_game_history_detail', [('partner') : Partner, ('M4_spin_transaction_id') : GlobalVariable.M4_spin_transaction_id, ('M4_login_user_id') : GlobalVariable.M4_login_user_id]))
+def M4_spin_number = ''
+//def M4_history_bonuses1 = GlobalVariable.M4_history_bonuses1
+def spin_data =  GlobalVariable.M4_history_bonuses1.extra_spins_data
 
+for (int i = 0; i < spin_data.size(); i++) {
+	println(spin_data.size())
+	def spin_number_value = spin_data[i].spin_number
+	if (i == spin_data.size()-1) {
+		M4_spin_number = spin_number_value
+		}
+	println(M4_spin_number)
+}
+WS.sendRequestAndVerify(findTestObject('INT/RGS(M4)/Summary_history', [('partner_code') : partner_code, ('game_code') : Game_code, ('partner') : Partner, ('userid') : Userid]))
 
 //Round detail, base spin reel
 def reels01 = GlobalVariable.M4_round_reels1.symbols[0].symbol
@@ -302,6 +334,15 @@ def F_M4reels43 = GlobalVariable.M4_history_F_reels[4].symbols[2].symbol
 def M4_history_balance = GlobalVariable.M4_history_balance
 long M4_history_balance_result = new Long(M4_history_balance)
 
+def M4_bonus_total_win = 0
+//def M4_history_data = GlobalVariable.M4_history_bonuses1.extra_spins_data
+for (int i = 0; i < spin_data.size();  i++){
+	def line_wins = spin_data[i].line_wins
+	for (int j = 0; j < line_wins.size(); j ++){
+		M4_bonus_total_win += line_wins[j].prize
+	}
+}
+
 ExcelKeywords.setValueToCellByIndex(NuRGS, 1, 1, GlobalVariable.M4_round_currency)
 ExcelKeywords.setValueToCellByIndex(M4_historyOrOthersAPI, 1, 1, GlobalVariable.M4_history_currency)
 ExcelKeywords.setValueToCellByIndex(NuRGS, 2, 1, GlobalVariable.M4_round_id)
@@ -354,6 +395,9 @@ ExcelKeywords.setValueToCellByIndex(NuRGS, 35, 1, F_reels33)
 ExcelKeywords.setValueToCellByIndex(NuRGS, 36, 1, F_reels41)
 ExcelKeywords.setValueToCellByIndex(NuRGS, 37, 1, F_reels42)
 ExcelKeywords.setValueToCellByIndex(NuRGS, 38, 1, F_reels43)
+ExcelKeywords.setValueToCellByIndex(NuRGS, 39, 1, free_spins_left)
+ExcelKeywords.setValueToCellByIndex(NuRGS, 40, 1, total_free_spin_count)
+ExcelKeywords.setValueToCellByIndex(NuRGS, 41, 1, total_free_spin_win_amount)
 
 //M4_history base spin
 ExcelKeywords.setValueToCellByIndex(M4_historyOrOthersAPI, 9, 1, M4reels01)
@@ -388,7 +432,9 @@ ExcelKeywords.setValueToCellByIndex(M4_historyOrOthersAPI, 35, 1, F_M4reels33)
 ExcelKeywords.setValueToCellByIndex(M4_historyOrOthersAPI, 36, 1, F_M4reels41)
 ExcelKeywords.setValueToCellByIndex(M4_historyOrOthersAPI, 37, 1, F_M4reels42)
 ExcelKeywords.setValueToCellByIndex(M4_historyOrOthersAPI, 38, 1, F_M4reels43)
-
+ExcelKeywords.setValueToCellByIndex(M4_historyOrOthersAPI, 39, 1, 0)
+ExcelKeywords.setValueToCellByIndex(M4_historyOrOthersAPI, 40, 1, M4_spin_number)
+ExcelKeywords.setValueToCellByIndex(M4_historyOrOthersAPI, 41, 1, M4_bonus_total_win)
 
 ExcelKeywords.setValueToCellByAddresses(M4_historyOrOthersAPI, content1)
 ExcelKeywords.setValueToCellByAddresses(NuRGS, content)
@@ -396,11 +442,6 @@ ExcelKeywords.saveWorkbook(excelTestFile02, workbook01)
 
 CompareSheet_result = ExcelKeywords.compareTwoSheets(NuRGS, M4_historyOrOthersAPI)
 println("Result of compare sheet01 of File01Sheet01 and File02Sheet01 is: " + CompareSheet_result)
-
-//assert GlobalVariable.M4_round_booster_type == null
-//ExcelKeywords.setValueToCellByIndex(NuRGS, 0, 1, GlobalVariable.M4_round_currency)
-//ExcelKeywords.setValueToCellByIndex(M4_historyOrOthersAPI, 0, 1, GlobalVariable.M4_history_currency)
-
 println("reels01 is: "+reels01)
 println("M4reels01 is: "+M4reels01)
 println("F_reels01 is: "+F_reels01)
@@ -408,7 +449,15 @@ println("F_M4reels01 is: "+F_M4reels01)
 
 def feature_trigger_complete = GlobalVariable.M4_round_spin_result_list.features_triggered[0].complete
 println("feature_trigger_complete" +feature_trigger_complete)
+println("GlobalVariable.summary_total_win_1 is: "+GlobalVariable.summary_total_win_1)
+println("GlobalVariable.M4_history_total_won is: "+GlobalVariable.M4_history_total_won)
+println("GlobalVariable.summary_round_id_1 is:"+GlobalVariable.summary_round_id_1)
+println("GlobalVariable.summary_total_win_1 is:"+GlobalVariable.summary_total_win_1)
+println("GlobalVariable.M4_history_total_won is: "+GlobalVariable.M4_history_total_won)
+println("GlobalVariable.summary_with_free_spin_1 is: " +GlobalVariable.summary_with_free_spin_1)
 
 assert reels01 == M4reels01
 assert F_reels01 == F_M4reels01
-assert feature_trigger_complete != true
+assert feature_trigger_complete == true
+assert GlobalVariable.summary_with_free_spin_1 == true
+assert GlobalVariable.summary_total_win_1 == GlobalVariable.M4_history_total_won
