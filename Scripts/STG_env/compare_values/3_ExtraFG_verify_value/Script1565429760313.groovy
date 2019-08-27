@@ -96,7 +96,21 @@ for (int i=0; i < M4_round_features_triggered.size(); i++) {
 }
 println(extraFreeSpinIndex)
 
-
+def extra_count = 0
+def M4_spin_result = GlobalVariable.M4_spin_result
+def M4_spin_reels = M4_spin_result.reels
+for (int i=0; i < M4_spin_reels.size(); i++) {
+	def symbols = M4_spin_reels[i].symbols
+	for (int j=0; j < symbols.size(); j++) {
+		def symbol = symbols[j].symbol
+		if (i == 2 &&  symbol == "WILD_ExtraFG") {
+			extra_count = extra_count + 5
+		}
+		if ( i == 3 && symbol == "WILD_ExtraFG") {
+			extra_count = extra_count + 5
+		}
+	}
+}
 def freeSpinLeft = GlobalVariable.M4_round_features_triggered[0].feature_state.free_spins_left
 
 println("extraFreeSpinTypeAndComplete is:"+extraFreeSpinTypeAndComplete)
@@ -111,6 +125,8 @@ println("subfeatures is: "+subfeatures)
 assert extraFreeSpinTypeAndComplete == true
 assert extraFreeSpinLeft == M4_spin_number
 println("extraFreeSpinAdded is: "+extraFreeSpinAdded)
+println("extra_count is: "+extra_count)
+assert extraFreeSpinAdded == extra_count
 //assert extraFreeSpinAdded == extraFreeSpinLeft - 10
 assert GlobalVariable.summary_with_free_spin_1 == true
 assert subfeatures.equals(GlobalVariable.summary_feature_track_1)

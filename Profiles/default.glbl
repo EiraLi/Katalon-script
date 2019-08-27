@@ -929,4 +929,9 @@
       <initValue>''</initValue>
       <name>bo_totalCount</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>M4_spin_result</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

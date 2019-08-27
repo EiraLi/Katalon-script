@@ -97,6 +97,9 @@ GlobalVariable.M4_spin_round_id = M4_spin_round_id
 def M4_spin_line_wins = result_M4_spin.spin_result.bonus.bonus_data[0].get('properties').spin_result[0].line_wins
 GlobalVariable.M4_spin_line_wins = M4_spin_line_wins
 
+def M4_spin_result = result_M4_spin.spin_result
+GlobalVariable.M4_spin_result = M4_spin_result
+
 
 def M4_total_bonus_spins_int = result_M4_spin.spin_result.bonus.bonus_data[0].get('properties').total_bonus_spins
 println(&quot;******M4_total_bonus_spins type is:*******&quot;+ newline+ M4_total_bonus_spins_int.getClass().getName())
